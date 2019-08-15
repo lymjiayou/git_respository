@@ -1,0 +1,212 @@
+/* 导航 */
+body{
+    background-color: #F5F5F5;
+}
+.header{
+    background-color:#ee2222;
+    height: 80px;
+}
+.header_logo{
+    float:left;
+    width: 20%;
+    height: 80px;
+}
+.header_logo a{
+    display:block;
+    float:left;
+}
+#e1{
+    background: url("../../images/logo_1.jpg");
+    background-size: 100% 100%;
+    /*background-position:0px -3px;*/
+    width:80px;
+    height:80px;
+}
+#e2{
+    font-family:微软雅黑;
+    font-size:24px;
+    color:#ffffff;
+    margin-top:15px;
+    margin-left:30px;
+    text-decoration:none;
+}
+#e3{
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 2px solid #ffb2b2;
+    border-radius: 10px;
+    height: 25px;
+    padding: 2px 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#e3:hover{
+    font-weight: bold;
+}
+.head_nav{
+    float: left;
+    margin-left: 30px;
+    /*width: 200px;*/
+}
+.head_nav a{
+    display: block;
+    float: left;
+    margin: 0 30px 0 20px;
+    font: 400 18px/80px "微软雅黑";
+    color: #FFFFFF;
+}
+.container_box{
+    margin-top: 20px;
+}
+/*左侧导航栏*/
+.left_nav{
+    float:left;
+    margin:0px;
+    width:11%;
+}
+.left_nav .first_li{
+    margin: 10px 0 20px 0;
+}
+
+.left_nav .user_center{
+    padding-top: 10px;
+}
+.left_nav .user_center li{
+    height: 30px;
+}
+.left_nav .user_center li a{
+    padding-left: 5px;
+}
+
+.left_nav  .part{
+    font: 600 16px/16px "微软雅黑";
+}
+.left_nav .part:hover{
+     color:#ee2222;
+ }
+.nav li{
+    margin: 0;
+    height: 30px;
+}
+
+/*修改bootstrap默认样式*/
+.nav>li>a{
+    padding-left: 5px;
+}
+.nav a:hover{
+    height: 30px;
+}
+.nav a:focus{
+    color: #333333;
+}
+.nav>li>a:focus,.nav>li>a:hover
+{background-color:#F5F5F5}
+
+.right_content{
+    float:left;
+    margin-left: 10px;
+    width:88%;
+    padding:10px;
+}
+.right_content{
+     background:#ffffff;
+ }
+/*暂无数据*/
+.no_data{
+    text-align: center;
+    margin: 0 auto;
+}
+.list_content_box .no_data{
+    margin: 120px auto;
+}
+.shop_car_content_box .no_data{
+    margin: 300px auto;
+}
+.no_data h1{
+    font: 400 14px/30px "微软雅黑";
+}
+/*订单时间搜索*/
+.order_search_box{
+    float: right;
+    margin-top: 4px;
+    width:50%;
+}
+.receipt_search_box{
+    float: right;
+    /*margin-top: -10px;*/
+    width: 58%;
+}
+.order_search_box span,.receipt_search_box span{
+    display: block;
+    font-size: 14px;
+    float: left;
+    line-height: 30px;
+}
+.receipt_search_box .time_info{
+    float: left;
+    margin:0 10px 0 10px;
+
+}
+.order_search_box .time_info{
+    float: left;
+    margin:0 10px 0 10px;
+    width: 30%;
+}
+#search_time{
+    float: left;
+    margin-left: 20px;
+    width: 10%;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*账单按月份搜索*/
+.bill_search_box{
+    float: right;
+    /*margin-top: -10px;*/
+    width:35%;
+}
+.bill_search_box span{
+    display: block;
+    font-size: 14px;
+    float: left;
+    line-height: 30px;
+}
+.bill_search_box .time_info{
+    float: left;
+    margin:0 10px 0 10px;
+}
+#search_time{
+    float: left;
+    margin-left: 20px;
+    width: 10%;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*提示*/
+.wait_pay_tip{
+    margin-left: 50px;
+}
+.good_content{
+    cursor: pointer;
+}
+/*记账*/
+.on_account{
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #ee2222;
+}

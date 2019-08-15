@@ -1,0 +1,70 @@
+.head{
+    overflow: hidden;
+    /*padding-bottom: 20px;*/
+    /*border-bottom: 1px solid #dddddd;*/
+    height: 60px;
+}
+
+.total_prise {
+    margin: 0 20px 0 10px;
+}
+.total_prise>b {
+    font-size: 18px;
+    color: #ee2222;
+}
+.options {
+    height: 50px;
+    line-height: 50px;
+    /*border: 1px solid #f1f1f1;*/
+    border:none;
+    color: #666;
+    font-size: 13px;
+}
+.toolbar {
+    float: right;
+}
+.toolbar>div {
+    float: left;
+}
+.text{
+    font: 400 14px/25px "微软雅黑";
+}
+.bill_box{
+    padding: 20px 0 0 20px;
+}
+.bill_header{
+    font: bold 16px/16px "微软雅黑";
+    float: left;
+    color: #ee2222;
+}
+.bill_header span{
+    padding-left: 10px;
+    font-size: 18px;
+}
+/*对账单表格*/
+.table_bills tr,.table_bills th,.table_bills td{
+    height: 50px;
+    text-align: center;
+    /*line-height: 50px;*/
+    font-size: 14px;
+    font-family: "微软雅黑";
+    vertical-align: middle!important
+}
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#d9edf7}
+.table-hover>tbody>tr:hover{background-color:#c4e3f3}
+
+/*换页*/
+.bill_box .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+

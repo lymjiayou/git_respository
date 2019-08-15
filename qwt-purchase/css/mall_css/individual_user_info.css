@@ -1,0 +1,314 @@
+#myTab{
+    height: 45px;
+    border-bottom: 1px solid #dddddd;
+}
+#myTab li{
+    text-align: center;
+    width: 120px;
+    font: 400 16px/45px "微软雅黑";
+    height: 45px;
+}
+ #myTabContent{
+     margin: 20px;
+ }
+ #infoTabContent{
+     margin-top: 40px;
+ }
+ #u_info,#change_head,#change_head{
+     font-size: 14px;
+ }
+
+#infoTabContent .item{
+    font-size: 14px;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.item .label_info{
+    float: left;
+    width: 120px;
+    text-align: right;
+}
+
+.item .info{
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+}
+.item .info_warn{
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+}
+.item .info_warn .warn{
+    color: #ee2222;
+}
+/*#infoTabContent .interest_item{*/
+    /*!*height: 100px;*!*/
+    /*overflow: hidden;*/
+/*}*/
+#infoTabContent .interest_item .interest_box{
+    overflow: hidden;
+    width: 610px;
+}
+#infoTabContent .interest_box .interest{
+    float: left;
+    margin: 5px 20px 5px 0;
+    padding: 0 10px 0 10px;
+   height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.no_choose_interest{
+    border: 1px solid #dddddd;
+}
+.choose_interest{
+    border: 1.5px solid #ee2222;
+}
+
+.radio{
+    overflow: hidden;
+    margin: 0px;
+}
+.radio label{
+    margin-right: 20px;
+    line-height: 70px;
+    float: left;
+}
+.radio input{
+    top: 25px;
+}
+
+.form-control{
+    display: inline;
+    /*width: 200px;*/
+}
+.form-control[readonly]{
+    background-color: #fff;
+}
+/*按钮*/
+.save_edit,.submit_password,.submit_head{
+    margin: 20px 0 10px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+#change_password i{
+    color: #ee2222;
+    font-family: "黑体";
+}
+#change_password .form-validate{
+    height: 20px;
+    color: #c5c5c5;
+    font-size: 12px;
+    padding-left: 140px;
+    /*margin: -10px 0 0 120px;*/
+}
+#change_password .form-list{
+    /*width: 398px;*/
+    height: 52px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+#change_head .head_info{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #5bc0de;
+    border-radius: 4px;
+    margin-top: 45px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#infoTabContent .company_info{
+    margin-top: 20px;
+    height: 140px;
+    /*overflow: hidden;*/
+}
+.confirm_update{
+    margin-top: 20px;
+    height: 30px;
+}
+.company_info .company_pic_info{
+    height: 120px;
+    width: 300px;
+}
+.company_head_info{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #5bc0de;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.company_confirm_update{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #5bc0de;
+    border-radius: 4px;
+    color: #5bc0de;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.pic_button_box{
+    overflow: hidden;
+    float: left;
+}
+.company_pic_info label{
+    /*float: left;*/
+    margin-right: 20px;
+}
+.company_pic_info .company_pic_show{
+    float: left;
+    margin-right: 20px;
+}
+.company_pic_show{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    color: #dddddd;
+    font: 400 48px/120px "黑体";
+}
+/*更改头像*/
+#change_head .item{
+    height: 120px;
+    line-height: 120px;
+}
+#change_head .head_pic_show{
+    height: 120px;
+    width: 120px;
+    border: 1px solid #ddd;
+}
+.choose_head_pic label,.choose_head_pic .head_confirm_update{
+    float: left;
+}
+#change_head .choose_head_pic{
+    width: 500px;
+}
+#change_head .head_confirm_update{
+    margin: 45px 0 0 30px;
+}
+.head_pic_show img{
+    width: 100%;
+    height: 100%;
+}
+.head_confirm_update{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #5bc0de;
+    border-radius: 4px;
+    color: #5bc0de;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/*表单验证后出现的小图标*/
+.i-def{
+    width: 16px;
+    height: 16px;
+    /*top: 5px;*/
+    /*left: 5px;*/
+    /*position: absolute;*/
+    display: block;
+    float: left;
+    background: url("../../images/icon.png") no-repeat;
+}
+.point{
+    background-position: 0 -100px;
+}
+.main-content-L .form-validate span,.main-content-R .form-validate1 span{
+    position: absolute;
+    left: 30px;
+    top: 2px;
+}
+.error{
+    background-position: -17px -100px;
+}
+.feifa{
+    color: #ee2222;
+}
+.form-list .i-status，.form-list1 .i-status {
+    background: url("../../images/icon.png") 0 -117px;
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+}
+.point2{
+    background-position: -34px -117px;
+}
+.point3{
+    background-position: -34px -134px;
+}
+.point4{
+    background-position: -17px -134px;
+}
+.form-group .company_pic_show{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    color: #dddddd;
+    font: 400 48px/100px "黑体";
+}
+/*更改标签页样式*/
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #ffffff;
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none;
+    border-bottom: 2px solid #ff1f17;
+    height: 100%;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+/*模态框*/
+.modal.fade.in{
+    top:120px;
+}
+.modal-header{
+    background-color:#ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#fail_edit_Modal .modal-header,#fail_operation_content .modal-header ,#fail_operation_Modal .modal-header{
+    background-color:#ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.del_content{
+    height: 300px;
+    border-radius: 0px;
+}
+.del_body{
+    height: 180px;
+}
+.del_body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+.del_body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+#success_edit_Modal .del_body .edit_text,#success_update_Modal .del_body .update_text,#fail_edit_Modal .ask_text{
+    text-align: center;
+    font:bold 16px/16px "微软雅黑";
+}

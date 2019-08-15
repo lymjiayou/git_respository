@@ -1,0 +1,197 @@
+.head{
+    overflow: hidden;
+    /*padding-bottom: 20px;*/
+    border-bottom: 1px solid #dddddd;
+    height: 80px;
+}
+th{
+    font-weight: 400;
+    font-size: 14px;
+}
+.recharge_list{
+    width: 100%;
+}
+.recharge_list th{
+    text-align: center;
+}
+.recharge_box{
+    padding: 20px 0 0 20px;
+}
+.recharge_header{
+    font: bold 16px/16px "微软雅黑";
+    float: left;
+    /*color: #ee2222;*/
+}
+.recharge_header span{
+    padding-left: 10px;
+    font-size: 18px;
+}
+#recharge{
+    float: right;
+    margin-right: 20px;
+}
+ .recharge_list_text{
+     /*float: left;*/
+    font: bold 16px/40px "微软雅黑";
+
+    color: #ee2222;
+    width: 65px;
+     margin-top: 20px;
+    border-bottom: 3px solid #ee2222;
+}
+ .recharge_list_head{
+     height: 50px;
+     border-bottom: 1px solid #dddddd;
+     padding-left: 20px;
+ }
+ .recharge_list_head span{
+     display: block;
+     float: left;
+     font: 400 14px/50px "微软雅黑";
+     text-align: center;
+ }
+ .recharge_list_head .recharge_num,.recharge_list_head .recharge_time,.recharge_list_head .recharge_money,.recharge_list_head .recharge_operation,
+ .re_num,.re_time,.re_money,.re_operation
+ {
+     width: 200px;
+     margin: 0 20px 0 20px;
+ }
+.recharge_list_head .recharge_pay_way,.re_pay_way{
+    width: 100px;
+    margin: 0 20px 0 20px;
+}
+.recharge_content{
+    padding-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    font-size: 14px;
+}
+.recharge_content div{
+    float: left;
+}
+.re_operation{
+    padding-left: 60px;
+}
+.recharge_content .re_operation span{
+    display: block;
+    float: left;
+    width: 85px;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+}
+.re_operation span:hover{
+    color: #ee2222;
+}
+.choose_li .way_pic{
+    float: left;
+    margin: 50px 80px 0 80px;
+}
+.choose_li li{
+    width: 250px;
+    height: 100px;
+    border-radius: 4px;
+    border: 2px solid #f2f2f2;
+}
+.choose_li .way_pic img{
+    width: 100%;
+    height: 100%;
+}
+/*换页*/
+.right_content .recharge_box .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+/*模态框*/
+.modal.fade.in{
+    top:40px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#recharge_detail_Modal .modal-header,#recharge_ways_Modal .modal-header,#online_check_Modal .modal-header,#success_pay_Modal .modal-header{
+    background-color: #ffb412;
+}
+#recharge_ways_Modal .modal-body{
+    height: 230px;
+}
+#recharge_ways_Modal .way_lists{
+    overflow: hidden;
+}
+.modal-content{
+    height: 350px;
+    border-radius: 0px;
+}
+.del_content{
+    height: 300px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 350px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.del_body{
+    height: 180px;
+}
+.del_body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+.del_body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+.del_body .ask_text,.del_content .update_text{
+    text-align: center;
+    font:bold 16px/16px "微软雅黑";
+}
+.modal-body .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 95px;
+    /*clear: both;*/
+}
+.modal .info{
+    float: left;
+    width: 450px;
+}
+.modal .recharge_warn{
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+    color: #ee2222;
+}
+.modal .recharge_warn i{
+    font-size: 14px;
+    line-height: 30px;
+    color: #ee2222;
+}
+.modal .recharge_tip{
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+    color: #818181;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#d9edf7}
+.table-hover>tbody>tr:hover{background-color:#c4e3f3}

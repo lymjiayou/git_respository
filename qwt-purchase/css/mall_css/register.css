@@ -1,0 +1,354 @@
+body {
+    font:16px/150% Arial,Verdana;
+    color:#333333;
+    /*background:#F6F6F6;*/
+}
+/*模态框*/
+.modal.fade.in{
+    top:120px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 370px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 100px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+/*顶部的logo部分*/
+.header{
+    width:100%;
+    height: 120px;
+    /*background: url("../image/headbg.jpg") bottom left;*/
+    /*background-repeat: repeat-x;*/
+    box-shadow: 2px 3px 10px 2px #eee;
+}
+.header .header-content{
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+/*顶部的logo*/
+.header .header-content .logo{
+    float: left;
+    width: 294px;
+    height: 120px;
+    /*margin-top: 5px;*/
+    background: url("../../images/login_logo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.header .header-content span{
+    float: left;
+    font-size: 24px;
+    line-height: 34px;;
+    padding-left: 30px;
+    margin-top: 70px;
+}
+.header .header-content .login{
+    float: right;
+    font-size: 16px;
+    margin-top: 75px;
+    color: #999;
+}
+/*中间注册部分*/
+.center{
+    width: 50%;
+    margin:50px auto;
+}
+.pic_text_info{
+    display: block;
+    font: bold 16px/30px "微软雅黑";
+    float: left;
+    margin-right: 20px;
+}
+ .company_info{
+     float: left;
+     width: 90px;
+     height: 30px;
+     line-height: 30px;
+     border: 1px solid #5bc0de;
+     /*background-color: #5bc0de;*/
+     border-radius: 4px;
+     /*margin-top: 45px;*/
+     color: #5bc0de;
+     text-align: center;
+     cursor: pointer;
+ }
+.update_company_info{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #5bc0de;
+    border-radius: 4px;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.confirm_update{
+    font-size: 14px;
+    line-height: 20px;
+}
+.confirm_update i{
+    font-size: 14px;
+}
+/*个人用户注册  /*企业注册*/
+.center .main-content-L,.main-content-R{
+    width: 400px;
+    margin: 50px auto;
+}
+.main-content-L .form-list,.main-content-R .form-list1{
+    width: 398px;
+    height: 52px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+.main-content-L .form-list label,.main-content-R .form-list1 label{
+    float: left;
+    width: 110px;
+    height: 52px;
+    color: #666;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 52px;
+    padding-left: 20px;
+    word-spacing: 0.12em;
+    letter-spacing: 0.3em;
+}
+#telId,#country,#country1{
+    letter-spacing: 0em;
+}
+.main-content-L .form-list label a ,.main-content-R .form-list1 label a{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 5px;
+    /*background: url(../image/icon.png) no-repeat;*/
+    /*background-position: -2px -151px;*/
+}
+.main-content-L .form-list input,.main-content-R .form-list1 input{
+    width: 260px;
+    height: 19px;
+    outline: none;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #666;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 25px;
+    background-color: #f2f2f2;
+
+}
+.main-content-L .form-list  label#country,.main-content-R .form-list1 label#country1{
+    border-right: 1px solid #ddd;
+}
+.main-content-L .form-list img,.main-content-R .form-list1 img{
+    width: 110px;
+    height: 46px;;
+    position: absolute;
+    right: 3px;
+    top:3px;;
+}
+.main-content-L .form-list div,.main-content-R .form-list1 div{
+    width: 110px;
+    height: 46px;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 46px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+.main-content-L .form-validate,.main-content-R .form-validate1{
+    position: relative;
+    height: 27px;
+    color: #c5c5c5;
+    font-size: 12px;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.main-content-L .form-validate a,.main-content-R .form-validate1 a{
+    color: #38f;
+    float: right;
+}
+.main-content-L .form-check,.main-content-R .form-check1{
+    color: #333;
+    font-size: 12px;
+}
+.main-content-L .form-check input,.main-content-R .form-check1 input{
+    margin-top: -2px;
+}
+
+.main-content-L .form-check a,.main-content-R .form-check1 a{
+    color: #38f;;
+}
+.main-content-L .form-submit,.main-content-R .form-submit1{
+    width:100%;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    font-family: "微软雅黑";
+    background: #e22;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.center .clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*注册页面的底部声明部分*/
+.footer{
+    font-size: 12px;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+    color: #999;
+    padding-bottom: 30px;
+}
+.footer p a{
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+.footer p:first-child{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.footer p span{
+    padding-left: 1px;
+    margin: 0 10px;
+    font-size: 10px;
+    background-color: #999;
+}
+/*表单验证后出现的小图标*/
+.i-def{
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    display: inline-block;
+    background: url("../../images/icon.png") no-repeat;
+}
+.point{
+    background-position: 0 -100px;
+}
+.main-content-L .form-validate span,.main-content-R .form-validate1 span{
+    position: absolute;
+    left: 30px;
+    top: 2px;
+}
+.error1,.error2{
+    background-position: -17px -100px;
+}
+.feifa{
+    color: #ee2222;
+}
+.form-list .i-status，.form-list1 .i-status {
+    background: url("../../images/icon.png") 0 -117px;
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+}
+.point2{
+    background-position: -34px -117px;
+}
+.point3{
+    background-position: -34px -134px;
+}
+.point4{
+    background-position: -17px -134px;
+}
+.form-group .company_pic_show{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    color: #dddddd;
+    font: 400 48px/100px "黑体";
+}
+/*修改分页的样式*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #ffffff;
+    background-color: #ee2222;
+}
+.nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #ffffff;
+    background-color: #ee2222;
+}
+/*模态框*/
+.modal.fade.in{
+    top:120px;
+}
+#fail_register_Modal .modal-header,#fail_operation_content .modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#success_register_Modal .modal-header,#success_update_Modal .modal-header,#show_user_protocol .modal-header{
+    background-color: #ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 320px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 200px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.modal-body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+.modal-body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+.modal-body .ask_text,.modal-body .update_text{
+    text-align: center;
+    font:bold 16px/20px "微软雅黑";
+}
+#protocol h2{
+    font: 600 16px/28px "微软雅黑";
+}
+#protocol img{
+    display: block;
+    margin: 10px auto;
+}
+#protocol p{
+    font: 400 14px/25px "微软雅黑";
+}
+#protocol h1{
+    font: 600 18px/36px "微软雅黑";
+    text-align: center;
+}
+#protocol table{
+    margin: 10px auto;
+    width: 90%;
+}
+

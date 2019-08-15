@@ -1,0 +1,567 @@
+body{
+    background-color: #F5F5F5;
+}
+.header{
+    background-color:#e45050;
+    height: 80px;
+}
+
+.header_logo{
+    float:left;
+    width: 20%;
+    height: 80px;
+}
+.header_logo a{
+    display:block;
+    float:left;
+}
+#e1{
+    background: url("../../images/logo_1.jpg");
+    background-size: 100% 100%;
+    /*background-position:0px -3px;*/
+    width:80px;
+    height:80px;
+}
+#e2{
+    font-family:微软雅黑;
+    font-size:24px;
+    color:#ffffff;
+    margin-top:15px;
+    margin-left:30px;
+    text-decoration:none;
+}
+#e3{
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 2px solid #ffb2b2;
+    border-radius: 10px;
+    height: 25px;
+    padding: 2px 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#e3:hover{
+    font-weight: bold;
+}
+/*内容*/
+.container_box{
+    margin-top: 20px;
+}
+#order_num{
+    font-size: 14px;
+}
+/*当前定位*/
+.location_box a{
+    display: block;
+    float: left;
+    margin: 0 5px 0 10px;
+    font-size: 14px; ;
+}
+.location_box i{
+    font-family: "黑体";
+}
+/*物流信息*/
+
+.track-rcol{
+    margin: 50px auto;
+    width: 900px;
+    border: 1px solid #eee;
+}
+.track-list{
+    margin: 20px;
+    padding-left: 5px;
+    position: relative;
+}
+.track-list li{
+    position: relative;
+    padding: 9px 0 0 25px;
+    line-height: 18px;
+    border-left: 1px solid #d9d9d9;
+    color: #999;
+}
+.track-list li .last{
+    color: red;
+    padding-top: 0;
+    border-left-color: #fff;
+}
+.track-list li .node-icon{
+    position: absolute;
+    left: -6px; top: 50%;
+    width: 11px;
+    height: 11px;
+    background: url(../../images/wuliu.png)  -21px -72px no-repeat;
+}
+.track-list li.last .node-icon{
+    background-position:0 -72px;
+}
+.track-list li .time{
+    margin-right: 20px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.track-list li .txt{
+    max-width: 600px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.track-list li.last .time{
+    margin-right: 20px;
+}
+.track-list li.last .txt{
+    max-width: 600px;
+}
+
+
+/*订单状态信息*/
+ .order_status_box{
+     border-top: 4px solid #e45050;
+     /*height: 520px;*/
+     margin-top: 20px;
+     padding-bottom: 50px;
+     overflow: hidden;
+     width: 100%;
+     background-color: #FFFFFF;
+ }
+ .status_text{
+     font: 400 18px/18px "微软雅黑";
+     margin: 20px;
+ }
+
+.stepInfo{
+    margin: 50px 100px 80px 100px;
+    height: 80px;
+}
+.stepIco{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #dddddd;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    /*margin-left: 100px;*/
+
+}
+#create{
+    margin-left: 50px;
+}
+.stepText{
+    width: 80px;
+    color: #333333;
+    margin-left: -15px;
+}
+.line1,.line2,.line3,.line4{
+    width: 164px;
+    float: left;
+    height: 7px;
+    background-color: #dddddd;
+    margin-top: 20px;
+}
+/*列表信息*/
+.order_list{
+    height: 50px;
+    width: 95%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin: 20px auto;
+}
+.order_list span{
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.order_list .good{
+    width: 300px;
+}
+.order_list .single_price,.order_list .num{
+    width: 120px;
+}
+.order_list .status,.order_list .operation{
+    width: 150px;
+}
+.order_list .all_price{
+    width: 170px;
+}
+/*订单列表*/
+.order_content1{
+    width: 95%;
+    margin: auto;
+    /*height: 120px;*/
+    height: 122px;
+    border-top:1px solid #dddddd;
+    border-right:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+}
+
+.order_box1 .order_num1,.order_box1 .order_time1{
+    float: left;
+}
+.order_head1 span{
+    font-size: 14px;
+    line-height: 30px;
+}
+.order_time1{
+    margin-left: 10px;
+}
+.order_num1{
+    margin-left: 50px;
+}
+.good_content1,.good_price1,.good_num1,.al_price1,.order_status1,.order_operation1{
+    float: left;
+}
+.good_content1{
+    width: 340px;
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.good_content1 .good_pic1{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+.good_content1 .good_pic1 img{
+    width: 100%;
+    height: 100%;
+}
+.good_content1 .good_name1,.good_content1 .good_standard{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.good_name span,.good_standard span,.good_name1 span{
+    height: 38px;
+    width: 100%;
+    font: 400 14px/19px "微软雅黑";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+}
+.good_content1 .good_standard{
+    margin-top: 10px;
+    color: #B1AAAA;
+}
+.good_price1{
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    /*margin:0 20px 0 40px;*/
+    line-height: 120px;
+}
+.good_num1{
+    text-align: center;
+    font-size: 14px;
+    width: 160px;
+    line-height: 120px;
+    /*padding-right: 20px;*/
+    border-right:1px solid #dddddd ;
+
+}
+.al_price1{
+    text-align: center;
+    border-right:1px solid #dddddd ;
+    font-size: 14px;
+    width: 180px;
+    /*margin: 0 20px 0 0px;*/
+    line-height: 120px;
+}
+.order_status1{
+    text-align: center;
+    border-right:1px solid #dddddd ;
+    font-size: 14px;
+    width: 190px;
+    height: 100%;
+}
+.order_status1 .o_status1{
+    color: #5bc0de;
+    font-weight: bold;
+    display: block;
+    line-height: 120px;
+}
+.order_operation1{
+    width: 130px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.order_operation1 button{
+    display: block;
+    /*margin-bottom: 10px;*/
+    margin: 10px auto ;
+
+}
+.order_operation1 .apply_refund,.order_operation1 .apply_reject{
+    margin-top: 30px;
+}
+/*待支付详情*/
+.order_box{
+    width: 95%;
+    margin: auto;
+    border-top: 1px solid #dddddd;
+    border-left:1px solid #dddddd ;
+    border-right:1px solid #dddddd ;
+
+}
+.order_box .order_head{
+    height: 30px;
+    background-color: #F5F5F5;
+}
+.order_content_box,.order_content_big_box{
+    overflow: hidden;
+}
+.order_box .order_content{
+    /*float: left;*/
+    height: 120px;
+    border-bottom: 1px solid #dddddd;
+    /*width: 880px;*/
+}
+.order_box .order_status,.order_box .order_operation,.order_box .order_content_box{
+    float: left;
+    /*border-bottom: 1px solid #dddddd;*/
+
+}
+.order_box .order_num,.order_box .order_time{
+    float: left;
+}
+.order_box .order_del{
+    float: right;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+.order_del img{
+    width: 100%;
+    height: 100%;
+}
+.order_head span{
+    font-size: 14px;
+    line-height: 30px;
+}
+.order_time{
+    margin-left: 10px;
+}
+.order_num{
+    margin-left: 50px;
+}
+.good_content,.good_price,.good_num,.al_price{
+    float: left;
+}
+.good_content{
+    width: 340px;
+    padding: 10px ;
+    font-size: 14px;
+    cursor: pointer;
+}
+.good_content .good_pic{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+.good_content .good_pic img{
+    width: 100%;
+    height: 100%;
+}
+.good_content .good_name,.good_content .good_standard{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+.good_content .good_standard{
+    margin-top: 10px;
+    color: #B1AAAA;
+}
+.good_price{
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    /*margin:0 10px 0 30px;*/
+    line-height: 120px;
+}
+.good_num{
+    text-align: center;
+    font-size: 14px;
+    width: 180px;
+    /*margin: 0 10px 0 0px;*/
+    line-height: 120px;
+    border-right:1px solid #dddddd ;
+}
+.al_price{
+    text-align: center;
+    border-right:1px solid #dddddd ;
+    font-size: 14px;
+    width: 160px;
+    /*margin: 0 20px 0 0px;*/
+    line-height: 120px;
+}
+.order_status{
+    text-align: center;
+    border-right:1px solid #dddddd ;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    width: 190px;
+    position: relative;
+    /*height: 241px;*/
+    /*padding:0 40px 0 20px;*/
+}
+.order_status .need_detail{
+    cursor: pointer;
+}
+.order_status .order_status_text{
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top:50%;
+    margin-top: -20px;
+}
+.order_status .o_status{
+    color: #5bc0de;
+    font-weight: bold;
+    display: block;
+    /*margin: 40px 0 5px 0;*/
+}
+.order_status .need_send_detail{
+    display: block;
+}
+
+.order_operation{
+    border-bottom: 1px solid #dddddd;
+    width: 158px;
+    position: relative;
+    /*padding-top: 10px;*/
+    /*margin-left: 60px;*/
+}
+.order_operation_box{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 50%;
+    margin-top: -50px;
+
+}
+.order_operation button{
+    display: block;
+    /*margin-bottom: 10px;*/
+    margin: 10px auto ;
+
+}
+.order_operation .refund_loading{
+    font-size: 14px;
+    margin-left: 5px;
+    line-height: 100px;
+}
+.order_operation .order_operation_box .refund,.order_operation .order_operation_box .confirm,
+.order_operation .order_operation_box .commit,.order_operation .order_operation_box .buy_again,.order_operation .order_operation_box .del_order{
+    margin-top: 30px;
+}
+/*订单详细信息*/
+.order_info_box{
+    margin-top: 40px;
+    height: 300px;
+    background-color: #FFFFFF;
+    /*padding:20px 20px;*/
+}
+.order_info_box .info_text{
+    font: 400 18px/18px "微软雅黑";
+    margin-bottom: 20px;
+}
+/*商品定制信息*/
+.request_info{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.request_info span{
+    float: left;
+    margin-left: 30px;
+    line-height: 25px;
+}
+.request_info .request{
+    float: left;
+    width: 500px;
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+/*四栏详细信息*/
+.receiver_info,.send_info,.pay_info,.receipt_info{
+    margin-top: 20px;
+    float: left;
+    width: 25%;
+    height: 90%;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.text{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.receiver_info,.send_info,.pay_info{
+    border-right: 1px solid #dddddd;
+}
+/*当父盒子没有高度时，子盒子浮动是撑不起来父盒子的高度，可以采用在父盒子overflow：hidden使得父盒子清除浮动*/
+.info_box .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.info_box .label_info{
+    float: left;
+    width: 90px;
+    /*clear: both;*/
+}
+.info_box .info{
+    float: left;
+    max-height: 100px;
+    width: 180px;
+}
+/*取消订单模态框*/
+.modal.fade.in{
+    top:120px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 370px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 250px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.modal-body .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 80px;
+    /*clear: both;*/
+}
+.modal .info{
+    float: left;
+    width: 300px;
+}
+

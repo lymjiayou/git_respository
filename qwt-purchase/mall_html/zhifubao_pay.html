@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>勤务通商品支付宝支付</title>
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/submit_pay.css">
+
+    <script src="../js/jquery-1.11.1.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/global.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            var http="http://129.28.67.53:8001/qinwutong/";
+            var http=Http;
+            var u_id=window.sessionStorage.u_id;
+            var s_id=window.sessionStorage.s_id;
+//            //解析json返回的用户名
+//            var login_str = window.sessionStorage.obj_user; //获取本地存储的数字对象
+//            if(login_str==null){
+//                console.log("no user!");
+//            }else {
+//                // alert(login_str);
+//                var obj = $.parseJSON(login_str); //再将数组转为json
+//                $("#username").attr("href", "#").html(obj.data.username);
+//                $("#register").hide();
+//                $("#exit").show();
+//                $("#exit").click(function () {
+//                    sessionStorage.removeItem("obj_user");
+//                    $("#username").attr("href", "login.html").html("你好，请登录");
+//                    $("#exit").hide()
+//                    $("#register").show();
+//                    $(".qwt_welcome").css("top", 70 + "px");
+//                    $("#hello_user").html("Hi，欢迎来到勤务通！");
+//                    $("#welcome").html("请先登录或注册")
+//                    $(".user_profit").show();
+//                })
+//            }
+            var str_total_price=window.sessionStorage.obj_total_price;
+            $(".total_price").text(str_total_price);
+            $(".do_not_pay").click(function () {
+                window.location.href=document.referrer;
+            })
+
+
+            //头部下拉菜单
+            //头部下拉菜单
+//            $(".top_shortcut .fl").mouseenter(function () {
+//                $(".top_shortcut .dt").addClass("current_bg");
+//                $(".top_shortcut .dd").show(100);
+//            }).mouseleave(function () {
+//                $(".top_shortcut  .dt").removeClass("current_bg");
+//                $(".top_shortcut .dd").hide(100);
+//            });
+            $(".my_qwt_box").mouseenter(function () {
+                $(".my_qwt_box .my_qwt").addClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").show(100);
+            }).mouseleave(function () {
+                $(".my_qwt_box .my_qwt").removeClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").hide(100);
+            });
+            $(".my_service_box").mouseenter(function () {
+                $(".my_service_box .my_service").addClass("current_bg");
+                $(".my_service_box .my_service_info").show(100);
+            }).mouseleave(function () {
+                $(".my_service_box .my_service").removeClass("current_bg");
+                $(".my_service_box .my_service_info").hide(100);
+            });
+
+
+        })
+    </script>
+    <style>
+        .scan_box{
+            height: 400px;
+            margin: 20px auto;
+            padding-top: 20px;
+        }
+        .scan_box .scan_left,.scan_box .scan_tip{
+            float: left;
+        }
+        .scan_box .scan_left{
+            height: 300px;
+            width: 300px;
+            border: 1px solid #333333;
+            margin: 0 200px 0 300px;
+        }
+        .scan_left img{
+            width: 100%;
+            height:100%;
+        }
+        .scan_left .scan_text{
+            height: 70px;
+            width: 300px;
+            margin-top: 2px;
+            padding: 10px;
+            background-color: salmon;
+            color: #FFFFFF;
+            font: 400 14px/14px "微软雅黑";
+        }
+        .scan_pic,.text{
+            float: left;
+            margin-left: 20px;
+        }
+        .scan_pic{
+            margin-top: -5px;
+        }
+
+        .text span{
+            display: block;
+            margin: 10px;
+        }
+        .scan_tip{
+            margin-top: -30px;
+            box-shadow: 2px 2px 2px #ddd;
+            height: 400px;
+            width: 240px;
+        }
+        .scan_tip img{
+            width: 100%;
+            height: 100%;
+        }
+        .do_not_pay{
+            height: 50px;
+            margin: 20px 0 0 20px;
+            cursor: pointer;
+        }
+        .do_not_pay i{
+            /*font-family: "宋体";*/
+            font: bold 18px/30px "宋体";
+            color: #2ea7e7;
+        }
+        .do_not_pay span{
+            font: bold 16px/30px "微软雅黑";
+            color:#2ea7e7;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<!--头部导航-->
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                定位：西安
+                <!--<i><s>◇</s></i>-->
+            </div>
+            <!--<div class="dd">-->
+                <!--<ul class="address">-->
+                    <!--<li><a href="#">西安</a></li>-->
+                    <!--<li><a href="#">渭南</a></li>-->
+                    <!--<li><a href="#">延安</a></li>-->
+                    <!--<li><a href="#">榆林</a></li>-->
+                    <!--<li><a href="#">汉中</a></li>-->
+                    <!--<li><a href="#">宝鸡</a></li>-->
+                    <!--<li><a href="#">安康</a></li>-->
+                    <!--<li><a href="#">铜川</a></li>-->
+                    <!--<li><a href="#">咸阳</a></li>-->
+                    <!--<li><a href="#">商洛</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>
+                    <a href="login.html" id="username">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="register.html" class="col-red" id="register">免费注册</a>
+                    <a href="#" class="col-red" id="exit" style="display: none">[退出]</a>
+                </li>
+                <li class="line"></li>
+                <li class="my_qwt_box">
+                    <div class="my_qwt">
+                        <a href="individual_order_list.html">我的订单</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_qwt_info">
+                        <div class="deal">
+                            <ul>
+                                <li><a href="individual_need_pay_list.html">待付款订单</a></li>
+                                <!--<li><a href="#">消息</a></li>-->
+                                <li><a href="individual_need_receive_list.html">待确认收货</a></li>
+                                <li><a href="individual_need_commit.html">待评价交易</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="my_service_box">
+                    <div class="my_service">
+                        <a href="javascript:;">商家管理</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_service_info">
+                        <div class="client_service">
+                            <!--<h1>客户</h1>-->
+                            <ul>
+                                <li><a href="javascript:;">商家入驻</a></li>
+                                <li><a href="javascript:;">商家登录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="line"></li>
+                <li class="check_login" style="cursor: pointer">监管审计</li>
+                <!--<li class="contact_server" style="cursor: pointer">联系客服<img src="../images/conact.png" alt=""></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+            <div class="qwt_logo_box" style="height: 100%;">                <a href="javascript:;" class="qwt_logo" title="勤务通" style="height: 100%;display: block"></a>            </div>
+            <!--</h1>-->
+            <span class="qwt_name"></span>
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+
+        <div class="qwt_scan">
+            <img src="../images/qwt-scan.gif" alt="">
+        </div>
+    </div>
+</div>
+<div class="break_line"></div>
+
+<!--结算内容-->
+<div class="pay_box clearfix">
+    <div class="w">
+        <div class="info_box">
+            <div class="goods_list_box">
+                <div class="please_pay">
+                    <h1>订单提交成功，请您及时付款，支付金额:</h1>
+                    <span class="fuhao">￥</span>
+                    <h2 class="total_price"></h2>
+                </div>
+                <div class="goods_list">
+                    <div class="goods_tab">
+                        <span class="order_num">订单号</span>
+                        <span class="pay_way">支付方式</span>
+                        <span class="total">金额</span>
+                        <span class="wuliu">物流</span>
+                    </div>
+                    <div class="list_info">
+                        <span class="order_num">123343423123214</span>
+                        <span class="pay_way">在线支付</span>
+                        <span class="total total_price">4.00</span>
+                        <span class="wuliu">快递</span>
+                    </div>
+                </div>
+                <div class="wechat_pay">
+                    <div class="please_pay">
+                        <h1>支付宝支付</h1>
+                    </div>
+                    <div class="scan_box">
+                        <div class="scan_left">
+                            <img src="../images/pay_scan.gif" alt="">
+                            <div class="scan_text">
+                                <div class="scan_pic">
+                                    <img src="../images/saomiao.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <span>请使用支付宝扫一扫</span>
+                                    <span>扫描二维码支付</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="scan_tip">
+                            <img src="../images/zhifubao_tip.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="do_not_pay"><i><</i><span>选择其他支付方式</span></div>
+
+
+        </div>
+
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+</body>
+</html>

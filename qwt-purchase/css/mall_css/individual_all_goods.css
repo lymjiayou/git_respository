@@ -1,0 +1,147 @@
+.all_goods_box{
+    padding: 20px;
+}
+
+.all_goods_header{
+    font: bold 16px/16px "微软雅黑";
+    color: #ee2222;
+    float: left;
+}
+.input-group{
+    float: right;
+    margin-right: 20px;
+    width: 250px;
+}
+.head{
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+/*商品展示部分*/
+.all_goods_list .goods_box{
+    /*height: 1700px;*/
+    width: 100%;
+    margin-top: 30px;
+}
+.all_goods_list .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+.goods_box .goods_list{
+    overflow: hidden;
+    margin-left: 10px;
+}
+ .goods_list li{
+    float: left;
+    width: 23%;
+    margin: 0 0 5% 2%;
+    height: 360px;
+}
+.goods_list .row{
+    width:100%;
+
+}
+.col4{
+    width: 95%;
+}
+.thumbnail{
+    height: 340px;
+}
+.thumbnail .pic_box{
+    text-align: center;
+    line-height: 240px;
+    height: 240px;
+    /*width: 240px;*/
+}
+.thumbnail .pic_box img{
+    max-height: 100%;
+    max-width: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+.thumbnail .caption{
+    height: 95px;
+}
+.caption h3{
+    height: 38px;
+    width: 100%;
+    font: 400 14px/19px "微软雅黑";
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.caption .goods_price{
+    color: #ee2222;
+    margin-top: 10px;
+    margin-left: 2px;
+    position: relative;
+}
+.caption .goods_price i{
+    font: 700 20px/20px "Microsoft YaHei" ;
+}
+.caption .goods_price .price{
+    font: 700 20px/20px "Microsoft YaHei" ;
+    margin-right: 4px;
+}
+.add_car{
+    position: absolute;
+    right: -8px;
+    bottom: -5px;
+
+}
+.add_car .btn-default{
+    border: 2px solid #EFBD54;
+    color: #EFBD54;
+    width: 100px;
+    text-align: right;
+    padding-right: 5px;
+    background: url("../../images/add_shop_car.png")no-repeat 5px center;
+}
+.goods_list .thumbnail:hover{
+    box-shadow: 5px 5px 5px #ddd;
+    webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: -webkit-transform .3s ease-in;
+    -moz-transition: -moz-transform .3s ease-in;
+    transition: -webkit-transform .3s ease-in;
+    -moz-transition: transform .3s ease-in,-moz-transform .3s ease-in;
+    transition: transform .3s ease-in;
+    transition: transform .3s ease-in,-webkit-transform .3s ease-in,-moz-transform .3s ease-in;
+}
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+/*模态框*/
+.modal.fade.in{
+    top:120px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 370px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 250px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+#successful_add_Modal .modal-body{
+    height: 100px;
+}
+#successful_add_Modal .modal-header{
+    background-color: #ffb412;
+}

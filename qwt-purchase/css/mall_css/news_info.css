@@ -1,0 +1,288 @@
+.category_list{
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    /*margin-bottom: 30px;*/
+}
+.all_good_index,.first_category,.second_category,.third_category,.some_good{
+    display: block;
+    float: left;
+    font: 400 16px/30px "微软雅黑";
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.category_list i{
+    font-family: "黑体";
+}
+.break_line{
+    margin-top: 40px;
+}
+/*商品分类*/
+.qwt_nav{
+    position:absolute;
+}
+.qwt_nav .dropdown_menu{
+    float: left;
+    width: 190px;
+    /*height: 40px;*/
+    position: relative;
+    z-index: 12;
+    text-align: center;
+    font-size: 16px;
+    /*background-color: #ee2222;*/
+    line-height: 40px;
+    color: #fff;
+}
+.qwt_nav .dropdown_menu .nav_dt{
+    width: 191px;
+    height: 40px;
+    background-color:#ee2222;
+    cursor: pointer;
+}
+#classify_messgae{
+    overflow: hidden;
+    /*padding-left: 14px;*/
+    /*height: 470px;*/
+}
+.cut_line{
+    margin: 0 3px 0 3px;
+    font-size: 14px;
+}
+#classify_messgae li:nth-child(even) .cut_line,#classify_messgae li:nth-child(13) .cut_line{
+    display: none;
+    /*color: #ee2222;*/
+}
+.dropdown_menu .nav_dt a{
+    display: block;
+    height: 44px;
+    color: #333333;
+    font: 400 14px/44px "Microsoft YaHei" ;
+    padding-left: 10px;
+}
+
+.dropdown_menu .nav_dd{
+    display: none;
+    position: relative;
+    height: 490px;
+    /*border: 1px solid #ee2222;*/
+    /*background-color: #fff;*/
+    background-color: #f5f5f5;
+    /*opacity: 0.9;*/
+    color: #333333;
+    font-size: 14px;
+    width: 188px;
+    z-index: 100000;
+    /*padding-top: 10px;*/
+}
+.dropdown_menu .nav_dd .category1{
+    /*padding-left: 20px;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    /*float: left;*/
+    /*margin: 0 5px 0 5px;*/
+}
+/*.dropdown_menu .nav_dd li:hover{*/
+/*background-color: #CCCCCC;*/
+/*}*/
+.dropdown_menu .nav_dd li .category1_a{
+    color: #333333;
+    font: 500 14px/27px "微软雅黑";
+    /*使一级标签垂直居中*/
+}
+
+.dropdown_menu .nav_dd li a:hover{
+    color: #ee2222;
+
+}
+/*导航栏下拉菜单（右侧出现详细分类）*/
+.dropdown_menu .nav_dd .nav_dd_info{
+    position: absolute;
+    /*padding-top: 10px;*/
+    /*padding-left: 25px;*/
+    top: 0px;
+    left: 185px;
+    width: 850px;
+    height: 485px;
+    padding-right: 10px;
+    box-shadow: 3px 5px 2px 0px #f8f8f8;
+    display: none;
+}
+.dropdown_menu .nav_dd .nav_dd_info ul li a{
+    font-size: 12px;
+}
+.dropdown_menu .nav_dd .nav_dd_info ul li .info_dt{
+    font-weight: bold;
+    float: left;
+}
+.dropdown_menu .nav_dd .show_nav_dd_info{
+    background-color: #CCCCCC;
+    /*height: 20px;*/
+}
+/*只要加上show_dd_info这个类，二三级分类就会出来*/
+.dropdown_menu .nav_dd .show_nav_dd_info .nav_dd_info{
+    display: block;
+    background-color: #fff;
+}
+.nav_dd_info ul{
+    margin-left: 10px;
+    /*margin-top: 15px;*/
+
+}
+
+.nav_dd_info .info_dd{
+    padding: 0 5px 0 5px;
+}
+.nav_dd_info .info_dt{
+    margin-right: 5px;
+}
+.dropdown_menu .nav_dd .nav_dd_info .info_more1{
+    /*height: 15%;*/
+    line-height: 30px;
+}
+/*三级分类*/
+.dropdown_menu .nav_dd .nav_dd_info .info_more1 .info_more1_dd{
+    margin-left: 10%;
+    text-align: left;
+    line-height: 30px;
+}
+.goods_first_list li,.goods_second_list li,.goods_third_list li{
+    margin-right: 15px;
+    padding: 5px 10px 5px 10px;
+}
+.all_categroy dd li:hover,.second_category dd li:hover,.third_category dd li:hover{
+    border-radius: 5px;
+    background-color: #c9302c;
+    text-decoration: none;
+
+}
+.all_categroy dd li a:hover,.second_category dd li a:hover,.third_category dd li a:hover{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.all_categroy .selected,.second_category .selected,.third_category .selected{
+    background-color: #EFBD54;
+    border-radius: 5px;
+}
+.all_categroy .selected a,.second_category .selected a,.third_category .selected a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*.all_categroy .goods_first_list{*/
+/**/
+/*}*/
+.all_categroy .goods_first_list,.second_category.goods_second_list{
+    display: block;
+    float: left;
+    width: 100%;
+    /*height: 25px;*/
+}
+.third_category.goods_third_list{
+    display: block;
+    /*padding-top: 5px;*/
+    float: left;
+    width: 95%;
+    height: 50px;
+}
+.goods_first_list li{
+    display: block;
+    float: left;
+    height: 100%;
+    margin:0px 8px 10px 8px;
+    cursor: pointer;
+}
+.goods_second_list li{
+    display: block;
+    float: left;
+    height: 100%;
+    margin:5px 10px 10px 10px;
+    cursor: pointer;
+}
+.goods_third_list li{
+    display: block;
+    float: left;
+    height: 100%;
+    margin:5px 5px 10px 10px;
+    cursor: pointer;
+}
+.goods_first_list li a,.goods_second_list li a,.goods_third_list li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+.goods_first_list li a{
+    margin-top: -2px;
+}
+/*信息展示部分*/
+.back_to_index,.current_info{
+    display: block;
+    float: left;
+    font: 400 16px/30px "微软雅黑";
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.news_big_box i{
+    font-family: "宋体";
+}
+.news_info{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.news_title_box{
+    width: 90%;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 10px auto;
+}
+.news_title_box h1{
+    font: 600 18px/36px "微软雅黑";
+    text-align: center;
+}
+
+.news_content h2{
+    font: 600 16px/28px "微软雅黑";
+}
+.news_content img{
+    display: block;
+    margin: 10px auto;
+}
+.news_content p{
+    font: 400 14px/25px "微软雅黑";
+}
+.news_content h1{
+    font: 600 18px/36px "微软雅黑";
+    text-align: center;
+}
+.news_content table{
+    margin: 10px auto;
+    width: 90%;
+}
+.news_content table td,.news_content table th{
+    text-align: left;
+    font: 400 14px/25px "微软雅黑";
+}
+.news_title_box p{
+    font: 400 14px/28px "微软雅黑";
+    text-align: center;
+    color: #9a9a9a;
+}
+.notice_box{
+    padding-left: 40px;
+    padding-right: 40px;
+    /*margin: 0 auto;*/
+    /*width: 600px;*/
+}
+.notice_box li{
+    font: 400 14px/25px "微软雅黑";
+    cursor: pointer;
+}
+.notice_box li:hover{
+    color: #ee2222;
+}
+.dingzhi img{
+    width: 100%;
+}

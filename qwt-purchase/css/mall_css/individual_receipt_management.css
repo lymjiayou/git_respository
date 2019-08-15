@@ -1,0 +1,242 @@
+.head{
+    overflow: hidden;
+    /*padding-bottom: 20px;*/
+    breceipt-bottom: 1px solid #dddddd;
+    height: 80px;
+}
+th{
+    font-weight: 400;
+    font-size: 14px;
+}
+.receipt_list{
+    width: 100%;
+}
+.receipt_list th{
+    text-align: center;
+}
+.receipt_header{
+    font: bold 16px/16px "微软雅黑";
+    float: left;
+    color: #ee2222;
+    padding: 20px;
+}
+.receipt_header span{
+    padding-left: 10px;
+    font-size: 18px;
+}
+/*列表信息*/
+.receipt_list_head{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    /*margin-bottom: 30px;*/
+}
+.receipt_list_head span{
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.list_num,.list_time{
+    width: 240px;
+}
+
+.receipt_list .type,.receipt_list .status{
+    width: 190px;
+}
+.receipt_list .operation{
+    width: 236px;
+    margin: 0;
+}
+.receipt_box{
+    padding: 20px;
+}
+.receipt_box .receipt_content{
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+/*.receipt_box .receipt_num,.receipt_box .receipt_time{*/
+    /*float: left;*/
+/*}*/
+/*.receipt_head span{*/
+    /*font-size: 14px;*/
+    /*line-height: 30px;*/
+/*}*/
+/*.receipt_time{*/
+    /*margin-left: 10px;*/
+/*}*/
+/*.receipt_num{*/
+    /*margin-left: 50px;*/
+/*}*/
+
+.receipt_list_num,.receipt_list_time{
+    font-size: 14px;
+    line-height: 50px;
+    width: 240px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.receipt_type,.receipt_status{
+    /*float: left;*/
+    line-height: 50px;
+    text-align: center;
+}
+.receipt_operation span{
+    display: block;
+    float: left;
+    width: 60px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+}
+.good_content{
+    width: 350px;
+    padding: 20px 0 10px 15px;
+    font-size: 14px;
+}
+.good_content .good_pic{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+.good_content .good_pic img{
+    width: 100%;
+    height: 100%;
+}
+.good_content .good_name{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.good_num{
+    font-size: 14px;
+    line-height: 50px;
+    width: 200px;
+    /*border-right:1px solid #dddddd ;*/
+    text-align: center;
+
+}
+.receipt_type{
+    /*text-align: center;*/
+    /*border-right:1px solid #dddddd ;*/
+    font-size: 14px;
+    width: 190px;
+    margin: 0 10px 0 10px;
+    line-height: 50px;
+}
+.receipt_status{
+    text-align: center;
+    /*border-right:1px solid #dddddd ;*/
+    font-size: 14px;
+    width: 190px;
+    height: 100%;
+    /*padding:0 40px 0 20px;*/
+    margin: 0 10px 0 10px;
+}
+.receipt_status .o_status{
+    color: #5bc0de;
+    font-weight: bold;
+    display: block;
+    margin: 40px 0 5px 0;
+}
+.receipt_status .need_send_detail{
+    display: block;
+}
+
+.receipt_operation{
+    cursor: pointer;
+}
+
+.receipt_operation span:hover{
+    cursor: pointer;
+    color: #ee2222;
+}
+/*换页*/
+.receipt_box .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+.receipt_content_box .change_page{
+    float: right;
+    margin-right: 50px;
+}
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+/*对账单表格*/
+.table_bills tr,.table_bills th,.table_bills td{
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    vertical-align: middle!important
+}
+.table_bills thead{
+    border-top: 1px solid #dddddd;
+}
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#d9edf7}
+.table-hover>tbody>tr:hover{background-color:#c4e3f3}
+/*模态框*/
+.modal.fade.in{
+    top:40px;
+}
+.modal-header{
+    background-color: #ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 350px;
+    breceipt-radius: 0px;
+}
+#tip_delete_Modal .del_content{
+    height: 300px;
+    breceipt-radius: 0px;
+}
+.modal-body{
+    height: 350px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+#tip_delete_Modal .del_body{
+    height: 180px;
+}
+#tip_delete_Modal .del_body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+#tip_delete_Modal .del_body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+#tip_delete_Modal .del_body .ask_text{
+    text-align: center;
+    font:bold 16px/16px "微软雅黑";
+}
+.modal-body .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 95px;
+    /*clear: both;*/
+}
+.modal .info{
+    float: left;
+    width: 350px;
+}

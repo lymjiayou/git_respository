@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="favicon-qwt.ico" >
+    <link rel="stylesheet" href="css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mall_css/global.css">
+    <link rel="stylesheet" href="css/mall_css/base1.css">
+    <link rel="stylesheet" href="css/mall_css/global.css">
+    <link rel="stylesheet" href="css/mall_css/index.css">
+    <!--<link rel="stylesheet" href="../css/base.css">-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/getcookie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/HTTP.js"></script>
+    <script src="js/imageURL.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/autoplay.js"></script>
+    <script src="js/skill2.js"></script>
+
+</head>
+<body>
+<!--联系客服--><div class="contact_server" style="cursor: pointer">联系客服<img src="images/conact.png" alt=""></div>
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                定位：西安
+                <!--<i><s>◇</s></i>-->
+            </div>
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>
+                    <a href="mall_html/login.html" id="username">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="mall_html/register.html" class="col-red" id="register">免费注册</a>
+                    <a href="javascript:;" class="col-red" id="exit" style="display: none">[退出]</a>
+                </li>
+                <li class="line"></li>
+                <li class="my_qwt_box">
+                    <div class="my_qwt">
+                        <a href="javascript:;">我的订单</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_qwt_info">
+                        <div class="deal">
+                            <ul>
+                                <li class="wait_pay"><a href="javascript:;">待付款订单</a></li>
+                                <li class="wait_receive"><a href="javascript:;">待确认收货</a></li>
+                                <li class="wait_commit"><a href="javascript:;">待评价交易</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="my_service_box">
+                    <div class="my_service">
+                        <a href="javascript:;">商家管理</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_service_info">
+                        <div class="client_service">
+                            <!--<h1>客户</h1>-->
+                            <ul>
+                                <li><a href="https://www.qinwutong.com/supply/">商家登录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="line"></li>
+                <li class="check_login" style="cursor: pointer">监管审计</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+                <div class="qwt_logo_box">
+                    <a href="javascript:;" class="qwt_logo" title="勤务通"></a>
+                </div>
+            <!--</h1>-->
+            <!--<span class="qwt_name"></span>-->
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+        <div class="search_box">
+            <input type="text" placeholder="Iphone XR" class="search">
+            <button class="search_button">搜索</button>
+        </div>
+
+        <div class="shop_car">
+            <span>我的购物车</span>
+            <input type="text" class="shop_car_num" value="0">
+            <!--<input type="text" class="shop_car_num_1" value="0">-->
+        </div>
+        <!--<div class="qwt_scan">-->
+            <!--<img src="images/qwt-scan.gif" alt="">-->
+        <!--</div>-->
+    </div>
+</div>
+<!--勤务通导航-->
+<div class="qwt_nav clearfix ">
+    <div class="w">
+        <div class="dropdown_menu">
+            <div class="nav_dt">
+                <!--<a href="javascript:;">全部商品分类</a>-->
+            </div>
+            <div class="nav_dd">
+                <ul id="classify_messgae">
+                    <!--<li>-->
+                        <!--<a href="">办公耗材</a>-->
+                        <!--<span class="nav_item_line">/</span>-->
+                        <!--<a href="javascript:;">办公用纸</a>-->
+                        <!--&lt;!&ndash;<span class="nav_item_line">/</span>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<a href="javascript:;">数码</a>&ndash;&gt;-->
+                        <!--<div class="nav_dd_info">-->
+                            <!--<ul>-->
+                                <!--<li><a href="javascript:;" class="info_dt">办公耗材 ></a>-->
+
+                                        <!--<span> | </span><a href="javascript:;" class="info_dd">硒鼓</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">墨盒</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">碳粉/粉仓</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">碳带/色带</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">标签机色带</a>-->
+
+                                <!--</li>-->
+                                <!--<li class="info_more1"><a href="javascript:;" class="info_dt">办公用纸 ></a>-->
+                                    <!--<div class="info_more1_dd">-->
+                                        <!--<span> | </span><a href="javascript:;" class="info_dd">复印纸/速印纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">电脑打印纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">传真纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">收银纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">喷墨打印纸/相片纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">工程用纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">其他OA用纸</a><span> | </span>-->
+                                        <!--<a href="javascript:;" class="info_dd">电脑打印标签纸/手写标签纸</a>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="navitems">
+            <ul>
+                <li><a href="index.html" style="color:#ee2222;">首页</a></li>
+                <!--<li><a href="javascript:;">秒杀</a></li>-->
+                <li class="goods_center"><a href="mall_html/goods.html" target="_blank">商品中心</a></li>
+                <li class="jump_to_service"><a href="javascript:;">后勤服务管家</a></li>
+                <li class="dingzhi_info_index"><a href="javascript:;">一体化定制</a></li>
+                <li class="online_ask_index"><a href="javascript:;">在线询价</a></li>
+                <li class="compition_index"><a href="javascript:;">反向竞价大厅</a></li>
+            </ul>
+        </div>
+
+        <!--<div class="dianjia">-->
+            <!--<a href="javascript:;"></a>-->
+        <!--</div>-->
+    </div>
+</div>
+<!-- 京东banner-->
+<!--京东轮播部分-->
+<div class="w qwt_play_main clearfix">
+    <div class="qwt_slider">
+        <div class="qwt_main_slider" id="flash">
+            <!--京东轮播图-->
+            <ul id="slides">
+                <!--app-->
+                <li style="cursor: pointer">
+                    <img src="" alt="" class="APP">
+                </li>
+                <li >
+                    <!--办公文具-->
+                        <img src="images/slide1.jpg" alt="" first_index="i_0" first_id="i_1" class="slides_pic" first_name="办公文具">
+                </li>
+                <!--办公耗材-->
+                <li>
+                        <img src="images/slide2.jpg" alt="" first_index="i_1" first_id="i_100" class="slides_pic" first_name="办公耗材">
+                </li>
+                <!--办公设备-->
+                <li >
+                        <img src="images/slide3.png" alt="" first_index="i_2" first_id="i_116" class="slides_pic" first_name="办公设备">
+                </li>
+                <!--通讯数码-->
+                <li >
+                        <img src="images/slide4.jpg" alt="" first_index="i_5" first_id="i_183" class="slides_pic" first_name="通讯数码">
+                </li>
+                <!--APP-->
+                <!--<li >-->
+                        <!--<img src="" alt="" first_index="i_6" first_id="i_261" class="slides_pic" first_name="办公家电">-->
+                <!--</li>-->
+
+                <!--<li >-->
+                    <!--<img src="" alt="" class="jianshe_bank1">-->
+                <!--</li>-->
+                <li >
+                    <img src="" alt="" class="jianshe_bank2">
+                </li>
+            </ul>
+            <div id="arrow"><span id="left_arrow"><</span><span id="right_arrow">></span></div>
+
+            <div class="clcles" id="my_clcles">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="qwt_life_service">
+        <div class="qwt_login">
+            <div class="touxiang_box">
+                <img src="images/touxiang.png" alt="" class="img-circle">
+            </div>
+            <div class="qwt_welcome">
+                <span id="hello_user">Hi，欢迎来到勤务通！</span></br>
+                <span id="welcome">请先登录或注册</span>
+            </div>
+            <div class="user_profit">
+                <a href="mall_html/login.html">登录</a>
+                <a href="mall_html/register.html">注册</a>
+            </div>
+        </div>
+        <div class="qwt_adv">
+            <div class="adv_items"><p style="float:left;">公告</p>
+                <a href="mall_html/news/news_info.html" style="float:right; margin-right: 10px; line-height: 22px">更多 <i style="font-family: '宋体'">>></i></a>
+            </div>
+            <div class="tab_items">
+                <div class="tab_item_info_chuxiao">
+                    <ul id="notice">
+                        <!--<li class="tab_item_chuxiao"><a href="javascript:;">500元神券提前领！</a></li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--京东秒杀区  现改为精品商品展示区-->
+<div class="skill_all ">
+    <div class="w qwt_skill_box ">
+        <div class="skill_goods">
+            <!--秒杀倒计时-->
+            <a href="javascript:;">
+                <div class="clearfix skill_time">
+                    <h1>勤务通秒杀</h1>
+                    <h2> FLASH&nbspDEALS</h2>
+                    <span><img src="images/lightning-b.png" alt=""></span>
+                    <h3>本场距离结束还剩</h3>
+                    <div class="qwt_kill_time">
+                        <p id="hour">23</p>
+                        <span class="sec_circle">:</span>
+                        <p id="minute">45</p>
+                        <span class="sec_circle">:</span>
+                        <p id="second">33</p>
+                        </div>
+                </div>
+            </a>
+            <!--滑动商品展示-->
+            <div class="skill_goods_items clearfix" id="skill_box">
+                <ul class="skill_box_ul clearfix">
+                    <!--<li class="skill_item">-->
+                        <!--<div class="skill_goods_info">-->
+                            <!--<a href="javascript:;" class="skill_goodlink">-->
+                                <!--<img src="images/goods6.jpg" alt="" class="skill_img"-->
+                                     <!--alt="优拉9321筒装黑色长尾票夹51mm">-->
+                            <!--</a>-->
+                                <!--<span class="skill_bg">-->
+
+                                <!--</span>-->
+                            <!--<a href="javascript:;" class="goods_des">优拉9321筒装黑色长尾票夹51mm</a>-->
+                        <!--</div>-->
+                        <!--<p class="goods_price">-->
+                                <!--<span class="goods_new_price">-->
+                                    <!--<i>¥</i>-->
+                                    <!--<span class="goodsskill_new_price">2.00</span>-->
+                                <!--</span>-->
+                                <!--<span class="goods_old_price">-->
+                                    <!--<i>¥</i>-->
+                                    <!--<del>¥5.00</del>-->
+                                <!--</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+
+                </ul>
+                <div id="arr"><span id="left"><</span><span id="right">></span></div>
+                <div class="no_skill"></div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--联系客服-->
+<div class="contact_server" style="cursor: pointer">联系客服<img src="images/conact.png" alt=""></div>
+<!--右侧固定导航栏-->
+<div class="right_nav_fix" style="display: none">
+    <ul>
+        <!--<li class="xiangpinzhi right_nav_item "><a  class="quality"><span class="left_nav_text">享品质</span></a></li>-->
+        <!--<li class="clothes_beau right_nav_item"><a  class="love"><span class="left_nav_text">服饰美妆</span></a></li>-->
+        <!--<li class="hometool_phone right_nav_item"><a  class="phone"><span class="left_nav_text">电脑手机</span></a>-->
+
+        <li class="book_car right_nav_item"><a  class="car_book"><span class="left_nav_text">办公劳防</span></a></li>
+        <li class="move_yundong right_nav_item"><a  class="player"><span class="left_nav_text">生活体育</span></a></li>
+        <li class="computer right_nav_item"><a  class="computer"><span class="left_nav_text">家电数码</span></a></li>
+        <li class="not_enough right_nav_item"><a  class="not_eng"><span class="left_nav_text">还没逛够</span></a></li>
+        <li class="back_top"><a  class="back_top_link left_nav_link"><span class="left_nav_text">顶部</span><i class="go_top_icon"></i></a></li>
+    </ul>
+</div>
+<!--左边导航栏item对应的内容区-->
+<!--根据导航栏分类 进行不同区域展示展示-->
+<!--办公劳防-->
+<div id="car_book" class="jiadian_phone clearfix">
+    <div class="jiadian_phone_box w">
+        <div class="love_life_detail">
+            <div class="love_life_detail_l  clearfix love_life_common">
+                <div class="love_life_t  car_book_t ">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">办公文具</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix">
+                        <ul>
+                            <li class="love_item car_book_item">
+                                <a href="javascript:;" class="love_link" id="wenjianjia">
+                                   <span class="love_item_text">
+                                        文件夹
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item car_book_item">
+                                <a href="javascript:;" class="love_link" id="bence">
+                                   <span class="love_item_text">
+                                        本册纸质
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item car_book_item">
+                                <a href="javascript:;" class="love_link" id="bijv">
+                                   <span class="love_item_text">
+                                        笔具类
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item car_book_item">
+                                <a href="javascript:;" class="love_link" id="baibanpeijian">
+                                   <span class="love_item_text">
+                                        白板配件
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item car_book_item">
+                                <a href="javascript:;" class="love_link" id="biaoshizhanshi">
+                                   <span class="love_item_text">
+                                        标识展示
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" class="clothe_pic" id="bangong_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul class="office_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">图书排行榜</p>-->
+                                    <!--<span class="cl_desc">好书盘点</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="love_life_detail_r  clearfix love_life_common">
+                <div class="love_life_t lovecar_t">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">汽车用品</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix computer_r">
+                        <ul>
+                            <li class="love_item  lovecar_item">
+                                <a href="javascript:;" class="love_link" id="meirongqingxi">
+                                   <span class="love_item_text">
+                                        美容清洗
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item  lovecar_item">
+                                <a href="javascript:;" class="love_link" id="weixiubaoyang">
+                                   <span class="love_item_text">
+                                        维修保养
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b computer_r">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" id="qicheyongpin_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul  class="laobao_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">车载电器</p>-->
+                                    <!--<span class="cl_desc">智能车生活</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--生活户外-->
+<div id="player" class="jiadian_phone clearfix">
+    <div class="jiadian_phone_box w">
+        <div class="love_life_detail">
+            <div class="love_life_detail_l  clearfix love_life_common">
+                <div class="love_life_t  player_t ">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">生活用品</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix">
+                        <ul>
+                            <li class="love_item player_item">
+                                <a href="javascript:;" class="love_link" id="shenghuoyongpin">
+                                   <span class="love_item_text">
+                                        生活用品
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item player_item">
+                                <a href="javascript:;" class="love_link" id="yinliao">
+                                   <span class="love_item_text">
+                                        饮料
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item player_item">
+                                <a href="javascript:;" class="love_link" id="wenyuyongpin">
+                                   <span class="love_item_text">
+                                        文娱用品
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" class="clothe_pic" id="play3c_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul class="life_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">学生专享</p>-->
+                                    <!--<span class="cl_desc">开学季低至9.9</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="love_life_detail_r  clearfix love_life_common">
+                <div class="love_life_t love_t">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">体育用品</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix computer_r">
+                        <ul>
+                            <li class="love_item  love_player_item">
+                                <a href="javascript:;" class="love_link" id="qiulei">
+                                   <span class="love_item_text">
+                                        球类
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item  love_player_item">
+                                <a href="javascript:;" class="love_link" id="qipai">
+                                   <span class="love_item_text">
+                                        棋牌
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item  love_player_item">
+                                <a href="javascript:;" class="love_link" id="jianshenqixie">
+                                   <span class="love_item_text">
+                                        健身器械
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item  love_player_item">
+                                <a href="javascript:;" class="love_link" id="huwaiyongpin">
+                                   <span class="love_item_text">
+                                        户外用品
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b computer_r">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" id="yongdonghuwai_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul class="sport_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">运动</p>-->
+                                    <!--<span class="cl_desc">大牌钜惠</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--办公家电-->
+<div id="computer" class="jiadian_phone clearfix">
+    <div class="jiadian_phone_box w">
+        <div class="love_life_detail">
+            <div class="love_life_detail_l  clearfix love_life_common">
+                <div class="love_life_t  jiandain_t computer_t ">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">办公家电</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix">
+                        <ul>
+                            <li class="love_item jiadian_item">
+                                <a href="javascript:;" class="love_link" id="dajiadian">
+                                   <span class="love_item_text">
+                                        大家电
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item jiadian_item">
+                                <a href="javascript:;" class="love_link" id="shenghuodianqi">
+                                   <span class="love_item_text">
+                                        生活电器
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" class="clothe_pic" id="jiadian_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul class="household_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">劲霸大牌日</p>-->
+                                    <!--<span class="cl_desc">买3免1</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="love_life_detail_r  clearfix love_life_common">
+                <div class="love_life_t love_beau gaoji_t">
+                    <div class="love_l clearfix">
+                        <h4 class="love_title">数码通讯</h4>
+                        <!--<img src="./images/pt_qrcode.png" alt="" class="pt_code">-->
+                    </div>
+                    <div class="love_r clearfix computer_r">
+                        <ul>
+                            <li class="love_item beau_item gaoji_item">
+                                <a href="javascript:;" class="love_link" id="diannaozhengji">
+                                   <span class="love_item_text">
+                                        电脑整机
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item beau_item gaoji_item">
+                                <a href="javascript:;" class="love_link" id="diannaopeijian">
+                                   <span class="love_item_text">
+                                        电脑配件
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item beau_item gaoji_item">
+                                <a href="javascript:;" class="love_link" id="wangluoshebei">
+                                   <span class="love_item_text">
+                                        网络设备
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item beau_item gaoji_item">
+                                <a href="javascript:;" class="love_link" id="tongxunpeijian">
+                                   <span class="love_item_text">
+                                        通讯配件
+                                   </span>
+                                </a>
+                            </li>
+                            <li class="love_item beau_item gaoji_item">
+                                <a href="javascript:;" class="love_link" id="shumacunchu">
+                                   <span class="love_item_text">
+                                        数码存储
+                                   </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="love_life_b computer_r">
+                    <div class="clothe_city fl clearfix">
+                        <a href="javascript:;" class="clothe_link">
+                            <img src="" alt="" id="shouji_pic">
+                        </a>
+                    </div>
+                    <div class="clothes_dec fr clearfix">
+                        <ul class="computer_good_ul">
+                            <!--<li class="cl_item">-->
+                                <!--<a href="javascript:;" class="cl_link">-->
+                                    <!--<p class="cl_title">新Phone尚</p>-->
+                                    <!--<span class="cl_desc">大牌新品  京东首发</span>-->
+                                    <!--<img src="images/goods1.jpg" alt="" class="cl_pic">-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--还没逛够-->
+<div id="not_eng" class="left_share_quality_content clearfix ">
+    <div class="w">
+        <div class="share_quality w tese_shop">
+            <div class="share_quality_top">
+                <div class="share_title">
+                    <p class="share_text">——  热门推荐  ——</p>
+                </div>
+            </div>
+            <div class="share_quality_left not_eng_box">
+                <ul class="hot_goods_ul">
+                    <!--<li class="not_eng_item">-->
+                        <!--<a href="javascript:;" class="not_eng_link">-->
+                            <!--<img src="images/goods1.jpg" alt="" class="not_eng_pic">-->
+                            <!--<div class="not_eng_info">-->
+                                <!--<p class="not_eng_title">泸州原浆精品白酒小瓶粮食酒特价浓香型高粱酒52度300mL 整箱6瓶装 送杯套</p>-->
+                                <!--<p class="not_eng_text">-->
+                                    <!--<i>¥</i>-->
+                                    <!--<span class="more_info_price_txt">65.0</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="mall_html/news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="mall_html/news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="mall_html/news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="mall_html/news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="mall_html/news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="mall_html/news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="mall_html/news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="mall_html/news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="mall_html/news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="mall_html/news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="mall_html/news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="mall_html/news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="mall_html/news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="mall_html/news/news_reject.html">退换货</a></dd>
+                    <dd><a href="mall_html/news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="mall_html/news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="mall_html/news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="mall_html/news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="mall_html/news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="mall_html/news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="mall_html/news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="mall_html/news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="mall_html/news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="mall_html/news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="images/mess.png" alt=""/></a>
+                    <a href="#"><img src="images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--&lt;!&ndash;勤务通右侧菜单栏&ndash;&gt;-->
+<!--<div class="qwt_toolbar">-->
+
+<!--</div>-->
+</body>
+</html>

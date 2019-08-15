@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b3bc372-7ee9-44f0-bb17-5a1c8a0cdd2d" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="297157135">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="10" />
+          <entry key="js" value="54" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="10" />
+          <entry key="JavaScript" value="54" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="6" />
+          <entry key="html" value="15" />
+          <entry key="js" value="1290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="6" />
+          <entry key="HTML" value="15" />
+          <entry key="JavaScript" value="1290" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="static" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="individual_bills.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_html/individual_bills.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finish_commit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_html/finish_commit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2585">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forget_password.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_html/forget_password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_html/goods.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods_detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall_html/goods_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individual_bills.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mall_css/individual_bills.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individual_global.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mall_css/individual_global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="66" column="11" lean-forward="false" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base1.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mall_css/base1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159">
+              <caret line="408" column="1" lean-forward="false" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mall_css/page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop_car.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall_html/shop_car.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="116" column="57" lean-forward="false" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>新建</find>
+      <find>town</find>
+      <find>choose</find>
+      <find>bankN</find>
+      <find>bank</find>
+      <find>银行</find>
+      <find>no_</find>
+      <find>url</find>
+      <find>订单详情</find>
+      <find>need_detail</find>
+      <find>order_state</find>
+      <find>fail_pay_Modal</find>
+      <find>recharge_ways_Modal</find>
+      <find>fail_operation_Modal</find>
+      <find>recharge_list_box</find>
+      <find>re_operation</find>
+      <find>online_check_Modal</find>
+      <find>recharge_detail_Modal</find>
+      <find>detail</find>
+      <find>i</find>
+      <find>i_</find>
+      <find>pay_way</find>
+      <find>way_pic</find>
+      <find>recharge</find>
+      <find>amount_box</find>
+      <find>confirm_recharge_way</find>
+      <find>recharge_warn</find>
+      <find>recharge_list</find>
+      <find>amount</find>
+      <find>分页</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>https://www.qinwutong.com/supply/</replace>
+      <replace>www.qinwutong.com</replace>
+      <replace>buy_list</replace>
+      <replace>seckill</replace>
+      <replace>&lt;li class=&quot;jump_to_service&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;后勤服务管家&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>else</replace>
+      <replace>&lt;script src=&quot;../js/jquery.easing.min.js&quot;&gt;&lt;/script&gt;    &lt;script src=&quot;../js/jquery.cookie.js&quot;&gt;&lt;/script&gt;</replace>
+      <replace>&lt;script src=&quot;../js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;    &lt;script src=&quot;../js/jquery.cookie.js&quot;&gt;&lt;/script&gt;</replace>
+      <replace>&lt;script src=&quot;../js/getcookie.js&quot;&gt;&lt;/script&gt;</replace>
+      <replace>type:&quot;POST&quot;,                        beforeSend: function(request) {                            var cooinfo=getCookie(&quot;XSRF-TOKEN&quot;);                            console.log(cooinfo);                            request.setRequestHeader(&quot;X-XSRF-TOKEN&quot;, cooinfo);                        },</replace>
+      <replace>type:&quot;patch&quot;,                        beforeSend: function(request) {                            var cooinfo=getCookie(&quot;XSRF-TOKEN&quot;);                            console.log(cooinfo);                            request.setRequestHeader(&quot;X-XSRF-TOKEN&quot;, cooinfo);                        },</replace>
+      <replace>type:&quot;delete&quot;,                        beforeSend: function(request) {                            var cooinfo=getCookie(&quot;XSRF-TOKEN&quot;);                            console.log(cooinfo);                            request.setRequestHeader(&quot;X-XSRF-TOKEN&quot;, cooinfo);                        },</replace>
+      <replace>POST</replace>
+      <replace>type:&quot;POST&quot;</replace>
+      <replace>type:&quot;patch&quot;</replace>
+      <replace>type:&quot;delete&quot;</replace>
+      <replace>type:&quot;post&quot;</replace>
+      <replace>tpye:&quot;put&quot;</replace>
+      <replace>&lt;script src=&quot;../../js/HTTP.js&quot;&gt;&lt;/script&gt;    &lt;script src=&quot;../../js/imageURL.js&quot;&gt;&lt;/script&gt;</replace>
+      <replace>&lt;li class=&quot;goods_center&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;商品中心&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;jump_to_service&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;后勤服务管家&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;dingzhi_info&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;一体化定制&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;online_ask&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;在线询价&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;compition&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;反向竞价大厅&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;li class=&quot;dingzhi_info&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;一体化定制&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;online_ask&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;在线询价&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;compition&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;反向竞价大厅&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;li class=&quot;dingzhi_info_news&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;一体化定制&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;online_ask_news&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;在线询价&lt;/a&gt;&lt;/li&gt;                &lt;li class=&quot;compition_news&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;反向竞价大厅&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>var selfID=$(this).attr(&quot;self_id&quot;).split(&quot;_&quot;)[1];                        var commodityCODE=$(this).attr(&quot;commodity_code&quot;).split(&quot;_&quot;)[1];                        window.open(&quot;mall_html/goods_detail.html?selfID=&quot;+selfID+&quot;&amp;commodityCode=&quot;+commodityCODE);</replace>
+      <replace>goods_detail.html                      var commodityCODE=$(this).attr(&quot;commodity_code&quot;).split(&quot;_&quot;)[1];                        window.open(&quot;mall_html/goods_detail.html?selfID=&quot;+selfID+&quot;&amp;commodityCode=&quot;+commodityCODE);</replace>
+      <replace />
+      <replace>window.open(&quot;submit_pay.html&quot;)</replace>
+      <replace>commit_list[i].purchaseUser.username</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;https://www.qinwutong.com/supply/&quot;&gt;商家登录&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>data.error</replace>
+      <replace>$(&quot;#fail_operation_Modal&quot;).on('hide.bs.modal', function () {                                                            window.close();                                                        })</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\qwt\QinWutong\src\main\resources\static</dir>
+      <dir>D:\qwt\QinWutong\static</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/seckill_animation.js" />
+        <option value="$PROJECT_DIR$/js/goods.js" />
+        <option value="$PROJECT_DIR$/mall_html/register.html" />
+        <option value="$PROJECT_DIR$/js/goods_1.js" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/js/global.js" />
+        <option value="$PROJECT_DIR$/js/HTTP.js" />
+        <option value="$PROJECT_DIR$/js/imageURL.js" />
+        <option value="$PROJECT_DIR$/js/skill2.js" />
+        <option value="$PROJECT_DIR$/js/individual_user_info.js" />
+        <option value="$PROJECT_DIR$/js/register_person.js" />
+        <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/js/submit_order_direct.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/shanxi.js" />
+        <option value="$PROJECT_DIR$/js/shanxi_main.js" />
+        <option value="$PROJECT_DIR$/mall_html/submit_order_direct.html" />
+        <option value="$PROJECT_DIR$/mall_html/submit_order_direct1.html" />
+        <option value="$PROJECT_DIR$/js/select.js" />
+        <option value="$PROJECT_DIR$/js/goods_detail.js" />
+        <option value="$PROJECT_DIR$/mall_html/submit_order_direct_1.html" />
+        <option value="$PROJECT_DIR$/js/submit_order_direct_1.js" />
+        <option value="$PROJECT_DIR$/mall_html/news/news_info.html" />
+        <option value="$PROJECT_DIR$/css/mall_css/news_info.css" />
+        <option value="$PROJECT_DIR$/js/news_info.js" />
+        <option value="$PROJECT_DIR$/mall_html/individual_order_list.html" />
+        <option value="$PROJECT_DIR$/css/mall_css/individual_global.css" />
+        <option value="$PROJECT_DIR$/mall_html/individual_need_pay_list.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_need_commit.html" />
+        <option value="$PROJECT_DIR$/js/individual_need_cancel.js" />
+        <option value="$PROJECT_DIR$/mall_html/individual_need_send_list.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_need_receive_list.html" />
+        <option value="$PROJECT_DIR$/js/order_detail.js" />
+        <option value="$PROJECT_DIR$/mall_html/individual_all_goods.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_always_goods.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_index.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_receipt_management.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_receiver_address.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_refund.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_user_info.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_user_protocol.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_need_cancel.html" />
+        <option value="$PROJECT_DIR$/mall_html/submit_pay.html" />
+        <option value="$PROJECT_DIR$/css/mall_css/submit_pay.css" />
+        <option value="$PROJECT_DIR$/js/submit_pay.js" />
+        <option value="$PROJECT_DIR$/mall_html/individual_recharge.html" />
+        <option value="$PROJECT_DIR$/js/individual_recharge.js" />
+        <option value="$PROJECT_DIR$/mall_html/shop_car.html" />
+        <option value="$PROJECT_DIR$/mall_html/individual_bills.html" />
+        <option value="$PROJECT_DIR$/css/mall_css/page.css" />
+        <option value="$PROJECT_DIR$/css/mall_css/individual_bills.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mall_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qwt-purchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wechat\文件\WeChat Files\shihui8514\Files\purchase\purchase\images" />
+      <recent name="D:\qwt\QinWutong\static测试v1\mall_html\news" />
+      <recent name="D:\qwt\QinWutong\static\js" />
+      <recent name="D:\qwt\QinWutong\static\css\mall_css" />
+      <recent name="D:\qwt\QinWutong\static\mall_html\news" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\qwt\QinWutong\static\css\mall_css" />
+      <recent name="D:\qwt\QinWutong\static\mall_html\news" />
+      <recent name="D:\qwt\QinWutong\src\main\resources\static" />
+      <recent name="D:\qwt\QinWutong\src\main\resources\static\mall_html" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/static/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="news_about_us.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/static/mall_html/news/news_about_us.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.news_about_us.html" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.news_about_us.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b3bc372-7ee9-44f0-bb17-5a1c8a0cdd2d" name="Default" comment="" />
+      <created>1534595054902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534595054902</updated>
+      <workItem from="1534595056878" duration="5416000" />
+      <workItem from="1534601385335" duration="1677000" />
+      <workItem from="1534604197465" duration="1434000" />
+      <workItem from="1534657174968" duration="11516000" />
+      <workItem from="1534669215966" duration="5974000" />
+      <workItem from="1534686511231" duration="2321000" />
+      <workItem from="1534730581314" duration="18789000" />
+      <workItem from="1534817070867" duration="24893000" />
+      <workItem from="1534916024436" duration="2912000" />
+      <workItem from="1534918952029" duration="1541000" />
+      <workItem from="1534920506701" duration="22107000" />
+      <workItem from="1534986238649" duration="12176000" />
+      <workItem from="1535008297127" duration="2231000" />
+      <workItem from="1535078838352" duration="22164000" />
+      <workItem from="1535173721635" duration="13193000" />
+      <workItem from="1535189770747" duration="3593000" />
+      <workItem from="1535334771653" duration="5610000" />
+      <workItem from="1535349968772" duration="10090000" />
+      <workItem from="1535371762233" duration="6965000" />
+      <workItem from="1535423791531" duration="21248000" />
+      <workItem from="1535457822665" duration="6008000" />
+      <workItem from="1535502611512" duration="452000" />
+      <workItem from="1535505776473" duration="33705000" />
+      <workItem from="1535597135422" duration="1959000" />
+      <workItem from="1535613525934" duration="1000" />
+      <workItem from="1535613572172" duration="755000" />
+      <workItem from="1535955460259" duration="7359000" />
+      <workItem from="1535969725357" duration="10150000" />
+      <workItem from="1536025486247" duration="13039000" />
+      <workItem from="1536044899850" duration="15187000" />
+      <workItem from="1536071702378" duration="31000" />
+      <workItem from="1536110881424" duration="9052000" />
+      <workItem from="1536121488921" duration="11516000" />
+      <workItem from="1536194899719" duration="10662000" />
+      <workItem from="1536206599761" duration="7182000" />
+      <workItem from="1536218175546" duration="284000" />
+      <workItem from="1536218599890" duration="1459000" />
+      <workItem from="1536289461211" duration="12900000" />
+      <workItem from="1536324701296" duration="513000" />
+      <workItem from="1536325671549" duration="1042000" />
+      <workItem from="1536386745324" duration="16021000" />
+      <workItem from="1536408425278" duration="4539000" />
+      <workItem from="1536413022541" duration="2572000" />
+      <workItem from="1536460401287" duration="27453000" />
+      <workItem from="1536545486609" duration="600000" />
+      <workItem from="1536546507143" duration="26069000" />
+      <workItem from="1536627060048" duration="35311000" />
+      <workItem from="1536674966552" duration="69000" />
+      <workItem from="1536715443644" duration="13516000" />
+      <workItem from="1536742192448" duration="2491000" />
+      <workItem from="1536756963900" duration="4844000" />
+      <workItem from="1536805295218" duration="10476000" />
+      <workItem from="1536823590102" duration="3446000" />
+      <workItem from="1536827094886" duration="7093000" />
+      <workItem from="1536838550699" duration="10497000" />
+      <workItem from="1536849531945" duration="954000" />
+      <workItem from="1536903579296" duration="24630000" />
+      <workItem from="1537101352022" duration="2743000" />
+      <workItem from="1537104141768" duration="277000" />
+      <workItem from="1537105415239" duration="3123000" />
+      <workItem from="1537151383282" duration="23450000" />
+      <workItem from="1537245466527" duration="2901000" />
+      <workItem from="1537252610479" duration="601000" />
+      <workItem from="1537255852799" duration="596000" />
+      <workItem from="1537258944615" duration="2955000" />
+      <workItem from="1537322415586" duration="452000" />
+      <workItem from="1537329923494" duration="4561000" />
+      <workItem from="1537350046963" duration="3361000" />
+      <workItem from="1537408361296" duration="16215000" />
+      <workItem from="1537453580889" duration="626000" />
+      <workItem from="1537494471324" duration="2322000" />
+      <workItem from="1537510527525" duration="917000" />
+      <workItem from="1537511882082" duration="2182000" />
+      <workItem from="1537680089355" duration="2499000" />
+      <workItem from="1537690854692" duration="1234000" />
+      <workItem from="1537705140922" duration="7774000" />
+      <workItem from="1537756438745" duration="7422000" />
+      <workItem from="1537852588676" duration="28905000" />
+      <workItem from="1537927386496" duration="2271000" />
+      <workItem from="1537929700602" duration="27014000" />
+      <workItem from="1538018005336" duration="2141000" />
+      <workItem from="1538025443361" duration="2249000" />
+      <workItem from="1538048225163" duration="663000" />
+      <workItem from="1538058956436" duration="5995000" />
+      <workItem from="1538092809432" duration="18940000" />
+      <workItem from="1538118762639" duration="2011000" />
+      <workItem from="1538201911317" duration="2733000" />
+      <workItem from="1538208532978" duration="12397000" />
+      <workItem from="1538229238954" duration="1156000" />
+      <workItem from="1538292107361" duration="592000" />
+      <workItem from="1538450014949" duration="19693000" />
+      <workItem from="1538714278729" duration="19132000" />
+      <workItem from="1538793044914" duration="28823000" />
+      <workItem from="1538881543320" duration="4259000" />
+      <workItem from="1538896335220" duration="592000" />
+      <workItem from="1538897169046" duration="468000" />
+      <workItem from="1538898236984" duration="251000" />
+      <workItem from="1538898511038" duration="13190000" />
+      <workItem from="1538919428737" duration="625000" />
+      <workItem from="1538921324034" duration="1539000" />
+      <workItem from="1538961948593" duration="27821000" />
+      <workItem from="1539049244418" duration="34839000" />
+      <workItem from="1539135525340" duration="21221000" />
+      <workItem from="1539223136222" duration="29281000" />
+      <workItem from="1539307644964" duration="2244000" />
+      <workItem from="1539352836502" duration="583000" />
+      <workItem from="1539427351446" duration="3284000" />
+      <workItem from="1539436343207" duration="599000" />
+      <workItem from="1539501666188" duration="356000" />
+      <workItem from="1539502970183" duration="14997000" />
+      <workItem from="1539567707855" duration="6401000" />
+      <workItem from="1539610583530" duration="916000" />
+      <workItem from="1539658773472" duration="30759000" />
+      <workItem from="1539741355403" duration="27700000" />
+      <workItem from="1539779001068" duration="7658000" />
+      <workItem from="1539825565969" duration="26495000" />
+      <workItem from="1539914160791" duration="7401000" />
+      <workItem from="1539923215767" duration="51000" />
+      <workItem from="1539923590797" duration="482000" />
+      <workItem from="1539924346201" duration="250000" />
+      <workItem from="1539924612434" duration="11181000" />
+      <workItem from="1540016602445" duration="10003000" />
+      <workItem from="1540104626361" duration="5198000" />
+      <workItem from="1540189017292" duration="4943000" />
+      <workItem from="1540266019558" duration="3903000" />
+      <workItem from="1540367045645" duration="7713000" />
+      <workItem from="1540435794597" duration="4769000" />
+      <workItem from="1540448074836" duration="3355000" />
+      <workItem from="1540456072129" duration="1395000" />
+      <workItem from="1540549248790" duration="1241000" />
+      <workItem from="1540550545173" duration="37000" />
+      <workItem from="1540554434570" duration="3292000" />
+      <workItem from="1540726661224" duration="2161000" />
+      <workItem from="1540778375893" duration="3840000" />
+      <workItem from="1540793747843" duration="157000" />
+      <workItem from="1540864152549" duration="445000" />
+      <workItem from="1540876977299" duration="2832000" />
+      <workItem from="1540887858260" duration="6921000" />
+      <workItem from="1540952561668" duration="7661000" />
+      <workItem from="1540965808697" duration="4995000" />
+      <workItem from="1541037541530" duration="9998000" />
+      <workItem from="1541150905558" duration="6557000" />
+      <workItem from="1541384189420" duration="5972000" />
+      <workItem from="1541423887009" duration="1364000" />
+      <workItem from="1541481910212" duration="17790000" />
+      <workItem from="1541558279079" duration="7680000" />
+      <workItem from="1541645087919" duration="5368000" />
+      <workItem from="1541730142525" duration="1993000" />
+      <workItem from="1541755413388" duration="60000" />
+      <workItem from="1541762032558" duration="1003000" />
+      <workItem from="1541916450182" duration="2551000" />
+      <workItem from="1541990253083" duration="790000" />
+      <workItem from="1542004613162" duration="1039000" />
+      <workItem from="1542807710325" duration="1706000" />
+      <workItem from="1543216905321" duration="666000" />
+      <workItem from="1543239015485" duration="955000" />
+      <workItem from="1543283230268" duration="2530000" />
+      <workItem from="1543567303891" duration="675000" />
+      <workItem from="1543731845779" duration="2896000" />
+      <workItem from="1543741144513" duration="622000" />
+      <workItem from="1543801428881" duration="743000" />
+      <workItem from="1543894962070" duration="1957000" />
+      <workItem from="1544428817560" duration="2021000" />
+      <workItem from="1544443037892" duration="2215000" />
+      <workItem from="1544446027055" duration="939000" />
+      <workItem from="1544448668297" duration="661000" />
+      <workItem from="1544494021110" duration="9634000" />
+      <workItem from="1544753953492" duration="2036000" />
+      <workItem from="1544866626835" duration="77000" />
+      <workItem from="1545297735144" duration="1427000" />
+      <workItem from="1545360843686" duration="4159000" />
+      <workItem from="1545544016091" duration="538000" />
+      <workItem from="1545553686783" duration="611000" />
+      <workItem from="1545619931974" duration="646000" />
+      <workItem from="1545637386190" duration="664000" />
+      <workItem from="1545719729955" duration="959000" />
+      <workItem from="1545791876118" duration="1465000" />
+      <workItem from="1546415303120" duration="2110000" />
+      <workItem from="1546826458730" duration="22627000" />
+      <workItem from="1546912028752" duration="13983000" />
+      <workItem from="1547431999109" duration="2057000" />
+      <workItem from="1547449575670" duration="2014000" />
+      <workItem from="1547519057551" duration="2669000" />
+      <workItem from="1547555190170" duration="598000" />
+      <workItem from="1547608214752" duration="675000" />
+      <workItem from="1547635832494" duration="3489000" />
+      <workItem from="1547691152590" duration="2943000" />
+      <workItem from="1548059768406" duration="5599000" />
+      <workItem from="1548158299763" duration="4413000" />
+      <workItem from="1548309279635" duration="7191000" />
+      <workItem from="1548399450039" duration="765000" />
+      <workItem from="1550628674076" duration="3872000" />
+      <workItem from="1550801262203" duration="3123000" />
+      <workItem from="1550804421300" duration="2525000" />
+      <workItem from="1550927252204" duration="578000" />
+      <workItem from="1550927881208" duration="621000" />
+      <workItem from="1551097207158" duration="5398000" />
+      <workItem from="1551102969260" duration="447000" />
+      <workItem from="1551173536431" duration="609000" />
+      <workItem from="1551336652624" duration="3276000" />
+      <workItem from="1551407157275" duration="1341000" />
+      <workItem from="1551427030350" duration="1369000" />
+      <workItem from="1551840984076" duration="2303000" />
+      <workItem from="1552373121342" duration="3054000" />
+      <workItem from="1552439373133" duration="44000" />
+      <workItem from="1552456785102" duration="2712000" />
+      <workItem from="1552553328578" duration="2333000" />
+      <workItem from="1552557494505" duration="607000" />
+      <workItem from="1552563334455" duration="435000" />
+      <workItem from="1552616343645" duration="1239000" />
+      <workItem from="1552716877769" duration="1907000" />
+      <workItem from="1552875111519" duration="3230000" />
+      <workItem from="1552895125784" duration="220000" />
+      <workItem from="1552996625501" duration="4643000" />
+      <workItem from="1553001843069" duration="600000" />
+      <workItem from="1553002752132" duration="322000" />
+      <workItem from="1553003133968" duration="13000" />
+      <workItem from="1553045128780" duration="1019000" />
+      <workItem from="1553068026118" duration="3311000" />
+      <workItem from="1553500681714" duration="6931000" />
+      <workItem from="1553563469433" duration="11736000" />
+      <workItem from="1553687681516" duration="131000" />
+      <workItem from="1554093698713" duration="219000" />
+      <workItem from="1554111006016" duration="6035000" />
+      <workItem from="1554259947243" duration="899000" />
+      <workItem from="1554271776165" duration="1464000" />
+      <workItem from="1554291051679" duration="409000" />
+      <workItem from="1554686864179" duration="3777000" />
+      <workItem from="1554690688687" duration="3747000" />
+      <workItem from="1554699429307" duration="462000" />
+      <workItem from="1554776491013" duration="5485000" />
+      <workItem from="1554792933556" duration="1477000" />
+      <workItem from="1554864736722" duration="4497000" />
+      <workItem from="1554905766857" duration="77000" />
+      <workItem from="1554947469364" duration="7748000" />
+      <workItem from="1555032309190" duration="21062000" />
+      <workItem from="1555291217243" duration="1744000" />
+      <workItem from="1555572986563" duration="1540000" />
+      <workItem from="1555640259045" duration="303000" />
+      <workItem from="1555640697765" duration="841000" />
+      <workItem from="1555820204844" duration="4612000" />
+      <workItem from="1555897264635" duration="12680000" />
+      <workItem from="1555983560582" duration="1600000" />
+      <workItem from="1556008865789" duration="1557000" />
+      <workItem from="1556012705502" duration="323000" />
+      <workItem from="1556109998038" duration="320000" />
+      <workItem from="1556541688203" duration="1000" />
+      <workItem from="1556541695237" duration="2491000" />
+      <workItem from="1556588547461" duration="3079000" />
+      <workItem from="1557045692237" duration="10949000" />
+      <workItem from="1558315453092" duration="548000" />
+      <workItem from="1558402419409" duration="1396000" />
+      <workItem from="1558662139396" duration="5653000" />
+      <workItem from="1558688407304" duration="630000" />
+      <workItem from="1558937656633" duration="863000" />
+      <workItem from="1558943940128" duration="4719000" />
+      <workItem from="1559115006582" duration="3486000" />
+      <workItem from="1559120352704" duration="660000" />
+      <workItem from="1559121088499" duration="380000" />
+      <workItem from="1559121478299" duration="931000" />
+      <workItem from="1559122562304" duration="114000" />
+      <workItem from="1559281575870" duration="1525000" />
+      <workItem from="1559292205466" duration="4232000" />
+      <workItem from="1559297761316" duration="2734000" />
+      <workItem from="1559393186211" duration="1151000" />
+      <workItem from="1559394455742" duration="640000" />
+      <workItem from="1559460148756" duration="3118000" />
+      <workItem from="1559789883513" duration="406000" />
+      <workItem from="1559790315646" duration="2231000" />
+      <workItem from="1560148881951" duration="637000" />
+      <workItem from="1560216362699" duration="9034000" />
+      <workItem from="1560240508571" duration="2110000" />
+      <workItem from="1560244207679" duration="3501000" />
+      <workItem from="1560393192655" duration="15275000" />
+      <workItem from="1560484370371" duration="7036000" />
+      <workItem from="1560573880387" duration="8669000" />
+      <workItem from="1560661192257" duration="15950000" />
+      <workItem from="1563003355578" duration="20410000" />
+      <workItem from="1563048154975" duration="1249000" />
+      <workItem from="1563096610392" duration="4602000" />
+      <workItem from="1563171118694" duration="5795000" />
+      <workItem from="1563196917415" duration="7017000" />
+      <workItem from="1563211594494" duration="1399000" />
+      <workItem from="1563259533496" duration="1787000" />
+      <workItem from="1563269527016" duration="37000" />
+      <workItem from="1563336957370" duration="10236000" />
+      <workItem from="1563536751111" duration="4793000" />
+      <workItem from="1563959827057" duration="2035000" />
+      <workItem from="1564043019399" duration="1335000" />
+      <workItem from="1564106814917" duration="551000" />
+      <workItem from="1564130850965" duration="3132000" />
+      <workItem from="1564396196287" duration="755000" />
+      <workItem from="1564457059860" duration="1964000" />
+      <workItem from="1564474470564" duration="1306000" />
+      <workItem from="1564479368927" duration="22000" />
+      <workItem from="1564491891930" duration="922000" />
+      <workItem from="1564493227099" duration="476000" />
+      <workItem from="1564494328137" duration="707000" />
+      <workItem from="1564538220724" duration="1237000" />
+      <workItem from="1564574053818" duration="46000" />
+      <workItem from="1564574120711" duration="52000" />
+      <workItem from="1565420819725" duration="12329000" />
+      <workItem from="1565502218379" duration="308000" />
+      <workItem from="1565503218390" duration="9218000" />
+      <workItem from="1565528458702" duration="812000" />
+      <workItem from="1565529288259" duration="24683000" />
+      <workItem from="1565750955674" duration="13425000" />
+      <workItem from="1565834030343" duration="2845000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1717478000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297244" sideWeight="0.5021142" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11764706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38188976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2273622" sideWeight="0.49788582" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/submit_order_direct_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3280">
+          <caret line="644" column="34" lean-forward="false" selection-start-line="644" selection-start-column="29" selection-end-line="644" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/submit_order_direct_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10386">
+          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/submit_order_direct_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="296" column="109" lean-forward="false" selection-start-line="296" selection-start-column="109" selection-end-line="296" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/goods_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="575" column="17" lean-forward="false" selection-start-line="575" selection-start-column="17" selection-end-line="575" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/area.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/news/news_about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="130" column="12" lean-forward="false" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/individual_need_receive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="114" column="17" lean-forward="true" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/news_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/news/news_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="190" column="25" lean-forward="true" selection-start-line="190" selection-start-column="25" selection-end-line="190" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/news_info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="217" column="21" lean-forward="true" selection-start-line="217" selection-start-column="21" selection-end-line="217" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/individual_need_send.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="429" column="0" lean-forward="true" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_need_pay_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_need_send_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_need_receive_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_order_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/order_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="117" column="60" lean-forward="true" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/order_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_need_commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_all_goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_always_goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_order_commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_receipt_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_receiver_address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_refund.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_user_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_user_protocol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/resetting_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/individual_need_cancel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_need_cancel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1131">
+          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/tip.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/submit_pay.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="136" column="1" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/submit_pay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2675">
+          <caret line="142" column="27" lean-forward="false" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_recharge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="95" column="62" lean-forward="true" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/submit_pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="361" column="55" lean-forward="false" selection-start-line="361" selection-start-column="55" selection-end-line="361" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#16505#16512#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/individual_recharge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <marker date="1565774573529" expanded="true" signature="9053:9069" ph="..." />
+            <marker date="1565774573529" expanded="true" signature="19980:19996" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/zhifubao_pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/wechat_recharge_pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/shop_car.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="386" column="0" lean-forward="false" selection-start-line="386" selection-start-column="0" selection-end-line="391" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="180" column="16" lean-forward="false" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/shop_car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="116" column="57" lean-forward="false" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/base1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="408" column="1" lean-forward="false" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/individual_global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="66" column="11" lean-forward="false" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mall_css/individual_bills.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/individual_bills.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/finish_commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2585">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/forget_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall_html/goods_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

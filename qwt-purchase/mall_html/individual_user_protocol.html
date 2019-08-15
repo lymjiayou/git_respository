@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通用户信息</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="../css/mall_css/bootstrap-datetimepicker.min.css">-->
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/individual_global.css">
+    <link rel="stylesheet" href="../css/mall_css/individual_protocol.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/global.js"></script>
+    <!--<script src="../js/individual_user_info.js"></script>-->
+</head>
+<body>
+<!-- 头部 导航区 -->
+<div class="header">
+    <div class="w">
+        <div class="header_logo">
+            <a href="#" id="e1"></a>
+            <a href="#" id="e2">我的勤务通</a>
+            <a href="../index.html" id="e3">返回商城首页</a>
+        </div>
+        <div class="head_nav">
+            <a href="individual_index.html" class="center_index">首页</a>
+            <a href="individual_user_info.html">用户设置</a>
+        </div>
+    </div>
+</div>
+
+<!-- 内容区容器 -->
+<div class="container_box clearfix">
+    <div class="w">
+        <!-- 左侧列表 -->
+        <div class="left_nav">
+            <ul>
+                <li class="first_li">
+                    <a class="part">订单中心</a>
+                    <ul id="trade_tab" class="user_center">
+                        <li class="active"><a href="individual_order_list.html" >我的订单</a></li>
+                        <li><a href="individual_need_pay_list.html">待付款订单</a></li>
+                        <li><a href="individual_need_send_list.html" >待发货订单</a></li>
+                        <li><a href="individual_need_receive_list.html" >待收货订单</a></li>
+                        <li><a href="individual_need_commit.html">待评价订单</a></li>
+                        <li><a href="individual_need_cancel.html">已取消订单</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">客户服务</a>
+                    <ul id="client_server_tab" class="user_center">
+                        <li><a href="individual_refund.html" >退货及退款</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">用户中心</a>
+                    <ul id="client_tab" class="user_center">
+                        <li><a href="individual_user_info.html" >用户信息设置</a></li>
+                        <li><a href="individual_receiver_address.html">收货地址</a></li>
+                        <li><a href="individual_recharge.html">账户充值</a></li>
+                        <li><a href="individual_user_protocol.html" style="color: #ee2222">消费保障及服务协议</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">资产中心</a>
+                    <ul class="user_center">
+                        <li><a href="individual_all_goods.html">我的全部商品</a></li>
+                        <li><a href="individual_always_goods.html">常购清单</a></li>
+                        <li><a href="individual_bills.html">我的账单</a></li>
+                        <li><a href="individual_receipt_management.html">发票管理</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- 右侧内容区 -->
+        <div class="right_content">
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="user_info">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#user_protocol" data-toggle="tab">勤务通商城用户注册协议</a>
+                        </li>
+                        <li>
+                            <a href="#trade_protocol" data-toggle="tab">勤务通商城用户交易服务条款</a>
+                        </li>
+
+                    </ul>
+
+                    <div id="infoTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="user_protocol">
+                            <p>本协议是由用户（以下简称“您”）与勤务通商城网站（网址：包括但不限于www.qinwutong.com等运营方）（以下简称“网站”）之间就网站服务等相关事宜所订立的协议，请您仔细阅读本注册协议，您点击“同意”和“下一步”按钮后，即视为您接受并同意遵守本协议的约定。</p>
+                            <h2>一、协议</h2>
+                            <p>1、本协议（包括其附件）及网站上已发布或将发布的任何有关使用网站的规则，包括但不限于《勤务通商城用户交易服务条款》等（下称“有关规则”）将构成双方之间完整的协议。<br>
+                                2、有关规则是本协议不可分割的一部分，与本协议具有同等法律效力。<br>
+                                3、网站有权根据需要不时修订、重述各项规则，并不需另行通知您。所有经修订及重述的有关规则将于网站上公布后即自动生效。您如不同意相关修订及重述，须立即以书面通知的方式终止本协议，继续使用网站服务将表示您接受经修订及重述的有关规则并同意受其约束。<br>
+                                4、您通过网络页面点击“同意”和“下一步”按钮或以其他方式选择接受本协议，即表示您与勤务通商城已达成协议并同意接受本协议的全部约定内容。本协议自您的入驻申请获得勤务通商城审核通过之时起生效。</p>
+                            <h2>二、服务</h2>
+                            <p>1、网站通过互联网依法为您提供包括但不限于交易平台商品信息搜寻服务、与网站沟通、订立订单及合同服务、互联网金融、物流服务、运营设计服务等其他互联网信息服务及增值服务，您在完全同意本协议及本站相关规定的情况下，方有权使用本站的相关服务。<br>
+                                2、您必须自行准备以下设备和开支：<br>
+                                &nbsp&nbsp&nbsp&nbsp（1）上网设备，包括并不限于电脑或者其他上网终端及其他必备的上网装置；<br>
+                                &nbsp&nbsp&nbsp&nbsp（2）上网开支，包括并不限于网络服务费、上网设备租用费、流量费等。</p>
+                            <h2>三、承诺</h2>
+                            <p>1、您承诺在网站注册成为本网站用户的公司是根据该您所属国相关法律以公司形式成立的相关法律主体存在；<br>
+                                2、您承诺您向网站提供的注册资料是真实、准确、有效的，并保证其诸如电子邮件地址、联系电话、联系地址、邮政编码等内容的有效性及安全性；<br>
+                                3、您承诺遵守有关规则。您将在期间内的任何时间遵守本协议以及所有已公示或将公示于网站的任何有关规则及其相关流程；<br>
+                                4、您在未经网站事先书面批准的情况下不对网站上的任何数据作无关其使用服务的商业性利用，包括但不限于在复制、传播或向他方披露等方式使用；<br>
+                                5、您承诺严格遵守以下义务：<br>
+                                &nbsp&nbsp&nbsp&nbsp（1）不传输或发表：煽动抗拒、破坏宪法和法律、行政法规实施的言论，煽动颠覆国家政权，推翻社会主义制度的言论，煽动分裂国家、破坏国家统一的言论，煽动民族仇恨、民族歧视、破坏民族团结的言论；<br>
+                                &nbsp&nbsp&nbsp&nbsp（2）不利用本网站从事洗钱、窃取商业秘密、窃取个人信息等违法犯罪活动；<br>
+                                &nbsp&nbsp&nbsp&nbsp（3）不干扰本网站的正常运转，不得侵入本网站及国家计算机信息系统；<br>
+                                &nbsp&nbsp&nbsp&nbsp（4）不传输或发表损害国家社会公共利益和涉及国家安全的信息资料或言论；<br>
+                                &nbsp&nbsp&nbsp&nbsp（5）不传输或发表任何违法犯罪的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的、淫秽的、不文明的等信息资料；<br>
+                                &nbsp&nbsp&nbsp&nbsp（6）不教唆他人从事本条所禁止的行为；<br>
+                                &nbsp&nbsp&nbsp&nbsp（7）不发布任何侵犯他人著作权、商标权等知识产权及其他合法权利的内容。</p>
+                            <h2>四、信息收集及保护</h2>
+                            <p>1、您在本网站进行注册、浏览、订单、评价、参加活动等行为时，涉及您名称、通信地址、联系电话、电子邮箱、联系人、订单情况、评价或反馈、投诉内容、cookies等信息的，本网站有权从完成交易、提供物流、售后及客户服务、开展活动、完成良好的客户体验等多种角度予以收集，并将对其中涉及个人隐私信息予以严格保密，除非得到您的授权、为履行强行性法律义务（如国家安全机关指令）或法律另有规定、本注册协议或其他条款另有约定外，本站不会向外界披露您的隐私信息。<br>
+                                2、您注册成功后，将产生登录名和密码等账户信息，您可以根据本站规定更改您的密码。您应谨慎合理的保存、使用您的账户信息。<br>
+                                3、您同意，勤务通商城拥有通过邮件、短信、电话、网站通知或声明等形式，向在本站注册的用户、收货人发送订单信息、促销活动、售后服务、客户服务等告知信息的权利。如您不希望接收上述信息，可退订。</p>
+                            <h2>五、订单成立及履约基本规则</h2>
+                            <p>1、当您订立订单时，请您仔细核对确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。如果因您填写的收货人、联系电话、地址等信息错误，导致勤务通商城（或勤务通商城委托的配送公司）将货物交付给非您本意的收货人的，由此造成的损失需由您自行承担。<br>
+                                2、您同意网站上的订单成立规则：<br>
+                                &nbsp&nbsp&nbsp&nbsp（1）网站中展示的商品信息包括但不限于价格、规格、属性等信息，其性质仅为要约邀请，是网站希望您向网站发出要约的意思表示；<br>
+                                &nbsp&nbsp&nbsp&nbsp（2）当您确定购买并提交订单时（您的订单内容应包含您希望购买的商品名称、数量、单价、总额及支付方式、联系方式、收货人、收货地址等信息），视为您向网站发出了要约；<br>
+                                &nbsp&nbsp&nbsp&nbsp（3）您提交订单显示成功后并非网站对您要约的承诺。只有系统将订单信息反馈至网站，经网站业务审核确认能够满足您的订购需求时，方视为网站对您的要约作出承诺，此时您与网站之间的订单已经成立。<br>
+                                &nbsp&nbsp&nbsp&nbsp（4）订单成立后，您根据提交订单载明的应支付的保证金或预付款金额支付至网站指定的支付渠道后，方视为您与网站之间的订单已经生效。<br>
+                                3、订单取消：<br>
+                                &nbsp&nbsp&nbsp&nbsp（1）在网站与您的订单生效之前，您与网站均有权取消相关商品的订单，订单取消后，您已支付的款项将退回您的付款账户，您和网站都无须承担任何违约责任。 <br>
+                                &nbsp&nbsp&nbsp&nbsp（2）在网站与您的订单生效之后，原则上您和网站都无权取消相关商品的订单，但您因其他原因确实需要取消订单的，您和网站应沟通取消订单，具体违约责任详见《勤务通商城用户交易服务条款》。 <br>
+                                4、网站将尽量满足您的订单需求，避免您订购的商品无货，但是由于技术问题以及网站难以控制和避免的因素，网站无法保证符合您提交的订单中所有要求的商品都有货；如您订购的商品无货，网站将及时与您联系，您有权取消订单，但您取消订单后网站不承担因商品无货而产生的一切责任。<br>
+                                5、如您在订购过程中有任何疑问或与网站产生纠纷的，您可以通过网站设立的客服渠道进行咨询和投诉。<br>
+                                6、当网站将您采购订单下所对应的商品交付至第一承运人时，该采购订单项下的货物风险由网站转移至您名下。同时在您未完全付完采购订单中的货款前，网站保留对未完全付款金额所对应的货物的所有权。</p>
+                            <h2>六、所有权及知识产权条款</h2>
+                            <p>1、您同意并已充分了解本协议的条款，承诺不将已发表于本站的信息，以任何形式发布或授权其他主体以任何方式使用（包括但不限于在各类网站、媒体上使用）。<br>
+                                2、除法律另有强制性规定外，未经网站明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，网站有权追究其法律责任。<br>
+                                3、网站所展示的资料信息（包括但不限于图表、文字、商标、标识、图像、声音文件片段、数字下载、视频、数据编辑和软件等），均是勤务通商城的财产，受国际相关版权法规、公约
+                                等的保护，未经勤务通商城书面许可，任何第三方无权将上述资料信息复制、出版、发行、公开展示、编码、翻译、传输或散布至任何其他计算机、服务器、网站或其他媒介。本站上所有内容的汇编是勤务通商城的排他财产，受国际版权法的保护。本站上所有软件都是勤务通商城或其关联公司或其软件供应商的财产，受国际版权法的保护。</p>
+                            <h2>七、协议终止</h2>
+                            <p>1、协议期限。除非依据本协议的条款提前终止，本协议自您的入驻申请获得网站审核通过之时起生效（“协议生效日”）至提前终止或终止事项产生日为止。<br>
+                                2、提前终止。协议任何一方均可以提前三十天书面通知的方式终止本协议，在终止前未完成的相关订单应履行完毕；<br>
+                                3、因故终止。<br>
+                                &nbsp&nbsp&nbsp&nbsp（1）如您违反任何有关规则或本协议项下的任何义务、承诺、陈述或保证，网站有权即时以书面通知您终止本协议，且按有关规则和本协议对您采取相关的执行行为；<br>
+                                &nbsp&nbsp&nbsp&nbsp（2）您恶意多次取消订单，网站有权书面通知您终止本协议。<br>
+                                &nbsp&nbsp&nbsp&nbsp（3）除非本协议中另行约定，如任何一方发生任何违约事件，非违约方应向违约方发出书面通知，要求违约方在其指定的合理期限内纠正违约行为，并就其因违约行为遭受的任何损失向违约方提出索赔。如违约方未能在指定期间内纠正违约行为，非违约方应有权以书面通知立即终止本协议。<br>
+                                4、您在收到服务开通通知后九十天内未以服务账户及密码登录网站的，网站有权以书面通知您即时终止本协议。</p>
+                            <h2>八、法律文本、管辖法及争端解决</h2>
+                            <p>本协议采用中文文本，因本协议或您在网站订购商品引起的或与之相关的争议、纠纷或索赔、包括违约、协议的效力和终止，均受中华人民共和国法律管辖并根据中华人民共和国相关法律解
+                                释，任何中国的法律冲突规则或原则不适用于本协议。凡因本协议引起的或与之相关的争议、纠纷或索赔、包括违约、协议的效力和终止，均应提交上海国际经济贸易仲裁委员会按照申请仲裁时
+                                该会现行有效的仲裁规则仲裁解决，仲裁地为上海。仲裁裁决是终局的,对双方均有约束力。</p>
+                        </div>
+                        <div class="tab-pane fade" id="trade_protocol">
+                            <p>如果您在勤务通商城网站订购商品，便接受了以下交易服务条款，请仔细阅读以下条款。（此服务条款仅约束在勤务通商城网站入驻的用户）</p>
+                            <h2>一、 服务内容及模式</h2>
+                            <p>1、勤务通商城网站为您提供商品信息搜寻服务、商品购销服务、跨境电商服务、物流服务、后勤服务等其他互联网服务。<br>
+                                2目前勤务通商城网站在商品购销服务为您提供以下服务模式：<br>
+                                勤务通商城网站根据您平台的销售订单情况您要求网站将商品从平台自有前置仓或供货商仓库直发至中国境内最终消费者。产生的费用包含商品价格及商品从仓库直发至中国境内的最终消费者产生的费用。<br>
+                                3、目前勤务通商城网站在跨境电商服务为您提供以下几种服务模式：<br>
+                                &nbsp&nbsp&nbsp&nbsp ①海外仓模式：勤务通商城网站将商品从商品所在国运送至中国境内海外仓地。产生的费用包含商品价格及运送至中国境内海外仓的运输费、仓区的操作费、仓储费、上架费等费用。（仓储费如超过一个月还应收取额外仓储费）。<br>
+                                &nbsp&nbsp&nbsp&nbsp ②一件代发模式：勤务通商城网站根据您平台的销售订单情况您要求网站将商品从中国境内的海外仓直发至中国境内最终消费者。一件代发模式产生的费用包含商品价格及从中国境内的海外仓直发至中国境内的最终消费者产生的费用。<br>
+                                说明：第②种服务模式要求您将您自己的订单信息包括但不限于收件人姓名、联系方式、收货地址、产品名称等信息提供至勤务通商城网站。勤务通商
+                                城网站保证不泄露上述个人信息。</p>
+                            <h2>二、 商品价格变化</h2>
+                            <p>1、因网站中商品类目繁多，网站不能保证所有商品都已经被正确定价，在您尚未订购之前勤务通商城有权随时对商品价格重新定价。如您已经订购，勤务通商城网站将采取以下措施：<br>
+                                &nbsp&nbsp&nbsp&nbsp①如您订购商品的正确价格低于错误定价，勤务通商城网站将以商品的正确价格向您销售交付该商品；<br>
+                                &nbsp&nbsp&nbsp&nbsp②如您订购商品的正确价格高于错误定价，勤务通商城网站将与您沟通，根据实际情况或取消订单或修改订单（但勤务通商城网站保留最终的决定权）。<br>
+                                2、因商品原材料、人工成本、运输费用等因素变化，勤务通商城网站有权随时对商品价格重新定价。</p>
+                            <h2>三、 商品描述及缺货</h2>
+                            <p>1、网站尽可能的保证商品信息的准确，但仍可能因技术原因、人员操作以及其他不可抗力原因造成错误，勤务通商城网站将按正确的信息和您进行确认修改，您有权取消订单或者按照正确的信息完成交易，但勤务通商城网站对此不承担相关责任。<br>
+                                2、若您订购的商品发生缺货，勤务通商城网站会及时通知您，则您有权单方取消订单办理退款（如已付款），但勤务通商城网站
+                                不承担因缺货产生的违约责任。</p>
+                            <h2>四、 退货政策</h2>
+                            <p>对您在勤务通商城网站订购的商品，如发生需退换货情况，双方协商解决。</p>
+                            <h2>五、 违约责任</h2>
+                            <p>1、全部取消 <br>
+                                当您订购的订单生效之后（即订单已付订），原则上您和勤务通商城网站都无权取消相关商品的订单，因网站已为您的订单向品牌方订购相关商品，如您确定需要取消订单，您应向勤务通商城网站赔偿该订单总金额的30%作为违约金，网站有权在不通知您的情况下直接在您支付至网站的保证金或预付款金额中扣除，如您支付的保证金或预付款金额不足支付，网站有权在不通知您的情况下在您后续订单中的保证金或预付款金额中直接扣除。<br>
+                                2、部分取消 <br>
+                                当您订购的订单生效之后（即订单已付订），且您和勤务通商城网站都部分履行订单相关权利与义务（即您支付了部分货款，勤务通商城交付了相应部分
+                                货款的商品），原则上您和勤务通商城网站都无权取消相关商品的订单，因勤务通商城已为您的订单向品牌方订购相关商品，如您确定需要取消订单，您应向
+                                勤务通商城网站赔偿该订单未履行部分金额的50%作为违约金，网站有权在不通知您的情况下直接在您支付至网站的保证金或预付款金额中扣除，如您支付
+                                的保证金或预付款金额不足支付，网站有权在不通知您的情况下在您后续订单中的保证金或预付款金额中直接扣除。</p>
+                            <h2>六、 其他</h2>
+                            <p>1、《勤务通商城用户交易服务条款》是《勤务通商城用户注册协议》不可分割的组成部分，如相关内容与《勤务通商城用户注册协议》冲突，以《勤务通商城用户交易服务条款》为准。<br>
+                                2、网站有权根据需要不定时对本交易服务条款进行修改、废止、制定，并以网站公示的方式进行公告，不再单独通知您。变更后
+                                的交易服务条款一经在网站公布后立即生效。如您不同意相关变更，应当立即停止从网站购买商品并停止使用网站其他服务。如您继
+                                续使用从网站购买商品或使用网站其他服务的，即表示您接受经修订的交易服务条款。</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--提示图片上传成功Modal-->
+<div class="modal fade" id="success_update_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="update_text">图片上传成功！</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示修改信息成功Modal-->
+<div class="modal fade" id="success_edit_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="edit_text">修改信息成功！</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示修改信息Modal-->
+<div class="modal fade" id="fail_edit_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/tip.png" alt="">
+                </div>
+                <div class="ask_text"></div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

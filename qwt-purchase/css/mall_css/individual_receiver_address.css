@@ -1,0 +1,228 @@
+
+.address_box{
+    /*height: 200px;*/
+    padding: 20px;
+}
+
+.address_header{
+    font: bold 16px/16px "微软雅黑";
+    color: #ee2222;
+    float: left;
+}
+.new_address{
+    float: right;
+}
+
+/*列表信息*/
+.address_list_box{
+    width: 100%;
+    margin-top: 60px;
+}
+.address_list_box th{
+    text-align: center;
+    font-size: 14px;
+}
+.address_list{
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+.address_list span{
+    display: block;
+    float: left;
+    /*line-height: 50px;*/
+    font-size: 14px;
+    text-align: center;
+    margin: 0 15px 0 10px;
+}
+.address_list .reciever{
+    /*width: 100px;*/
+    margin-left: 10px;
+}
+/*.address_list .reciever_area{*/
+    /*width: 190px;*/
+/*}*/
+/*.address_list .reciever_street{*/
+    /*width: 290px;*/
+/*}*/
+/*.address_list .reciever_tel{*/
+    /*width: 130px;*/
+/*}*/
+/*.address_list .operation{*/
+    /*width: 156px;*/
+/*}*/
+th{
+    font-weight: 400;
+}
+.address_list .reciever_tel{
+    margin-left: -10px;
+}
+.address_list .reciever_default{
+    height: 50px;
+    width: 100px;
+}
+/*收货人信息*/
+.receiver_content{
+    height: 70px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    padding: 10px;
+}
+.receiver_name_info,.receiver_area_info,.receiver_street_info,.receiver_tel_info,.receiver_default_info,.receiver_operation{
+    /*float: left;*/
+    line-height: 40px;
+    text-align: center;
+}
+.receiver_name_info{
+    width: 100px;
+}
+.receiver_area_info{
+    width: 250px;
+}
+.receiver_street_info{
+    width: 280px;
+}
+.receiver_tel_info{
+    width: 140px;
+}
+.receiver_default_info{
+    width: 150px;
+    height: 100%;
+}
+.receiver_operation{
+    width: 150px;
+    padding: 10px 0 0 25px;
+}
+.receiver_operation .edit,.receiver_operation .delete{
+    float: left;
+    /*margin: auto auto;*/
+    width:50px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+.receiver_operation .e_sign{
+    margin-top: 2px;
+}
+.receiver_operation span:hover{
+    color: #ee2222;
+}
+.receiver_operation img{
+    display: block;
+}
+.receiver_operation .edit{
+    height: 50px;
+    border-right: 1px solid #dddddd;
+}
+.receiver_content:hover{
+    background-color: #c4e3f3;
+}
+/*换页*/
+.address_box .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+/*模态框*/
+.modal.fade.in{
+    top:40px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#new_address_Modal .modal-header,#edit_address_Modal .modal-header{
+    background-color: #ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 570px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 450px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.modal-body .item{
+    width: 100%;
+    height: 70px;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 80px;
+    /*clear: both;*/
+}
+.modal .label_info i{
+    color: #ee2222;
+}
+.modal .info {
+    float: left;
+    /*width: 300px;*/
+}
+.modal label{
+    font-weight: 400;
+}
+.modal .modal-body .name input,.modal .modal-body .tel input{
+    width: 120px;
+}
+.modal .modal-body .street input{
+    width: 350px;
+}
+#tip_delete_Modal .del_content{
+    height: 300px;
+    border-radius: 0px;
+}
+#tip_delete_Modal .del_body{
+    height: 180px;
+}
+#tip_delete_Modal .del_body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+#tip_delete_Modal .del_body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+#tip_delete_Modal .del_body .ask_text{
+    text-align: center;
+    font:bold 16px/16px "微软雅黑";
+}
+/*地区三级联动*/
+.modal .item .info select{
+    width: 75px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.modal .item .tips,.modal .item .warn{
+    font-size: 12px;
+}
+.modal .item .tips{
+    color: #8a8a8a;
+}
+.modal .item .warn{
+    margin-left: 10px;
+    color: #ee2222;
+}
+
+
+

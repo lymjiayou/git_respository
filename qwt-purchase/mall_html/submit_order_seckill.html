@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通商品提交订单</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/submit_order.css">
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"> </script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/shanxi.js"></script>
+    <script src="../js/shanxi_main.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/luhmCheck.js"></script>
+    <script src="../js/submit_order_seckill_1.js"></script>
+    <script src="../js/submit_order_addr_fresh.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".my_qwt_box").mouseenter(function () {
+                $(".my_qwt_box .my_qwt").addClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").show(100);
+            }).mouseleave(function () {
+                $(".my_qwt_box .my_qwt").removeClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").hide(100);
+            });
+            $(".my_service_box").mouseenter(function () {
+                $(".my_service_box .my_service").addClass("current_bg");
+                $(".my_service_box .my_service_info").show(100);
+            }).mouseleave(function () {
+                $(".my_service_box .my_service").removeClass("current_bg");
+                $(".my_service_box .my_service_info").hide(100);
+            });
+            $(".shop_car").click(function () {
+                window.location.href="shop_car.html";
+            });
+        })
+    </script>
+
+</head>
+<body>
+<!--头部导航-->
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                定位：西安
+                <!--<i><s>◇</s></i>-->
+            </div>
+            <!--<div class="dd">-->
+                <!--<ul class="address">-->
+                    <!--<li><a href="#">西安</a></li>-->
+                    <!--<li><a href="#">渭南</a></li>-->
+                    <!--<li><a href="#">延安</a></li>-->
+                    <!--<li><a href="#">榆林</a></li>-->
+                    <!--<li><a href="#">汉中</a></li>-->
+                    <!--<li><a href="#">宝鸡</a></li>-->
+                    <!--<li><a href="#">安康</a></li>-->
+                    <!--<li><a href="#">铜川</a></li>-->
+                    <!--<li><a href="#">咸阳</a></li>-->
+                    <!--<li><a href="#">商洛</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>
+                    <a href="login.html" id="username">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="register.html" class="col-red" id="register">免费注册</a>
+                    <a href="#" class="col-red" id="exit" style="display: none">[退出]</a>
+                </li>
+                <li class="line"></li>
+                <li class="my_qwt_box">
+                    <div class="my_qwt">
+                        <a href="individual_order_list.html" target="_blank">我的订单</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_qwt_info">
+                        <div class="deal">
+                            <ul>
+                                <li><a href="individual_need_pay_list.html" target="_blank">待付款订单</a></li>
+                                <!--<li><a href="#">消息</a></li>-->
+                                <li><a href="individual_need_receive_list.html" target="_blank">待确认收货</a></li>
+                                <li><a href="individual_need_commit.html" target="_blank">待评价交易</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="my_service_box">
+                    <div class="my_service">
+                        <a href="#">商家管理</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_service_info">
+                        <div class="client_service">
+                            <!--<h1>客户</h1>-->
+                            <ul>
+                                <li><a href="https://www.qinwutong.com/supply/">商家登录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="line"></li>
+                <li class="check_login" style="cursor: pointer">监管审计</li>
+                <!--<li class="contact_server" style="cursor: pointer">联系客服<img src="../images/conact.png" alt=""></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+            <div class="qwt_logo_box" style="height: 100%;">                <a href="../index.html" class="qwt_logo" title="勤务通" style="height: 100%;display: block"></a>            </div>
+            <!--</h1>-->
+            <span class="qwt_name"></span>
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+        <!--<div class="search_box">-->
+            <!--<input type="text" placeholder="Iphone7 Puls" class="search">-->
+            <!--<button>搜索</button>-->
+        <!--</div>-->
+
+        <!--<div class="shop_car">-->
+            <!--<span>我的购物车</span>-->
+            <!--<input type="text" class="shop_car_num" value="0">-->
+        <!--</div>-->
+        <!--<div class="qwt_scan">-->
+            <!--<img src="../images/qwt-scan.gif" alt="">-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="break_line"></div>
+<!--结算内容-->
+<div class="pay_box clearfix">
+    <div class="w">
+        <div class="check_info">
+            <span>填写核对购物信息</span>
+        </div>
+        <div class="info_box">
+            <div class="receiver_box">
+                <h1>收货人信息</h1>
+                <!--<span id="change_person">[选择收货人]</span>-->
+                <!--<div class="receiver_info">-->
+                    <!--&lt;!&ndash;<span class="name">张小明</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="address">陕西省西安市雁塔区勤务通有限公司</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="tel">1389342394</span>&ndash;&gt;-->
+                <!--</div>-->
+                <div class="edit_receiver_info">
+                    <!--<div class="radio">-->
+                        <!--<label>-->
+                            <!--<input type="radio" name="address" id="optionsRadios1" value="张小明 陕西省西安市雁塔区勤务通有限公司 1389342394">-->
+                            <!--张小明 陕西省西安市雁塔区勤务通有限公司 1389342394-->
+                        <!--</label>-->
+                    <!--</div>-->
+
+
+                    <!--<button type="button" class="btn btn-info" id="save_info">保存收货人信息</button>-->
+
+                </div>
+
+                <div class="new"><span id="new_ad">使用新地址</span></div>
+            </div>
+            <div class="pay_way_box">
+                <h1>支付方式</h1>
+                <div class="pay_way">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="pay" value="在线支付" checked>
+                            在线支付
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="pay" value="货到付款" disabled>
+                            货到付款
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="pay" value="平台预充值支付">
+                            平台预充值支付
+                        </label>
+                    </div>
+                    <div class="radio company_pay_way">
+                        <label class="account_radio">
+                            <input type="radio" name="pay" value="记账" id="need_account">
+                            记账
+                        </label>
+                        <!--选择记账后的详细信息-->
+                        <div class="account_time_info">
+                            <select class="form-control choose_account_time">
+                                <option id="default">请选择时间</option>
+                                <option value="一个月以内" id="one">一个月以内</option>
+                                <option value="两个月以内" id="two">两个月以内</option>
+                                <option value="三个月以内" id="three">三个月以内</option>
+                            </select>
+                            <div class="account_text">价格将根据所选的记账时间乘以相应的利率,例如一个月X1.2,两个月X1.5,三个月X1.8</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="receipt_box">
+                <h1>发票信息</h1>
+                <div class="receipt_way">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="receipt" id="no_receipt" checked value="不需要发票">
+                            不需要发票
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="receipt" id="need_receipt" value="需要发票">
+                            需要发票
+                        </label>
+                    </div>
+                    <!--需要发票后的发票信息-->
+                    <div class="receipt_info">
+                        <ul>
+                            <!--发票类型-->
+                            <li>
+                                <span>发票类型:</span>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="re_type" checked value="电子发票">
+                                        电子发票
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="re_type" value="纸质发票">
+                                        纸质发票
+                                    </label>
+                                </div>
+                            </li>
+                            <!--开票类型-->
+                            <li>
+                                <span>开票类型:</span>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="kai_type" checked value="普通发票">
+                                        普通发票
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="kai_type" value="专用发票">
+                                        专用发票
+                                    </label>
+                                </div>
+                            </li>
+                            <!--企业名称曾-->
+                            <li>
+                                <span>抬头:</span>
+                                <input type="text" class="message company_name" id="company_name">
+                                <div class="info_warn"><i class="re_warn" style="font-size: 16px">*</i></div>
+                            </li>
+                            <li>
+                                <span>地址:</span>
+                                <input type="text" class="message company_address" id="company_address">
+                                <div class="info_warn"><i class="re_warn" style="font-size: 16px">*</i></div>
+                            </li>
+                            <li>
+                                <span>电话:</span>
+                                <input type="text" class="message company_tel" id="company_tel">
+                                <div class="info_warn"><i class="re_warn" style="font-size: 16px">*</i></div>
+                            </li>
+                            <li>
+                                <span>纳税人识别号:</span>
+                                <input type="text" class="message tax_num" id="tax_num">
+                                <div class="info_warn"><i class="re_warn" style="font-size: 16px">*</i></div>
+                            </li>
+                            <li>
+                                <span>开户银行及账号:</span>
+                                <select class="form-control choose_bank">
+                                    <option>建设银行</option>
+                                    <option>招商银行</option>
+                                    <option>农业银行</option>
+                                    <option>中国银行</option>
+                                    <option>交通银行</option>
+                                </select>
+                                <input type="text" class="message bank_account" id="bank_account">
+                                <div class="info_warn"><i class="re_warn" style="font-size: 16px">*</i></div>
+                            </li>
+                        </ul>
+                        <!--<button type="button" class="btn btn-info" id="save_recipt">保存发票信息</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="goods_list_box">
+                <h1>商品清单</h1>
+                <div class="goods_list">
+                    <div class="goods_tab">
+                        <span class="goods">商品</span>
+                        <span class="price">单价(元)</span>
+                        <span class="num">数量</span>
+                        <span class="total">小计</span>
+                    </div>
+                    <div class="lists">
+                        <!--<div class="list">-->
+                            <!--<div class="pic">-->
+                                <!--<img src="../images/goods1.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<span class="good">优拉9321筒装黑色长尾票夹51mm</span>-->
+                            <!--<span class="price">2.00</span>-->
+                            <!--<span class="num">1</span>-->
+                            <!--<span class="total">2.00</span>-->
+                        <!--</div>-->
+                        <!--<div class="list">-->
+                            <!--<div class="pic">-->
+                                <!--<img src="" alt="">-->
+                            <!--</div>-->
+                            <!--<span class="good">优拉9321筒装黑色长尾票夹51mm</span>-->
+                            <!--<span class="price">2.00</span>-->
+                            <!--<span class="num">1</span>-->
+                            <!--<span class="total">2.00</span>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="total_price_box">
+                        <div class="price_box">
+                            <span class="total_price">订单总金额：</span>
+                            <!--<span style="color: #ee2222;font-size: 20px">￥</span>-->
+                            <span class="total_price_num"></span>
+                        </div>
+                    </div>
+                    <div class="message_box">
+                        <span>买家留言:</span>
+                        <input type="text" class="buyer_message">
+                        <span class="diy">可填写商品的定制信息</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" class="btn btn-danger btn-lg" id="cancel_order">取消订单</button>
+                <button type="button" class="btn btn-warning btn-lg" id="submit_order" style="margin-left: 30px">提交订单</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--新增收货地址Modal-->
+<div class="modal fade" id="new_address_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="new_address_Label">新增地址</h4>
+            </div>
+            <div class="modal-body">
+                <div class="item">
+                    <span class="label_info"><i>*</i>收货人:</span>
+                    <div class="info name">
+                        <input  class="form-control name_detail" maxlength="20" type="text">
+                        <!--info-tips-->
+                    </div>
+                </div>
+                <div class="item select_item">
+                    <span class="label_info"><i>*</i>所在地区:</span>
+                    <div class="info">
+                        <select class="province">
+                            <option value="陕西">陕西</option>
+                        </select>
+                        <select class="city"></select>
+                        <select class="area"></select>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"><i>*</i>街道地址:</span>
+                    <div class="info street">
+                        <input  class="form-control street_detail" type="text">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"><i>*</i>电话号码:</span>
+                    <div class="info tel">
+                        <input  class="form-control tel_detail" type="text">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"></span>
+                    <div class="info">
+                        <label>
+                            <input type="checkbox" value="" class="default_addr">
+                            设置为默认收货地址
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default save_address">保存收货地址</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示删除Modal-->
+<div class="modal fade" id="tip_delete_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/tip.png" alt="">
+                </div>
+                <div class="ask_text">您确定要取消订单吗？</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-default cancel_del" data-dismiss="modal">取消</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content"></div>
+        </div>
+    </div>
+</div>
+<!--提示记账成功Modal-->
+<div class="modal fade" id="success_update_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="update_text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

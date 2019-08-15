@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通商品微信支付</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/submit_pay.css">
+    <link rel="stylesheet" href="../css/mall_css/wechat_pay.css">
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/wechat_pay.js"></script>
+
+
+</head>
+<body>
+<!--头部导航-->
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                <!--定位：西安-->
+                <!--<i><s>◇</s></i>-->
+            </div>
+            <!--<div class="dd">-->
+                <!--<ul class="address">-->
+                    <!--<li><a href="#">西安</a></li>-->
+                    <!--<li><a href="#">渭南</a></li>-->
+                    <!--<li><a href="#">延安</a></li>-->
+                    <!--<li><a href="#">榆林</a></li>-->
+                    <!--<li><a href="#">汉中</a></li>-->
+                    <!--<li><a href="#">宝鸡</a></li>-->
+                    <!--<li><a href="#">安康</a></li>-->
+                    <!--<li><a href="#">铜川</a></li>-->
+                    <!--<li><a href="#">咸阳</a></li>-->
+                    <!--<li><a href="#">商洛</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>您正在使用微信支付,&nbsp&nbsp请完成支付后在离开
+                    <!--<a href="login.html" id="username">你好，请登录</a>&nbsp;&nbsp;-->
+                    <!--<a href="register.html" class="col-red" id="register">免费注册</a>-->
+                    <!--<a href="#" class="col-red" id="exit" style="display: none">[退出]</a>-->
+                </li>
+                <!--<li class="line"></li>-->
+                <!--<li class="my_qwt_box">-->
+                    <!--&lt;!&ndash;<div class="my_qwt">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<a href="individual_order_list.html">我的订单</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<i><s>◇</s></i>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="my_qwt_info">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="deal">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="individual_need_pay_list.html">待付款订单</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;<li><a href="#">消息</a></li>&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="individual_need_receive_list.html">待确认收货</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="individual_need_commit.html">待评价交易</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</li>-->
+                <!--<li class="line"></li>-->
+                <!--<li class="my_service_box">-->
+                    <!--<div class="my_service">-->
+                        <!--<a href="#">商家管理</a>-->
+                        <!--<i><s>◇</s></i>-->
+                    <!--</div>-->
+                    <!--<div class="my_service_info">-->
+                        <!--<div class="client_service">-->
+                            <!--&lt;!&ndash;<h1>客户</h1>&ndash;&gt;-->
+                            <!--<ul>-->
+                                <!--<li><a href="../supplier_html/supplier_register.html">商家入驻</a></li>-->
+                                <!--<li><a href="../supplier_html/supplier_login.html">商家登录</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+
+                <!--</li>-->
+                <!--<li class="line"></li>-->
+                <!--<li class="line"></li>-->
+
+                <!--<li class="contact_server" style="cursor: pointer">联系客服<img src="../images/conact.png" alt=""></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+            <div class="qwt_logo_box" style="height: 100%;">                <a href="javascript:;" class="qwt_logo" title="勤务通" style="height: 100%;display: block"></a>            </div>
+            <!--</h1>-->
+            <span class="qwt_name"></span>
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+
+        <!--<div class="qwt_scan">-->
+            <!--<img src="../images/qwt-scan.gif" alt="">-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="break_line"></div>
+
+<!--结算内容-->
+<div class="pay_box clearfix">
+    <div class="w">
+        <div class="info_box">
+            <div class="goods_list_box">
+                <!--<div class="please_pay">-->
+                    <!--<h1>订单提交成功，请您及时付款，支付金额:</h1>-->
+
+                    <!--<h2 class="total_price"></h2>-->
+                <!--</div>-->
+                <!--<div class="goods_list">-->
+                    <!--<div class="goods_tab">-->
+                        <!--<span class="order_num">订单号</span>-->
+                        <!--<span class="pay_way">支付方式</span>-->
+                        <!--<span class="total">金额</span>-->
+                        <!--<span class="wuliu">物流</span>-->
+                    <!--</div>-->
+                    <!--<div class="list_info">-->
+                        <!--<span class="order_num">123343423123214</span>-->
+                        <!--<span class="pay_way">在线支付</span>-->
+                        <!--<span class="total total_price">4.00</span>-->
+                        <!--<span class="wuliu">快递</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="wechat_pay">
+                    <div class="please_pay">
+                        <h1>微信支付金额:<i style="color: #ee2222; font-size: 16px">￥</i><span class="we_total_price" style="color: #ee2222;"></span></h1>
+                    </div>
+                    <div class="scan_box">
+                        <div class="scan_left">
+
+                            <div class="scan_text">
+                                <div class="scan_pic">
+                                    <img src="../images/saomiao.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <span>请使用微信扫一扫</span>
+                                    <span>扫描二维码支付</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="scan_tip">
+                            <img src="../images/wechat_scan_tip.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--<div class="do_not_pay"><i><</i><span>选择其他支付方式</span></div>-->
+
+
+        </div>
+
+    </div>
+</div>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content"></div>
+        </div>
+    </div>
+</div>
+<!--查询是否支付成功-->
+<div class="modal fade" id="online_check_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <h4 class="modal-title">在线支付提示</h4>
+            </div>
+            <div class="modal-body" id="online_modal_content" style="height: 80px">请确认您是否已支付？</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success pay_success">已完成支付</button>
+                <button type="button" class="btn btn-info pay_fail">未完成支付</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示预充值支付成功Modal-->
+<div class="modal fade" id="success_update_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="update_text">支付成功!</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示支付失败Modal-->
+<div class="modal fade" id="fail_pay_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/tip.png" alt="">
+                </div>
+                <div class="ask_text">支付失败！</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--勤务通底部-->
+<!--<footer class="qwt_footer clearfix">-->
+    <!--<div class="w">-->
+        <!--<div class="qwt_service">-->
+            <!--<ul class="qwt_service_list">-->
+                <!--<li class="qwt_service_item">-->
+                    <!--&lt;!&ndash;<h5 class="more">齐</h5>&ndash;&gt;-->
+                    <!--<img src="../images/slogan1.jpg" alt="">-->
+                <!--</li>-->
+                <!--<li class="qwt_service_item">-->
+                    <!--&lt;!&ndash;<h5 class="quick">快</h5>&ndash;&gt;-->
+                    <!--<img src="../images/slogen2.jpg" alt="">-->
+
+                <!--</li>-->
+                <!--<li class="qwt_service_item">-->
+                    <!--&lt;!&ndash;<h5 class="good">真</h5>&ndash;&gt;-->
+                    <!--<img src="../images/slogen3.jpg" alt="">-->
+                <!--</li>-->
+                <!--<li class="qwt_service_item">-->
+                    <!--&lt;!&ndash;<h5 class="save">廉</h5>&ndash;&gt;-->
+                    <!--<img src="../images/slogen4.png" alt="">-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="qwt_shouhou clearfix">-->
+            <!--<div class="w qwt_sou">-->
+                <!--<dl>-->
+                    <!--<dt>-->
+                        <!--购物指南-->
+                    <!--</dt>-->
+                    <!--<dd><a href="#">购物流程</a></dd>-->
+                    <!--<dd><a href="#">会员介绍</a></dd>-->
+                    <!--<dd><a href="#">生活旅行</a></dd>-->
+                    <!--<dd><a href="#">常见问题</a></dd>-->
+                    <!--<dd><a href="#">联系客服</a></dd>-->
+                <!--</dl>-->
+
+                <!--<dl>-->
+                    <!--<dt>-->
+                        <!--配送方式-->
+                    <!--</dt>-->
+                    <!--<dd><a href="#">上门自提</a></dd>-->
+                    <!--<dd><a href="#">211限时达</a></dd>-->
+                    <!--<dd><a href="#">配送服务查询</a></dd>-->
+                    <!--<dd><a href="#">配送费收取标准</a></dd>-->
+                <!--</dl>-->
+
+                <!--<dl>-->
+                    <!--<dt>-->
+                        <!--支付方式-->
+                    <!--</dt>-->
+                    <!--<dd><a href="#">货到付款</a></dd>-->
+                    <!--<dd><a href="#">在线支付</a></dd>-->
+                    <!--<dd><a href="#">分期付款</a></dd>-->
+                    <!--<dd><a href="#">邮局汇款</a></dd>-->
+                    <!--<dd><a href="#">公司转账</a></dd>-->
+                <!--</dl>-->
+
+                <!--<dl>-->
+                    <!--<dt>-->
+                        <!--售后服务-->
+                    <!--</dt>-->
+                    <!--<dd><a href="#">售后政策</a></dd>-->
+                    <!--<dd><a href="#">价格保护</a></dd>-->
+                    <!--<dd><a href="#">退款说明</a></dd>-->
+                    <!--<dd><a href="#">返修/退换货</a></dd>-->
+                    <!--<dd><a href="#">取消订单</a></dd>-->
+                <!--</dl>-->
+                <!--&lt;!&ndash;<dl>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<dt>&ndash;&gt;-->
+                        <!--&lt;!&ndash;特色服务&ndash;&gt;-->
+                    <!--&lt;!&ndash;</dt>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<dd><a href="#">DIY装机</a></dd>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<dd><a href="#">延保服务</a></dd>&ndash;&gt;-->
+                <!--&lt;!&ndash;</dl>&ndash;&gt;-->
+
+                <!--<dl class="china_map">-->
+                    <!--<dt>-->
+                        <!--勤务通覆盖区县-->
+                    <!--</dt>-->
+                    <!--<dd>-->
+                        <!--<h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>-->
+                        <!--<a href="#">查看详情></a>-->
+                    <!--</dd>-->
+
+                <!--</dl>-->
+            <!--</div>-->
+            <!--<div class="w qwt_bottom clearfix">-->
+                <!--<div class="about">-->
+                    <!--<ul class="jb_about">-->
+                        <!--<li><a href="#">关于我们</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">联系我们</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">联系客服</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">合作招商</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">营销中心</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">手机勤务通</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">风险监测</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">隐私政策</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">Contact Us</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="copyright">-->
+                    <!--西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  | 互联网药品信息服务资格证编号(京)-经营性-2014-0008 | 新出发秦零 字第大120007号<br/>-->
+                    <!--音像制品经营许可证苏宿批005号 | 出版物经营许可证编号新出发(苏)批字第N-012号 | 互联网出版许可证编号新出网证(秦)字150号<br/>-->
+                    <!--网络文化经营许可证秦网文[2014]2148-348号 违法和不良信息举报电话：4006561155 Copyright © 2015-2019 勤务通 版权所有<br/>-->
+                    <!--勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务-->
+                <!--</div>-->
+                <!--<div class="message">-->
+                    <!--<a href="#"><img src="../images/mess.png" alt=""/></a>-->
+                    <!--<a href="#"><img src="../images/mess2.png" alt=""/></a>-->
+                    <!--<a href="#"><img src="../images/mess3.png" alt=""/></a>-->
+                    <!--<a href="#"><img src="../images/mess4.png" alt=""/></a>-->
+                    <!--<a href="#"><img src="../images/mess5.png" alt=""/></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
+<!--</footer>-->
+</body>
+</html>

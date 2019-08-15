@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="83161dde-03a0-44fc-9706-c3c2d315e035" name="mall" url="">
+        <fileTransfer host="129.28.67.53" port="21" rootFolder="/root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c6737b8d-e7ef-4233-b787-b90790642eb0" name="test_mall" url="">
+        <fileTransfer host="132.232.225.239" port="22" rootFolder="/home/limengya" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

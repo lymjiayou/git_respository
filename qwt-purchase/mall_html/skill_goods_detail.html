@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通秒杀商品详情</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/page.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/goods_detail.css">
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/page.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/imageURL.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/skill_goods_detail.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //头部下拉菜单
+            //头部下拉菜单
+//            $(".top_shortcut .fl").mouseenter(function () {
+//                $(".top_shortcut .dt").addClass("current_bg");
+//                $(".top_shortcut .dd").show(100);
+//            }).mouseleave(function () {
+//                $(".top_shortcut  .dt").removeClass("current_bg");
+//                $(".top_shortcut .dd").hide(100);
+//            });
+            $(".my_qwt_box").mouseenter(function () {
+                $(".my_qwt_box .my_qwt").addClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").show(100);
+            }).mouseleave(function () {
+                $(".my_qwt_box .my_qwt").removeClass("current_bg");
+                $(".my_qwt_box .my_qwt_info").hide(100);
+            });
+            $(".my_service_box").mouseenter(function () {
+                $(".my_service_box .my_service").addClass("current_bg");
+                $(".my_service_box .my_service_info").show(100);
+            }).mouseleave(function () {
+                $(".my_service_box .my_service").removeClass("current_bg");
+                $(".my_service_box .my_service_info").hide(100);
+            });
+            $(".shop_car").click(function () {
+                window.location.href="shop_car.html";
+            })
+        })
+    </script>
+
+</head>
+<body>
+<!--头部导航-->
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                定位：西安
+                <!--<i><s>◇</s></i>-->
+            </div>
+            <!--<div class="dd">-->
+            <!--<ul class="address">-->
+            <!--<li><a href="#">西安</a></li>-->
+            <!--<li><a href="#">渭南</a></li>-->
+            <!--<li><a href="#">延安</a></li>-->
+            <!--<li><a href="#">榆林</a></li>-->
+            <!--<li><a href="#">汉中</a></li>-->
+            <!--<li><a href="#">宝鸡</a></li>-->
+            <!--<li><a href="#">安康</a></li>-->
+            <!--<li><a href="#">铜川</a></li>-->
+            <!--<li><a href="#">咸阳</a></li>-->
+            <!--<li><a href="#">商洛</a></li>-->
+
+            <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>
+                    <a href="login.html" id="username">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="register.html" class="col-red" id="register">免费注册</a>
+                    <a href="#" class="col-red" id="exit" style="display: none">[退出]</a>
+                </li>
+                <li class="line"></li>
+                <li class="my_qwt_box">
+                    <div class="my_qwt">
+                        <a href="individual_order_list.html">我的订单</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_qwt_info">
+                        <div class="deal">
+                            <ul>
+                                <li><a href="individual_order_list.html">待付款订单</a></li>
+                                <!--<li><a href="#">消息</a></li>-->
+                                <li><a href="individual_order_list.html">待确认收货</a></li>
+                                <li><a href="individual_order_list.html">待评价交易</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="my_service_box">
+                    <div class="my_service">
+                        <a href="#">商家管理</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_service_info">
+                        <div class="client_service">
+                            <!--<h1>客户</h1>-->
+                            <ul>
+                                <li><a href="https://www.qinwutong.com/supply/">商家登录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="line"></li>
+                <li class="check_login" style="cursor: pointer">监管审计</li>
+                <!--<li class="contact_server" style="cursor: pointer">联系客服<img src="../images/conact.png" alt=""></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+            <div class="qwt_logo_box" style="height: 100%;">                <a href="../index.html" class="qwt_logo" title="勤务通" style="height: 100%;display: block"></a>            </div>
+            <!--</h1>-->
+            <span class="qwt_name"></span>
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+        <div class="search_box">
+            <input type="text" placeholder="Iphone7 Puls" class="search">
+            <button class="search_button">搜索</button>
+        </div>
+
+        <div class="shop_car">
+            <span>我的购物车</span>
+            <input type="text" class="shop_car_num" value="0">
+        </div>
+        <!--<div class="qwt_scan">-->
+            <!--<img src="../images/qwt-scan.gif" alt="">-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="break_line"></div>
+<div class="qwt_nav clearfix ">
+    <div class="w">
+
+        <div class="navitems" style="margin-left: 15px;left: 190px;width: 800px" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <!--<li><a href="#">秒杀</a></li>-->
+                <li><a href="goods.html" style="color: #ee2222" target="_blank">商品中心</a></li>
+                 <li class="jump_to_service"><a href="javascript:;">后勤服务管家</a></li>
+                <li class="dingzhi_info"><a href="javascript:;">一体化定制</a></li>
+                <li class="online_ask"><a href="javascript:;">在线询价</a></li>
+                <li class="compition"><a href="javascript:;">反向竞价大厅</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="current_category clearfix">
+    <div class="w good_category_info">
+        <span class="back_to_allcategory" ><a href="javascript:;">所有分类&nbsp&nbsp<i>></i></a></span>
+        <span class="first_category"><a href="javascript:;"></a></span>
+        <span class="second_category"><a href="javascript:;"></a></span>
+        <span class="third_category"><a href="javascript:;"></a></span>
+        <span class="goods_name"></span>
+    </div>
+</div>
+<!--商品信息-->
+<div class="goods_detail_box clearfix">
+    <div class="w">
+        <div class="goods_pic">
+            <!--<div class="pic_box">-->
+            <!--<img src="../images/goods1.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="pic_slide">-->
+            <!--<ul id="pic_slide_img">-->
+
+            <!--</ul>-->
+            <!--<div id="arr">-->
+            <!--<span id="left"></span>-->
+            <!--<span id="right"></span>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+        <div class="good_info">
+            <!--<div class="goods_name"><span class="name">'+good_info.commodityName+'</span></div>-->
+            <!--<div class="item">-->
+            <!--<span class="label_info">价格:</span>-->
+            <!--<div class="info price_tag"><i>'+'¥'+'</i></div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+            <!--<span class="label_info vip_label_info">会员价:</span>-->
+            <!--<div class="info vip_price_tag"><i>'+'¥'+'</i></div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+            <!--<span class="label_info">库存:</span>-->
+            <!--<div class="info">-->
+            <!--<input type="text" id="stock_num" value='+good_info.stockQuantity+'>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item choose_num">-->
+            <!--<span class="label_info">数量:</span>-->
+            <!--<div class="info num_add_sub">-->
+            <!--<input type="button" class="sub" value="-">-->
+            <!--<input type="text" class="num" value="1">-->
+            <!--<input type="button" class="add" value="+">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item choose_color">-->
+            <!--<span class="label_info">选择颜色:</span>-->
+            <!--<div class="info colors_info">-->
+            <!--<div class="color no_choose">黑色</div>-->
+            <!--<div class="color no_choose">银色</div>-->
+            <!--<div class="color no_choose">红色</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item choose_specification">-->
+            <!--<span class="label_info">选择规格:</span>-->
+            <!--<div class="info specifics_info">-->
+            <!--<div class="specific no_choose">i5 4G 双硬盘 独显</div>-->
+            <!--<div class="specific no_choose">i5 8G 500G 独显</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="buttons">
+                <!--<button type="button" class="btn btn-warning btn-lg add_shopcar" data-toggle="popover" >加入购物车</button>-->
+                <button type="button" class="btn btn-danger btn-lg immediately_buy">立即购买秒杀产品</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--浏览商品介绍-->
+<div class="goods_content_box clearfix">
+    <div class="w">
+        <div class="choose_tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#goods_detail" data-toggle="tab">商品详情</a>
+                </li>
+                <li><a href="#goods_specific" data-toggle="tab" id="more_standard">规格介绍</a></li>
+                <li><a href="#goods_comments" data-toggle="tab">商品评价</a></li>
+            </ul>
+            <!--tab里面的内容-->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="goods_detail">
+                    <!--<div class="goods_detail_info">-->
+
+                    <!--</div>-->
+                    <ul class="goods_detail_pic">
+
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="goods_specific">
+                    <!--<ul class="tab_specific_info">-->
+                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="label_info">价格:sadhalhd</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;<div class="info price_tag"><i>'+'¥'+'</i></div>&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="label_info">价格:</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="info price_tag"><i>'+'¥'+'</i></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="label_info">价格:</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="info price_tag"><i>'+'¥'+'</i></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="label_info">价格:</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="info price_tag"><i>'+'¥'+'</i></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!--</ul>-->
+
+                </div>
+                <div class="tab-pane fade" id="goods_comments">
+                    <div class="no_comment">
+                        <!--<h1>商品评价</h1>-->
+                        <!--<p>该商品暂无评价</p>-->
+                    </div>
+                    <div class="have_comments">
+                        <!--<div class="comment_item">-->
+                        <!--<div class="user_column">-->
+                        <!--&lt;!&ndash;用户信息&ndash;&gt;-->
+                        <!--<div class="user_info">-->
+                        <!--<img src="../images/goods3.jpg" alt="" class="img-circle user_img" style="width: 25px;height: 25px">-->
+                        <!--李小明-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="comment_column">-->
+                        <!--&lt;!&ndash;评论信息&ndash;&gt;-->
+                        <!--<div class="comment_info">-->
+                        <!--<div class="comment_stars">-->
+                        <!--<ul>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<p class="comment_content">今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去今鞍山道哈德企业哦亲我还得去</p>-->
+                        <!--<div class="pic_list">-->
+                        <!--<ul id="small_pic_list_box">-->
+                        <!--<li><img src="../images/goods3.jpg" alt=""></li>-->
+                        <!--<li><img src="../images/goods5.jpg" alt=""></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div class="big_pic_box">-->
+                        <!--<img src="../images/goods3.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--</div>-->
+                    </div>
+                    <div class="pageTest change_page" style="width: 850px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="same_recommend">
+            <div class="recommend">
+                <span>同类商品推荐</span>
+            </div>
+            <div class="goods_box">
+                <ul class="goods_list">
+                    <!--<li class="goods_info">-->
+                    <!--<div class="row">-->
+                    <!--<div class="col4">-->
+                    <!--<div class="thumbnail">-->
+                    <!--<a href="goods_detail.html"><img src="../images/goods1.jpg" alt=""></a>-->
+                    <!--<div class="caption">-->
+                    <!--<h3>优拉9321筒装黑色长尾票夹51mm</h3>-->
+                    <!--<div class="goods_price">-->
+                    <!--<i>¥</i>-->
+                    <!--<span class="price">12.00</span>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                </ul>
+                <div class="no_recommend"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--联系客服-->
+<div class="contact_server" style="cursor: pointer">联系客服<img src="../images/conact.png" alt=""></div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content">
+                请登录！
+            </div>
+        </div>
+    </div>
+</div>
+<!--添加购物车成功-->
+<div class="modal fade" id="successful_add_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">添加购物车</h4>
+            </div>
+            <div class="modal-body">
+                成功添加购物车！
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

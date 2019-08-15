@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通注册</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/register.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <!--<script src="../js/compress.js"></script>-->
+    <script src="../js/md5.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/register_person.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="header-content">
+        <a href="" class="logo"></a>
+        <span>欢迎注册</span>
+        <div class="login">已有账号？<a href="login.html"> 请登录</a> </div>
+    </div>
+</div>
+<!--注册部分-->
+<div class="center">
+    <!--选择个人还是企业-->
+    <div class="choose">
+
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#person" data-toggle="tab">个人用户</a></li>
+            <li><a href="#company" data-toggle="tab">企业用户</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="person">
+                <!--个人用户表单-->
+                <!-- 表单的左侧表单 -->
+                <div class="main-content-L">
+                    <form action="" method="post">
+                        <!-- 用户名 -->
+                        <div class="form-list">
+                            <label for="username">用 户 名</label>
+                            <!--<input class="form-control" type="text" id="username" placeholder="请输入您的用户名">-->
+                            <input type="text" id="username" maxlength="20" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" placeholder="您的账户名和登录名" >
+                        </div>
+                        <!-- 设置密码 -->
+                        <div class="form-validate"></div>
+                        <div class="form-list">
+                            <label for="password">设置密码</label>
+                            <input type="password" id="password" maxlength="20" onKeypress='javascript:if(event.keyCode == 32)event.returnValue = false;'  placeholder="建议至少使用两种字符组合">
+                        </div>
+                        <!-- 确认密码 -->
+                        <div class="form-validate"></div>
+                        <div class="form-list">
+                            <label for="Repassword">确认密码</label>
+                            <input type="password" id="Repassword" onKeypress='javascript:if(event.keyCode == 32)event.returnValue = false;' placeholder="请再次输入密码">
+                        </div>
+                        <!-- 手机号码 -->
+                        <div class="form-validate"></div>
+                        <div class="form-list">
+                            <label for="telphone" id="country">中国 +86</label>
+                            <input type="tel" id="telphone" placeholder="手机号" autocomplete="off">
+                        </div>
+                        <!-- 邮箱 -->
+                        <div class="form-validate"></div>
+                        <div class="form-list">
+                            <label for="email">绑定邮箱</label>
+                            <input type="email" id="email" placeholder="邮箱" autocomplete="off">
+                        </div>
+
+                        <div class="form-validate"></div>
+                        <!-- 单选框是否同意 -->
+                        <div class="form-check">
+                            <input type="checkbox" id="check_id" checked>
+                            我已阅读并同意 <a href="javascript:;" class="user_protocol">《勤务通商城用户注册协议》</a>
+                        </div>
+                        <!-- 表单的提交按钮 -->
+                        <div class="form-validate"></div>
+                        <input type="button" class="form-submit" value="立即注册">
+                    </form>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="company">
+                <!-- 企业 -->
+                <div class="main-content-R">
+                    <form action="" method="post">
+                        <!-- 用户名 -->
+                        <div class="form-list1">
+                            <label for="username1">用 户 名</label>
+                            <input type="text" id="username1" maxlength="20" onKeypress='javascript:if(event.keyCode == 32)event.returnValue = false;' placeholder="您的账户名和登录名" autocomplete="off">
+                        </div>
+                        <!-- 设置密码 -->
+                        <div class="form-validate1"></div>
+                        <div class="form-list1">
+                            <label for="password1">设置密码</label>
+                            <input type="password" id="password1" maxlength="20" onKeypress='javascript:if(event.keyCode == 32)event.returnValue = false;' placeholder="建议至少使用两种字符组合">
+                        </div>
+                        <!-- 确认密码 -->
+                        <div class="form-validate1"></div>
+                        <div class="form-list1">
+                            <label for="Repassword1">确认密码</label>
+                            <input type="password" id="Repassword1" onKeypress='javascript:if(event.keyCode == 32)event.returnValue = false;' placeholder="请再次输入密码">
+                        </div>
+                        <!-- 手机号码 -->
+                        <div class="form-validate1"></div>
+                        <div class="form-list1">
+                            <label for="telphone1" id="country1">中国 +86</label>
+                            <input type="tel" id="telphone1" placeholder="手机号" autocomplete="off">
+                        </div>
+                        <!-- 邮箱 -->
+                        <div class="form-validate1"></div>
+                        <div class="form-list1">
+                            <label for="email1">企业邮箱</label>
+                            <input type="email" id="email1" placeholder="邮箱" autocomplete="off">
+                        </div>
+                        <!--企业营业执照信息-->
+                        <div class="form-validate1"></div>
+                        <div class="form-group">
+                            <label for="inputfile">
+                                <span class="pic_text_info">上传企业营业执照</span>
+                                <div class="company_info" id="update_company_pic">选择图片
+                                    <input name="file" id="inputfile" type="file"  style="display: none">
+                                </div>
+                            </label>
+                            <div class="company_pic_show">
+                                <span>+</span>
+                            </div>
+                            <div class="update_company_info">确认上传</div>
+                            <div class="confirm_update"><i style="color: #ee2222">*</i>仅支持.jpg,.bmp,.gif,.jpeg,.png为后缀名的文件<br>&#160;选择图片后请点击 "确认上传" 完成上传</div>
+                        </div>
+
+                        <div class="form-validate1"></div>
+                        <!-- 单选框是否同意 -->
+                        <div class="form-check1">
+                            <input type="checkbox" id="check_id1" checked>
+                            我已阅读并同意 <a href="javascript:;" class="user_protocol">《勤务通商城用户注册协议》</a>
+                        </div>
+                        <!-- 表单的提交按钮 -->
+                        <div class="form-validate1"></div>
+                        <input type="button" class="form-submit1" value="立即注册" id="register_submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- 注册页面的底部声明部分 -->
+<div class="footer">
+    <p>
+        <a href="news/news_about_us.html">关于我们</a><span></span>
+        <a href="news/news_contact_us.html">联系我们</a><span></span>
+        <a href="news/news_shopping_process.html">购物流程</a><span></span>
+        <a href="news/news_shopping_process.html">会员介绍</a><span></span>
+        <a href="news/news_common_question.html">常见问题</a><span></span>
+        <a href="news/news_contact_service.html">联系客服</a>
+    </p>
+    <p>Copyright © 2017-2018  陕西勤务通 版权所有</p>
+</div>
+
+<!--提示图片上传成功Modal-->
+<div class="modal fade" id="success_update_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="update_text">图片上传成功！</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册成功-->
+<!--提示注册成功Modal-->
+<div class="modal fade" id="success_register_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/commit_finish.png" alt="">
+                </div>
+                <div class="ask_text">注册成功!</div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default I_know_success" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示注册失败Modal-->
+<div class="modal fade" id="fail_register_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/tip.png" alt="">
+                </div>
+                <div class="ask_text" id="fail_register_ask_test"></div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--展示用户注册协议-->
+<div class="modal fade" id="show_user_protocol" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="height: 800px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">勤务通商城用户注册协议</h4>
+            </div>
+            <div class="modal-body" style="height:680px;overflow: scroll;" id="protocol">
+                <p>本协议是由用户（以下简称“您”）与勤务通商城网站（网址：包括但不限于www.qinwutong.com等运营方）（以下简称“网站”）之间就网站服务等相关事宜所订立的协议，请您仔细阅读本注册协议，您点击“同意”和“下一步”按钮后，即视为您接受并同意遵守本协议的约定。</p>
+                <h2>一、协议</h2>
+                <p>1、本协议（包括其附件）及网站上已发布或将发布的任何有关使用网站的规则，包括但不限于《勤务通商城用户交易服务条款》等（下称“有关规则”）将构成双方之间完整的协议。<br>
+                    2、有关规则是本协议不可分割的一部分，与本协议具有同等法律效力。<br>
+                    3、网站有权根据需要不时修订、重述各项规则，并不需另行通知您。所有经修订及重述的有关规则将于网站上公布后即自动生效。您如不同意相关修订及重述，须立即以书面通知的方式终止本协议，继续使用网站服务将表示您接受经修订及重述的有关规则并同意受其约束。<br>
+                    4、您通过网络页面点击“同意”和“下一步”按钮或以其他方式选择接受本协议，即表示您与勤务通商城已达成协议并同意接受本协议的全部约定内容。本协议自您的入驻申请获得勤务通商城审核通过之时起生效。</p>
+                <h2>二、服务</h2>
+                <p>1、网站通过互联网依法为您提供包括但不限于交易平台商品信息搜寻服务、与网站沟通、订立订单及合同服务、互联网金融、物流服务、运营设计服务等其他互联网信息服务及增值服务，您在完全同意本协议及本站相关规定的情况下，方有权使用本站的相关服务。<br>
+                    2、您必须自行准备以下设备和开支：<br>
+                    &nbsp&nbsp&nbsp&nbsp（1）上网设备，包括并不限于电脑或者其他上网终端及其他必备的上网装置；<br>
+                    &nbsp&nbsp&nbsp&nbsp（2）上网开支，包括并不限于网络服务费、上网设备租用费、流量费等。</p>
+                <h2>三、承诺</h2>
+                <p>1、您承诺在网站注册成为本网站用户的公司是根据该您所属国相关法律以公司形式成立的相关法律主体存在；<br>
+                    2、您承诺您向网站提供的注册资料是真实、准确、有效的，并保证其诸如电子邮件地址、联系电话、联系地址、邮政编码等内容的有效性及安全性；<br>
+                    3、您承诺遵守有关规则。您将在期间内的任何时间遵守本协议以及所有已公示或将公示于网站的任何有关规则及其相关流程；<br>
+                    4、您在未经网站事先书面批准的情况下不对网站上的任何数据作无关其使用服务的商业性利用，包括但不限于在复制、传播或向他方披露等方式使用；<br>
+                    5、您承诺严格遵守以下义务：<br>
+                    &nbsp&nbsp&nbsp&nbsp（1）不传输或发表：煽动抗拒、破坏宪法和法律、行政法规实施的言论，煽动颠覆国家政权，推翻社会主义制度的言论，煽动分裂国家、破坏国家统一的言论，煽动民族仇恨、民族歧视、破坏民族团结的言论；<br>
+                    &nbsp&nbsp&nbsp&nbsp（2）不利用本网站从事洗钱、窃取商业秘密、窃取个人信息等违法犯罪活动；<br>
+                    &nbsp&nbsp&nbsp&nbsp（3）不干扰本网站的正常运转，不得侵入本网站及国家计算机信息系统；<br>
+                    &nbsp&nbsp&nbsp&nbsp（4）不传输或发表损害国家社会公共利益和涉及国家安全的信息资料或言论；<br>
+                    &nbsp&nbsp&nbsp&nbsp（5）不传输或发表任何违法犯罪的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的、淫秽的、不文明的等信息资料；<br>
+                    &nbsp&nbsp&nbsp&nbsp（6）不教唆他人从事本条所禁止的行为；<br>
+                    &nbsp&nbsp&nbsp&nbsp（7）不发布任何侵犯他人著作权、商标权等知识产权及其他合法权利的内容。</p>
+                <h2>四、信息收集及保护</h2>
+                <p>1、您在本网站进行注册、浏览、订单、评价、参加活动等行为时，涉及您名称、通信地址、联系电话、电子邮箱、联系人、订单情况、评价或反馈、投诉内容、cookies等信息的，本网站有权从完成交易、提供物流、售后及客户服务、开展活动、完成良好的客户体验等多种角度予以收集，并将对其中涉及个人隐私信息予以严格保密，除非得到您的授权、为履行强行性法律义务（如国家安全机关指令）或法律另有规定、本注册协议或其他条款另有约定外，本站不会向外界披露您的隐私信息。<br>
+                    2、您注册成功后，将产生登录名和密码等账户信息，您可以根据本站规定更改您的密码。您应谨慎合理的保存、使用您的账户信息。<br>
+                    3、您同意，勤务通商城拥有通过邮件、短信、电话、网站通知或声明等形式，向在本站注册的用户、收货人发送订单信息、促销活动、售后服务、客户服务等告知信息的权利。如您不希望接收上述信息，可退订。</p>
+                <h2>五、订单成立及履约基本规则</h2>
+                <p>1、当您订立订单时，请您仔细核对确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。如果因您填写的收货人、联系电话、地址等信息错误，导致勤务通商城（或勤务通商城委托的配送公司）将货物交付给非您本意的收货人的，由此造成的损失需由您自行承担。<br>
+                    2、您同意网站上的订单成立规则：<br>
+                    &nbsp&nbsp&nbsp&nbsp（1）网站中展示的商品信息包括但不限于价格、规格、属性等信息，其性质仅为要约邀请，是网站希望您向网站发出要约的意思表示；<br>
+                    &nbsp&nbsp&nbsp&nbsp（2）当您确定购买并提交订单时（您的订单内容应包含您希望购买的商品名称、数量、单价、总额及支付方式、联系方式、收货人、收货地址等信息），视为您向网站发出了要约；<br>
+                    &nbsp&nbsp&nbsp&nbsp（3）您提交订单显示成功后并非网站对您要约的承诺。只有系统将订单信息反馈至网站，经网站业务审核确认能够满足您的订购需求时，方视为网站对您的要约作出承诺，此时您与网站之间的订单已经成立。<br>
+                    &nbsp&nbsp&nbsp&nbsp（4）订单成立后，您根据提交订单载明的应支付的保证金或预付款金额支付至网站指定的支付渠道后，方视为您与网站之间的订单已经生效。<br>
+                    3、订单取消：<br>
+                    &nbsp&nbsp&nbsp&nbsp（1）在网站与您的订单生效之前，您与网站均有权取消相关商品的订单，订单取消后，您已支付的款项将退回您的付款账户，您和网站都无须承担任何违约责任。 <br>
+                    &nbsp&nbsp&nbsp&nbsp（2）在网站与您的订单生效之后，原则上您和网站都无权取消相关商品的订单，但您因其他原因确实需要取消订单的，您和网站应沟通取消订单，具体违约责任详见《勤务通商城用户交易服务条款》。 <br>
+                    4、网站将尽量满足您的订单需求，避免您订购的商品无货，但是由于技术问题以及网站难以控制和避免的因素，网站无法保证符合您提交的订单中所有要求的商品都有货；如您订购的商品无货，网站将及时与您联系，您有权取消订单，但您取消订单后网站不承担因商品无货而产生的一切责任。<br>
+                    5、如您在订购过程中有任何疑问或与网站产生纠纷的，您可以通过网站设立的客服渠道进行咨询和投诉。<br>
+                    6、当网站将您采购订单下所对应的商品交付至第一承运人时，该采购订单项下的货物风险由网站转移至您名下。同时在您未完全付完采购订单中的货款前，网站保留对未完全付款金额所对应的货物的所有权。</p>
+                <h2>六、所有权及知识产权条款</h2>
+                <p>1、您同意并已充分了解本协议的条款，承诺不将已发表于本站的信息，以任何形式发布或授权其他主体以任何方式使用（包括但不限于在各类网站、媒体上使用）。<br>
+                    2、除法律另有强制性规定外，未经网站明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，网站有权追究其法律责任。<br>
+                    3、网站所展示的资料信息（包括但不限于图表、文字、商标、标识、图像、声音文件片段、数字下载、视频、数据编辑和软件等），均是勤务通商城的财产，受国际相关版权法规、公约
+                    等的保护，未经勤务通商城书面许可，任何第三方无权将上述资料信息复制、出版、发行、公开展示、编码、翻译、传输或散布至任何其他计算机、服务器、网站或其他媒介。本站上所有内容的汇编是勤务通商城的排他财产，受国际版权法的保护。本站上所有软件都是勤务通商城或其关联公司或其软件供应商的财产，受国际版权法的保护。</p>
+                <h2>七、协议终止</h2>
+                <p>1、协议期限。除非依据本协议的条款提前终止，本协议自您的入驻申请获得网站审核通过之时起生效（“协议生效日”）至提前终止或终止事项产生日为止。<br>
+                    2、提前终止。协议任何一方均可以提前三十天书面通知的方式终止本协议，在终止前未完成的相关订单应履行完毕；<br>
+                    3、因故终止。<br>
+                    &nbsp&nbsp&nbsp&nbsp（1）如您违反任何有关规则或本协议项下的任何义务、承诺、陈述或保证，网站有权即时以书面通知您终止本协议，且按有关规则和本协议对您采取相关的执行行为；<br>
+                    &nbsp&nbsp&nbsp&nbsp（2）您恶意多次取消订单，网站有权书面通知您终止本协议。<br>
+                    &nbsp&nbsp&nbsp&nbsp（3）除非本协议中另行约定，如任何一方发生任何违约事件，非违约方应向违约方发出书面通知，要求违约方在其指定的合理期限内纠正违约行为，并就其因违约行为遭受的任何损失向违约方提出索赔。如违约方未能在指定期间内纠正违约行为，非违约方应有权以书面通知立即终止本协议。<br>
+                    4、您在收到服务开通通知后九十天内未以服务账户及密码登录网站的，网站有权以书面通知您即时终止本协议。</p>
+                <h2>八、法律文本、管辖法及争端解决</h2>
+                <p>本协议采用中文文本，因本协议或您在网站订购商品引起的或与之相关的争议、纠纷或索赔、包括违约、协议的效力和终止，均受中华人民共和国法律管辖并根据中华人民共和国相关法律解
+                    释，任何中国的法律冲突规则或原则不适用于本协议。凡因本协议引起的或与之相关的争议、纠纷或索赔、包括违约、协议的效力和终止，均应提交上海国际经济贸易仲裁委员会按照申请仲裁时
+                    该会现行有效的仲裁规则仲裁解决，仲裁地为上海。仲裁裁决是终局的,对双方均有约束力。</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

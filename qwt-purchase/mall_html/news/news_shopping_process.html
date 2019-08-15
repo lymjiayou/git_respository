@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/mall_css/global.css">
+    <link rel="stylesheet" href="../../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../../css/mall_css/news_info.css">
+
+
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/HTTP.js"></script>    <script src="../../js/imageURL.js"></script>
+
+    <script src="../../js/news_global.js"></script>
+    <script src="../../js/news_info.js"></script>
+</head>
+<body>
+<!--联系客服--><div class="contact_server" style="cursor: pointer">联系客服<img src="../../images/conact.png" alt=""></div>
+<div class="top_shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">
+                定位：西安
+                <!--<i><s>◇</s></i>-->
+            </div>
+            <!--<div class="dd">-->
+            <!--<ul class="address">-->
+            <!--<li><a href="#">西安</a></li>-->
+            <!--<li><a href="#">渭南</a></li>-->
+            <!--<li><a href="#">延安</a></li>-->
+            <!--<li><a href="#">榆林</a></li>-->
+            <!--<li><a href="#">汉中</a></li>-->
+            <!--<li><a href="#">宝鸡</a></li>-->
+            <!--<li><a href="#">安康</a></li>-->
+            <!--<li><a href="#">铜川</a></li>-->
+            <!--<li><a href="#">咸阳</a></li>-->
+            <!--<li><a href="#">商洛</a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="fr">
+            <ul class="fr_info">
+                <li>
+                    <a href="../login.html" id="username">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="../register.html" class="col-red" id="register">免费注册</a>
+                    <a href="#" class="col-red" id="exit" style="display: none">[退出]</a>
+                </li>
+                <li class="line"></li>
+                <li class="my_qwt_box">
+                    <div class="my_qwt">
+                        <a href="../individual_order_list.html" target="_blank">我的订单</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_qwt_info">
+                        <div class="deal">
+                            <ul>
+                                <li><a href="../individual_need_pay_list.html" target="_blank">待付款订单</a></li>
+                                <!--<li><a href="#">消息</a></li>-->
+                                <li><a href="../individual_need_receive_list.html" target="_blank">待确认收货</a></li>
+                                <li><a href="../individual_need_commit.html" target="_blank">待评价交易</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="my_service_box">
+                    <div class="my_service">
+                        <a href="#">商家管理</a>
+                        <i><s>◇</s></i>
+                    </div>
+                    <div class="my_service_info">
+                        <div class="client_service">
+                            <!--<h1>客户</h1>-->
+                            <ul>
+                                <li><a href="https://www.qinwutong.com/supply/">商家登录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="line"></li>
+
+                <li class="check_login" style="cursor: pointer">监管审计</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--京东三级头部-->
+<div class="level_three_header clearfix">
+    <div class="w m_search">
+        <div class="logo">
+            <!--<h1 class="qwt_logo_show">-->
+            <div class="qwt_logo_box" style="height: 100%;">                <a href="../../index.html" class="qwt_logo" title="勤务通" style="height: 100%;display: block"></a>            </div>
+            <!--</h1>-->
+            <span class="qwt_name"></span>
+            <!--<span class="qwt_english">Shaanxi QWT</span>-->
+        </div>
+        <div class="search_box">
+            <input type="text" placeholder="Iphone XR" class="search">
+            <button class="search_button">搜索</button>
+        </div>
+
+        <div class="shop_car">
+            <span>我的购物车</span>
+            <input type="text" class="shop_car_num" value="0">
+        </div>
+        <!--<div class="qwt_scan">-->
+        <!--<img src="../images/qwt-scan.gif" alt="">-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="break_line"></div>
+<div class="w">
+    <div class="qwt_nav  clearfix ">
+
+        <div class="dropdown_menu">
+            <div class="nav_dt">
+                全部商品分类
+            </div>
+            <div class="nav_dd">
+                <ul id="classify_messgae">
+                    <!--<li>-->
+                    <!--<a href="">办公耗材</a>-->
+                    <!--<span class="nav_item_line">/</span>-->
+                    <!--<a href="javascript:;">办公用纸</a>-->
+                    <!--&lt;!&ndash;<span class="nav_item_line">/</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a href="javascript:;">数码</a>&ndash;&gt;-->
+                    <!--<div class="nav_dd_info">-->
+                    <!--<ul>-->
+                    <!--<li><a href="javascript:;" class="info_dt">办公耗材 ></a>-->
+
+                    <!--<span> | </span><a href="javascript:;" class="info_dd">硒鼓</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">墨盒</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">碳粉/粉仓</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">碳带/色带</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">标签机色带</a>-->
+
+                    <!--</li>-->
+                    <!--<li class="info_more1"><a href="javascript:;" class="info_dt">办公用纸 ></a>-->
+                    <!--<div class="info_more1_dd">-->
+                    <!--<span> | </span><a href="javascript:;" class="info_dd">复印纸/速印纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">电脑打印纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">传真纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">收银纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">喷墨打印纸/相片纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">工程用纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">其他OA用纸</a><span> | </span>-->
+                    <!--<a href="javascript:;" class="info_dd">电脑打印标签纸/手写标签纸</a>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="navitems" style="margin-left: 15px">
+            <ul>
+                <li><a href="../../index.html" target="_blank">首页</a></li>
+                <!--<li><a href="#">秒杀</a></li>-->
+                <li class="goods_center"><a href="javascript:;">商品中心</a></li>
+                 <li class="jump_to_service"><a href="javascript:;">后勤服务管家</a></li>
+                <li class="dingzhi_info_news"><a href="javascript:;">一体化定制</a></li>                <li class="online_ask_news"><a href="javascript:;">在线询价</a></li>                <li class="compition_news"><a href="javascript:;">反向竞价大厅</a></li>  </ul>
+        </div>
+    </div>
+</div>
+
+<div class="news_content clearfix">
+    <div class="w">
+        <div style="overflow: hidden">
+            <a href="../../index.html" class="back_to_index">返回首页&nbsp&nbsp<i>></i></a>
+            <a href="javascript:;" class="current_info">购物流程和会员介绍</a>
+        </div>
+
+
+        <div class="news_info">
+            <div class="news_title_box">
+                <h1 class="title">勤务通商城购物流程和会员介绍</h1>
+                <!--<p class="time">2019年1月1日</p>-->
+            </div>
+            <div class="news_content">
+                <h2>购物流程：</h2>
+                <p>用户认证（采购商信息认证）→浏览商品(商品议价、定价）→生产订单、订单信息确认→收到商品→确认收货→申请售后</p>
+                <h2>会员介绍：</h2>
+                <p>1.企业用户 <br>
+                    &nbsp&nbsp&nbsp&nbsp1.1  成为企业用户需要哪些条件?<br>企业采购需要提供合法的营业执照，进行用户认证。<br>
+                    &nbsp&nbsp&nbsp&nbsp1.2  用户权益 <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA.企业用户部分商品享有特价；<br>
+                    &nbsp&nbsp&nbsp&nbsp1.3  专享服务 <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA.享有专属VIP专线服务（400-666-7511），及时为您解答和处理企业采购常见问题；<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB.享有专属客户经理服务，及时为您解答和处理合同签订、批量采购、企业解决方案等采购需求；<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspC.享有专属票据服务：自主开票，是指根据客户个性化需要，可自主选择如何开票、开票时间、寄送地址等。目前支持普票集中开票、普票货票分离（发票寄到其他地址）。<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD.享有企业用户专属活动特权。<br>
+                    &nbsp&nbsp&nbsp&nbsp1.4  特别声明 <br>
+                    &nbsp&nbsp&nbsp&nbsp会员账号禁止转借或转让他人使用，如因转借或转让他人使用所带来的一切后果，本公司概不负责，如被公司发现有转借或转让使用情况，公司则有权立即取消此会员账号的相应级别资格。<br>
+                    2.个人用户 <br>
+                    个人用户可以组团购买商品，享受团购价格 <br>
+                    会员日购买享受会员价 <br>
+                    3.企业用户和个人用户区别 <br>
+                    企业用户相对个人用户有以下优势 <br>
+                    &nbsp&nbsp&nbsp&nbspA.自主开票，是指根据客户个性化需要，可自主选择如何开票、开票时间、寄送地址等。目前支持普票集中开票、普票货票分离（发票寄到其他地址）。<br>
+                    &nbsp&nbsp&nbsp&nbspB.企业VIP客服：可享受400-666-7511的企业用户专属VIP热线；<br>
+                    &nbsp&nbsp&nbsp&nbspC.企业专享价格：可享受针对“企业用户”企业专享价格；<br>
+                    4.企业用户购买是否可以享受优惠政策 <br>
+                    我司针对企业用户的购买是有优惠政策的，一般只针对批量购买同一款产品的情况，同时要看所订购的产品当时的销售模式，如果是正在促销的产品，是无法再进行优惠的。除此之外，针对企业用户，我司将上线专属于企业用户的频道，并会不定时举行针对企业用户的促销专场。</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news_refund.html">退款说明</a></dd>
+                    <dd><a href="news_reject.html">退换货</a></dd>
+                    <dd><a href="news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

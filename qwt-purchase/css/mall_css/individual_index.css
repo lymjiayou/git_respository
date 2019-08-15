@@ -1,0 +1,299 @@
+.right_content{
+    background-color: #f5f5f5;
+}
+.right_content .r_head_box{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px #ddd;
+}
+.right_content .r_left_box{
+    width: 65%;
+    float: left;
+}
+.r_left_box .r_list_box,.r_left_box .r_DA_box{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 420px;
+    box-shadow: 5px 5px 5px #ddd;
+}
+.r_left_box .r_list_box{
+    margin-bottom: 30px;
+}
+.r_right_shopcar_box{
+    background-color: #FFFFFF;
+    float: left;
+    margin-left: 20px;
+    width: 33%;
+    height: 872px;
+    box-shadow: 5px 5px 5px #ddd;
+}
+/*头部内容*/
+/*r.r_head_box{*/
+    /*overflow: hidden;*/
+/*}*/
+.r_head_box .head_right,.r_head_box .head_left{
+    float: left;
+    height: 100%;
+}
+.r_head_box .head_left{
+    width: 320px;
+    overflow: hidden;
+}
+.r_head_box .head_right{
+    width: 700px;
+    overflow: hidden;
+}
+
+.r_head_box .user_touxiang_box{
+    float: left;
+    margin: 30px 10px 0 30px;
+    width: 100px;
+    height: 100px;
+    /*border-radius: 100px;*/
+    /*background: url("../../images/touxiang.png")no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*border: 1px solid #ee2222;*/
+}
+.user_touxiang_box img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 4px #eee;
+}
+.r_head_box .user_name_box{
+    margin: 30px 0 20px 10px;
+    float: left;
+    border-right: 1.5px dashed #dddddd;
+    height: 130px;
+    width: 170px;
+
+}
+.user_name_box h1{
+    padding-top: 20px;
+    font: 400 18px/18px "微软雅黑";
+}
+.item{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+
+.item .label_info{
+    float: left;
+    width: 70px;
+    text-align: left;
+}
+.item .info{
+    float: left;
+    width: 60px;
+}
+.user_wallet_info_box h1{
+    padding: 20px 0 10px 20px;
+    font: 400 18px/18px "微软雅黑";
+    /*border-bottom: 1px solid #dddddd;*/
+}
+.remian_money_box,.cost_money_box{
+    float: left;
+    margin-right: 10px;
+    width: 220px;
+    /*overflow: hidden;*/
+}
+.to_pay_money_box{
+    float: left;
+    width: 220px;
+    /*overflow: hidden;*/
+}
+.remian_money_box{
+    margin-left: 10px;
+}
+.my_property_box{
+    overflow: hidden;
+}
+.my_property_box .text_info{
+    margin-top: 25px;
+}
+.my_property_box .text_info,.my_property_box img{
+    float: left;
+}
+.my_property_box .property_label{
+    font: 400 14px/20px "微软雅黑";
+}
+.my_property_box .property_info{
+    font-weight: bold;
+    font-size: 18px;
+    color: #e45d04;
+    display: block;
+    width: 140px;
+    margin-top: 5px;
+}
+.head_box{
+    height: 60px;
+    /*border-bottom: 1px solid #dddddd;*/
+}
+.head_box h1{
+    float: left;
+    padding: 20px 0 0 20px;
+    font: 400 18px/18px "微软雅黑";
+}
+.head_box a{
+    display: block;
+    float: right;
+    margin: 25px 40px 0 0;
+    font: 400 14px/14px "微软雅黑";
+}
+/*全部订单列表*/
+.order_box{
+    /*margin-bottom: 10px;*/
+    padding: 0 10px 0 10px;
+}
+.order_box .order_head{
+    height: 30px;
+    background-color: #F5F5F5;
+}
+.order_box .order_content{
+    /*height: 120px;*/
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd;
+    /*border: 1px solid #dddddd;*/
+}
+.order_head span{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.good_content,.order_time,.al_price,.order_status,.order_operation{
+    float: left;
+}
+.good_content{
+    width: 250px;
+    padding: 20px 0 10px 15px;
+    font-size: 14px;
+}
+.good_content .good_pic{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+.good_content .good_pic img{
+    width: 100%;
+    height: 100%;
+}
+.good_content .good_name,.good_content .good_standard{
+    float: left;
+    width: 120px;
+    /*height: 100px;*/
+    margin-left: 10px;
+}
+.good_name span,.good_standard span{
+    height: 38px;
+    width: 100%;
+    font: 400 14px/19px "微软雅黑";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+}
+/*.good_content .good_name span,.good_content .good_standard span{*/
+    /*font: 400 14px/19px "微软雅黑";*/
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-line-clamp:2;*/
+    /*overflow: hidden;*/
+    /*!*white-space: nowrap;*!*/
+    /*text-overflow: ellipsis;*/
+/*}*/
+.good_content .good_standard{
+    margin-top: 10px;
+    color:#B1AAAA;;
+}
+.al_price{
+    text-align: center;
+    /*border-right:1px solid #dddddd ;*/
+    font-size: 14px;
+    width: 120px;
+    /*margin: 0 20px 0 0px;*/
+    line-height: 120px;
+}
+.order_time{
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    /*margin: 0 20px 0 0px;*/
+    line-height: 120px;
+}
+.order_status{
+    text-align: center;
+    /*border-right:1px solid #dddddd ;*/
+    font-size: 14px;
+    width: 100px;
+    height: 100%;
+    /*padding:0 40px 0 20px;*/
+}
+.order_status .o_status{
+    color: #5bc0de;
+    font-weight: bold;
+    display: block;
+    margin: 40px 0 5px 0;
+}
+.order_status .need_send_detail{
+    display: block;
+}
+/*购物车列表*/
+.shop_car_content_box .good_content{
+    overflow: hidden;
+}
+.shop_car_content_box .good_content{
+    width: 320px;
+}
+.shop_car_content_box .good_name{
+    width: 180px;
+}
+.shop_car_content_box .look_good{
+    display: block;
+    float: right;
+    margin: 40px 15px 0 0;
+}
+
+/*交易分析*/
+.DA_content_box{
+    margin-top: 20px;
+}
+.DA_content_box h1{
+    font: 400 18px/18px "微软雅黑";
+}
+.all_goods,.always_goods{
+    float: left;
+    margin: 0 40px 0 40px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+.DA_pic{
+    margin: 10px 10px 0 10px;
+    width: 230px;
+    height: 230px;
+}
+.DA_pic img{
+    width: 100%;
+    height: 100%;
+}
+.DA_text{
+    height: 60px;
+}
+.DA_text h1{
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.DA_text a{
+    font: 400 14px/14px "微软雅黑";
+    float: right;
+    margin: 22px 20px 0 0;
+    display: block;
+}
+

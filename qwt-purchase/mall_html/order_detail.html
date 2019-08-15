@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通商品订单详情</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/order_detail.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/order_detail.js"></script>
+</head>
+<body>
+<!-- 头部 导航区 -->
+<div class="header">
+    <div class="w">
+        <div class="header_logo">
+            <a href="#" id="e1"></a>
+            <a href="#" id="e2">我的勤务通</a>
+            <a href="../index.html" id="e3">返回商城首页</a>
+        </div>
+    </div>
+</div>
+<!-- 内容区容器 -->
+<div class="container_box clearfix">
+    <div class="w">
+        <div class="location_box">
+                <a href="individual_order_list.html">我的勤务通  <i>></i></a>
+                <a href="javascript:history.back(-1)">我的订单  <i>></i></a>
+                <a href="individual_order_list.html">订单编号: </a><span id="order_num"></span>
+        </div>
+        <!-- 上侧内容区 -->
+        <div class="order_status_box">
+            <div class="status_text">订单状态</div>
+            <!--订单进行状态-->
+            <div class="stepInfo">
+                <div class="stepIco stepIco1" id="create">1
+                    <div class="stepText" id="createText">生成订单</div>
+                </div>
+                <div class="line1"></div>
+                <div class="stepIco stepIco2" id="finish_pay">2
+                    <div class="stepText" id="finish_pay_Text">完成付款</div>
+                </div>
+                <div class="line2"></div>
+                <div class="stepIco stepIco3" id="produce">3
+                    <div class="stepText" id="produceText">商家发货</div>
+                </div>
+                <div class="line3"></div>
+                <div class="stepIco stepIco4" id="confirm_order">4
+                    <div class="stepText" id="confirm_text">确认收货</div>
+                </div>
+                <div class="line4"></div>
+                <div class="stepIco stepIco5" id="received">5
+                    <div class="stepText" id="receivedText">评价</div>
+                </div>
+            </div>
+            <!--物流信息-->
+            <!--<div class="track-rcol" style="display:none;">-->
+                <!--<div class="track-list">-->
+                    <!--<ul>-->
+                        <!--<li>-->
+                            <!--<i class="node-icon"></i>-->
+                            <!--<span class="time">2016-03-10 18:07:15</span>-->
+                            <!--<span class="txt">【京东到家】京东配送员【申国龙】已出发，联系电话【18410106883，感谢您的耐心等待，参加评价还能赢取京豆呦】</span>-->
+                        <!--</li>-->
+                        <!--<li class="last">-->
+                            <!--<i class="node-icon"></i>-->
+                            <!--<span class="time">2016-03-10 18:07:15</span>-->
+                            <!--<span class="txt">感谢您在京东购物，欢迎您再次光临！</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--订单列表-->
+            <div class="order_list">
+                <span class="good">商品</span>
+                <span class="single_price">单价</span>
+                <span class="num">数量</span>
+                <span class="all_price">小计</span>
+                <span class="status">交易状态</span>
+                <span class="operation">交易操作</span>
+            </div>
+
+            <!--<div class="order_content1">-->
+                <!--<div class="good_content1">-->
+                    <!--<div class="good_pic1">-->
+                        <!--<img src="../images/goods1.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="good_name1"><span>优拉9321筒装黑色长尾票夹51mm</span></div>-->
+                <!--</div>-->
+                <!--<div class="good_price1">-->
+                    <!--<span class="price1">2.00</span>-->
+                <!--</div>-->
+                <!--<div class="good_num1">-->
+                    <!--<span>X</span>-->
+                    <!--<span class="nums1">12</span>-->
+                <!--</div>-->
+                <!--<div class="al_price1">-->
+                    <!--<span>￥</span>-->
+                    <!--<span class="alprice1">24.00</span>-->
+                <!--</div>-->
+                <!--<div class="order_status1">-->
+                    <!--<span class="o_status1">待付款</span>-->
+                    <!--&lt;!&ndash;<a href="#" class="detail">订单详情</a>&ndash;&gt;-->
+                <!--</div>-->
+                <!--<div class="order_operation1">-->
+                    <!--<button type="button" class="btn btn-danger apply_refund">退货退款</button>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="order_box">-->
+                <!--<div class="order_content_big_box">-->
+                    <!--<div class="order_content_box">-->
+                        <!--<div class="order_content">-->
+                            <!--<div class="good_content">-->
+                                <!--<div class="good_pic">-->
+                                    <!--<img src="../images/goods1.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="good_name"><span>优拉9321筒装黑色长尾票夹51mm</span></div>-->
+                            <!--</div>-->
+                            <!--<div class="good_price">-->
+                                <!--<span class="price">2.00</span>-->
+                            <!--</div>-->
+                            <!--<div class="good_num">-->
+                                <!--<span>X</span>-->
+                                <!--<span class="nums">12</span>-->
+                            <!--</div>-->
+                            <!--<div class="al_price">-->
+                                <!--<span>￥</span>-->
+                                <!--<span class="alprice">24.00</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="order_content">-->
+                            <!--<div class="good_content">-->
+                                <!--<div class="good_pic">-->
+                                    <!--<img src="../images/goods2.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="good_name"><span>优拉9321筒装黑色长尾票夹51mm</span></div>-->
+                            <!--</div>-->
+                            <!--<div class="good_price">-->
+                                <!--<span class="price">2.00</span>-->
+                            <!--</div>-->
+                            <!--<div class="good_num">-->
+                                <!--<span>X</span>-->
+                                <!--<span class="nums">12</span>-->
+                            <!--</div>-->
+                            <!--<div class="al_price">-->
+                                <!--<span>￥</span>-->
+                                <!--<span class="alprice">24.00</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;多个订单用同一个订单状态&ndash;&gt;-->
+
+                    <!--</div>-->
+                    <!--<div class="order_status">-->
+                        <!--<div class="order_status_text">-->
+                            <!--<span class="o_status">待付款</span>-->
+                            <!--<span class="need_pay_detail">订单详情</span>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                    <!--&lt;!&ndash;多个商品用同一个操作&ndash;&gt;-->
+                    <!--<div class="order_operation">-->
+                        <!--<div class="order_operation_box">-->
+                            <!--<button type="button" class="btn btn-danger cancle_order">取消订单</button>-->
+                            <!--<button type="button" class="btn btn-warning pay_order">支付订单</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--定制信息-->
+            <div class="request_info">
+                <span>商品定制信息:</span>
+                <div class="request">无</div>
+            </div>
+        </div>
+        <div class="order_info_box">
+            <div class="receiver_info">
+                <div class="text">收货人信息</div>
+                <div class="info_box">
+                    <div class="item">
+                        <span class="label_info">收货人:</span>
+                        <div class="info receiver_name_h"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">地址:</span>
+                        <div class="info receiver_addr"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">电话:</span>
+                        <div class="info receiver_phone"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="send_info">
+                <div class="text">配送信息</div>
+                <div class="info_box">
+                    <div class="item">
+                        <span class="label_info">配送方式:</span>
+                        <div class="info">普通快递</div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">运费:</span>
+                        <div class="info"><i>￥</i>0.00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pay_info">
+                <div class="text">付款信息</div>
+                <div class="info_box">
+                    <div class="item">
+                        <span class="label_info">付款方式:</span>
+                        <div class="info" id="pay_way"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">商品总额:</span>
+                        <div class="info" id="all_price"></div>
+                    </div>
+                    <!--<div class="item">-->
+                        <!--<span class="label_info">应支付金额:</span>-->
+                        <!--<div class="info"><i>￥</i>4.00</div>-->
+                    <!--</div>-->
+                </div>
+
+            </div>
+            <div class="receipt_info">
+                <div class="text">发票信息</div>
+                <div class="info_box have_receipt_box">
+                    <div class="item">
+                        <span class="label_info">发票类型:</span>
+                        <div class="info check_type"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info"> 开票类型:</span>
+                        <div class="info start_check_type"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">发票抬头:</span>
+                        <div class="info company_name"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">地址及电话:</span>
+                        <div class="info company_address_tel"></div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label_info">开户银行:</span>
+                        <div class="info bank_name"></div>
+                    </div>
+                    <div class="item">
+                        <span class="label_info">银行账号:</span>
+                        <div class="info bank_account"></div>
+                    </div>
+                </div>
+                <div class="info_box no_receipt_box" style="display: none">
+                    <div class="item">
+                        <span class="label_info">发票类型:</span>
+                        <div class="info">不需要发票</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!-- 取消订单 Modal -->
+<div class="modal fade" id="cancle_order_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="cancle_order_Label">取消订单</h4>
+            </div>
+            <div class="modal-body">
+                <div class="cancle_confirm_text">您确定要取消下面的订单吗?</div>
+                <div class="item">
+                    <span class="label_info">订单号:</span>
+                    <div class="info cancel_id"></div>
+                </div>
+                <div class="item">
+                    <span class="label_info">取消原因:</span>
+                    <div class="info">
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="cancle_reason" value="改买其他商品" checked>
+                                改买其他商品
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="cancle_reason" value="拍错了，重新拍">
+                                拍错了，重新拍
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="cancle_reason" value="价格不满意" >
+                                价格不满意
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="cancle_reason" value="其他原因">
+                                其他原因
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default confirm_cancle_order" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--申请退款Modal-->
+<div class="modal fade" id="apply_refund_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="apply_refund_Label">申请退款</h4>
+            </div>
+            <div class="modal-body">
+                <div class="item">
+                    <span class="label_info">商品金额:</span>
+                    <div class="info refund_good_money"></div>
+                </div>
+                <div class="item">
+                    <span class="label_info">退款金额:</span>
+                    <div class="info refund_money"></div>
+                </div>
+                <!--<div class="item">-->
+                    <!--<span class="label_info">退款原因:</span>-->
+                    <!--<div class="info">-->
+                        <!--<textarea class="form-control" rows="5" id="refund_reason"></textarea>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <div class="item">
+                    <span class="label_info">退款原因:</span>
+                    <div class="info">
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="refund_reason" value="产品质量有问题" checked>
+                                产品质量有问题
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="refund_reason" value="拍错了，重新拍">
+                                拍错了，重新拍
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="refund_reason" value="价格不满意" >
+                                价格不满意
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="refund_reason" value="其他原因">
+                                其他原因
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default confirm_refund_order" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--申请退货Modal-->
+<div class="modal fade" id="apply_reject_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">申请退货</h4>
+            </div>
+            <div class="modal-body">
+                <div class="item">
+                    <span class="label_info">商品金额:</span>
+                    <div class="info reject_good_money"></div>
+                </div>
+                <div class="item">
+                    <span class="label_info">退款金额:</span>
+                    <div class="info reject_money"></div>
+                </div>
+                <!--<div class="item">-->
+                    <!--<span class="label_info">退货原因:</span>-->
+                    <!--<div class="info">-->
+                        <!--<textarea class="form-control" rows="5" id="reject_reason"></textarea>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <div class="item">
+                    <span class="label_info">退货原因:</span>
+                    <div class="info">
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="reject_reason" value="产品质量有问题" checked>
+                                产品质量有问题
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input  type="radio" name="reject_reason" value="不喜欢">
+                                不喜欢
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="reject_reason" value="价格不满意" >
+                                价格不满意
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="reject_reason" value="其他原因">
+                                其他原因
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default confirm_reject_order" data-dismiss="modal">确定</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

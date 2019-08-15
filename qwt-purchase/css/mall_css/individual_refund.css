@@ -1,0 +1,153 @@
+
+.refund_box{
+    padding: 20px;
+}
+.refund_header_header{
+    overflow: hidden;
+}
+.refund_header{
+    float: left;
+    font: bold 16px/16px "微软雅黑";
+    color: #ee2222;
+    background-color: #FFFFFF;
+}
+/*列表信息*/
+.refund_content:hover{
+    background-color: #c4e3f3;
+}
+.refund_list_box{
+    width: 100%;
+    margin-top: 20px;
+}
+.refund_list_box th{
+    text-align: center;
+}
+.order_list{
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 10px;
+    font: 400 14px/14px "微软雅黑";
+}
+.order_list span{
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.order_list .good{
+    width: 310px;
+}
+.order_list .refund_price,.order_list .apply_time{
+    width: 230px;
+}
+.order_list .audit_status,.order_list .operation{
+    width: 100px;
+}
+
+/*退款订单列表*/
+.refund_content{
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    padding: 10px;
+}
+.refund_num_info{
+    /*float: left;*/
+    padding: 5px 20px 5px 20px;
+    width: 350px;
+}
+.refund_num_info .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.refund_num_info .label_info{
+    display: block;
+    float: left;
+    width: 90px;
+    /*clear: both;*/
+}
+.refund_num_info .info{
+    float: left;
+    max-height: 72px;
+    width: 200px;
+}
+.refund_price_info,.apply_time_info,.refund_audit_info,.refund_operation{
+    text-align: center;
+    /*float: left;*/
+    line-height: 80px;
+}
+.refund_price_info{
+    margin-right:20px;
+    width: 200px;
+}
+.apply_time_info{
+    margin: 0 30px 0 30px ;
+    width: 200px;
+}
+.refund_audit_info,.refund_operation{
+    width: 80px;
+    margin: 0 20px 0 15px;
+}
+.refund_operation{
+    cursor: pointer;
+}
+.refund_operation:hover{
+    color: #ee2222;
+}
+
+/*换页*/
+.refund_box .change_page{
+    float: right;
+    margin-right: 50px;
+
+}
+/*分页  修改默认样式*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ee2222;
+    border-color: #ee2222;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #333333;
+}
+/*模态框*/
+.modal.fade.in{
+    top:120px;
+}
+.modal-header{
+    background-color: #ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 450px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 400px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.modal-body .item{
+    width: 100%;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 80px;
+    /*clear: both;*/
+}
+.modal .info{
+    float: left;
+    width: 450px;
+}

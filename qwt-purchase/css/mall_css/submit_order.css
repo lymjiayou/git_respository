@@ -1,0 +1,350 @@
+
+.pay_box .check_info{
+    margin-top: 50px;
+    width: 100%;
+}
+.check_info span{
+    font: 400 18px/18px "微软雅黑";
+}
+.pay_box .info_box{
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #ddd;
+    border: 1px solid #f2f2f2;
+}
+.pay_box .receiver_box,.pay_way_box,.receipt_box,.goods_list_box{
+    border-bottom: 1px solid #f2f2f2;
+    margin-top: 20px;
+}
+.pay_box .receiver_box h1,.pay_way_box h1,.receipt_box h1,.goods_list_box h1{
+    display: inline;
+    font: bold 16px/16px "微软雅黑";
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#new_ad{
+    display: inline;
+    color: #5bc0de;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+#new_ad{
+    margin: 20px 20px 20px 40px;
+    display: block;
+}
+.pay_box .receiver_box .receiver_info,.pay_way,.receipt_way,.edit_receiver_info{
+    margin: 20px 0 20px 20px;
+}
+/*.edit_receiver_info{*/
+    /*display: none;*/
+/*}*/
+
+/*收货人信息复选框*/
+.edit_receiver_info .radio,.receipt_way .radio,.pay_way .radio{
+    margin: 20px;
+    /*height: 3%;*/
+    /*width: 80%;*/
+}
+.edit_receiver_info .radio label,.edit_receiver_info .radio input,.receipt_way .radio label,.receipt_way .radio input,
+.pay_way .radio label,.pay_way .radio input
+{
+    font-size: 16px;
+}
+.edit_receiver_info .btn,#save_info2{
+    margin: 20px 0 0 20px;
+    outline: none;
+}
+
+.pay_box .receiver_box .receiver_info span,.pay_way span,.receipt_way span{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 400;
+}
+
+/*发票信息 需要发票的详细信息 记账信息 新地址信息*/
+.receipt_box .receipt_info,.receiver_box .address_info{
+    margin: 20px 0 20px 50px;
+    display: none;
+}
+
+.address_info .ad_name{
+    width: 120px;
+}
+.address_info .ad_tel{
+    width: 200px;
+}
+
+.pay_way_box{
+    height: 200px;
+}
+.account_radio{
+    float: left;
+}
+.account_time_info {
+    display: none;
+    float: left;
+    margin-left: 30px;
+    width: 650px;
+}
+.account_time_info .account_text{
+    color: #8c8c8c;
+    font-size: 14px;
+}
+.account_time_info .choose_account_time{
+    width: 125px;
+}
+.receipt_info span,.receiver_box .address_info li span{
+    /*color: #333333;*/
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+.receipt_info .info_warn{
+    float: left;
+    margin-left: 10px;
+}
+
+.receipt_info .info_warn .re_warn{
+    color: #ee2222;
+}
+.receipt_info span{
+    width: 120px;
+    text-align: left;
+}
+ .receiver_box .address_info li .name_null,.receiver_box .address_info li .tel_null,.receiver_box .address_info li .ad_null{
+     margin-left: 20px;
+    color: #ee2222;
+     display: none;
+}
+.receiver_box .address_info .ad_ad{
+    margin-left: 14px;
+}
+.receiver_box .address_info .ad_tel{
+    margin-left: 28px;
+}
+.receipt_info .radio label{
+    margin-right: 20px;
+}
+.receipt_info li,.address_info li{
+    height: 40px;
+}
+.receipt_info .radio{
+    margin: 0px;
+}
+.receipt_info li .message,.address_info li .message{
+    float: left;
+    height: 30px;
+    width: 400px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    margin-top: -5px;
+    padding-left: 10px;
+}
+.receipt_info button{
+    margin: 20px 0 0 20px;
+}
+.receipt_info .form-control,.account_time_info .form-control{
+    float: left;
+    padding-top: 3px;
+    width: 120px;
+    height: 30px;
+    outline: none;
+    margin: -5px 10px 0 0;
+}
+
+
+/*.receipt_info li div{*/
+    /*float: left;*/
+/*}*/
+/*商品列表*/
+.goods_list .goods_tab,.total_price_box{
+    width: 98%;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+}
+.goods_tab span,.price_box span{
+    font: 400 16px/40px "微软雅黑";
+}
+.goods_list_box .goods{
+    margin: 0 106px 0 200px;
+}
+.goods_list_box .price{
+    margin: 0 106px 0 159px;
+}
+.goods_list_box .num{
+    margin: 0 106px 0 80px;
+}
+.goods_list_box .total{
+    margin: 0 80px 0 80px;
+}
+.goods_list_box .lists{
+    margin: 10px auto;
+    width: 98%;
+    border: 1px solid #f2f2f2;
+}
+.goods_list_box .lists .list{
+    padding: 5px 0 0 50px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.lists .list .pic{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.lists .list .pic img{
+    width: 100%;
+    height: 100%;
+}
+.lists span{
+    display: block;
+    float: left;
+    bottom: 20px;
+}
+.lists .good{
+    /*height: 50%;*/
+    width: 320px;
+    margin:25px 0 0 20px ;
+    /*text-align: center;*/
+}
+.lists .price{
+    margin:25px 0 0 0 ;
+    text-align: center;
+    width: 110px;
+}
+.lists .num{
+    margin:25px 0 0 135px ;
+    text-align: center;
+    width: 100px;
+}
+.lists .total{
+    margin:25px 0 0 95px ;
+    text-align: center;
+    width: 150px;
+}
+.total_price_box .price_box{
+    float: right;
+    margin-right: 70px;
+}
+.total_price_box .price_box span{
+    font-family: "微软雅黑";
+}
+.price_box .total_price_num{
+    font-size: 20px;
+    color: #F11938;
+}
+.button{
+    float: right;
+    margin: 20px 20px 20px 0;
+}
+.message_box{
+    margin:20px 0 20px 0;
+}
+.message_box span{
+    font: 400 16px/16px "微软雅黑";
+    margin:20px 10px 20px 10px;
+}
+ .message_box .diy{
+     font-size: 14px;
+     color: #8c8c8c;
+ }
+.message_box .buyer_message{
+    height: 33px;
+    width: 400px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}
+/*模态框*/
+.modal.fade.in{
+    top:40px;
+}
+.modal-header{
+    background-color: #ee2222;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#new_address_Modal .modal-header,#success_update_Modal .modal-header{
+    background-color: #ffb412;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.modal-content{
+    height: 570px;
+    border-radius: 0px;
+}
+.modal-body{
+    height: 450px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.modal-body .item{
+    width: 100%;
+    height: 70px;
+    line-height: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.modal-body .label_info{
+    float: left;
+    width: 80px;
+    /*clear: both;*/
+}
+.modal .label_info i{
+    color: #ee2222;
+}
+.modal .info {
+    float: left;
+    /*width: 300px;*/
+}
+.modal label{
+    font-weight: 400;
+}
+.modal .modal-body .name input,.modal .modal-body .tel input{
+    width: 120px;
+}
+.modal .modal-body .street input{
+    width: 350px;
+}
+#tip_delete_Modal .del_content,#success_update_Modal .del_content{
+    height: 300px;
+    border-radius: 0px;
+}
+#tip_delete_Modal .del_body,#success_update_Modal .del_body{
+    height: 180px;
+}
+#tip_delete_Modal .del_body .tip_box,#success_update_Modal .del_body .tip_box{
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+#tip_delete_Modal .del_body .tip_box img,#success_update_Modal .del_body .tip_box img{
+    width: 100%;
+    height: 100%;
+}
+#tip_delete_Modal .del_body .ask_text,#success_update_Modal .del_body .update_text{
+    text-align: center;
+    font:bold 16px/16px "微软雅黑";
+}
+/*地区三级联动*/
+.modal .item .info select{
+    width: 75px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.modal .item .tips,.modal .item .warn{
+    font-size: 12px;
+}
+.modal .item .tips{
+    color: #8a8a8a;
+}
+.modal .item .warn{
+    margin-left: 10px;
+    color: #ee2222;
+}

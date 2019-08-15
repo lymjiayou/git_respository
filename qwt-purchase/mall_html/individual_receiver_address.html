@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<title>勤务通收货地址</title>-->
+    <title>勤务通商城</title>
+    <link rel="shortcut icon" href="../favicon-qwt.ico" >
+    <link rel="stylesheet" href="../css/mall_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mall_css/global.css">
+    <link rel="stylesheet" href="../css/mall_css/base1.css">
+    <link rel="stylesheet" href="../css/mall_css/individual_global.css">
+    <link rel="stylesheet" href="../css/mall_css/individual_receiver_address.css" />
+    <link rel="stylesheet" href="../css/mall_css/page.css" />
+    <script src="../js/jquery-1.11.1.min.js"></script>    <script src="../js/getcookie.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/HTTP.js"></script>
+    <!--<script src="../js/bootstrap-table.min.js"></script>-->
+    <!--<script src="../js/bootstrap-table-zh-CN.min.js"></script>-->
+
+    <!--关于收货地址三级联动的js-->
+    <!--<script src="../js/city.js"></script>-->
+    <script src="../js/shanxi.js"></script>
+    <script src="../js/shanxi_main.js"></script>
+    <script src="../js/global.js"></script>
+    <!--<script src="../js/individual_receiver_address.js"></script>-->
+    <script src="../js/individual_receiver_address_1.js"></script>
+    <script src="../js/page.js"></script>
+
+</head>
+<body>
+<!-- 头部 导航区 -->
+<div class="header">
+    <div class="w">
+        <div class="header_logo">
+            <a href="#" id="e1"></a>
+            <a href="#" id="e2">我的勤务通</a>
+            <a href="../index.html" id="e3">返回商城首页</a>
+        </div>
+        <div class="head_nav">
+            <a href="individual_index.html" class="center_index">首页</a>
+            <a href="individual_user_info.html">用户设置</a>
+        </div>
+    </div>
+</div>
+<!-- 内容区容器 -->
+<div class="container_box clearfix">
+    <div class="w">
+        <!-- 左侧列表 -->
+        <div class="left_nav">
+            <ul>
+                <li class="first_li">
+                    <a class="part">订单中心</a>
+                    <ul id="trade_tab" class="nav nav-stacked">
+                        <li><a href="individual_order_list.html" >我的订单</a></li>
+                        <li><a href="individual_need_pay_list.html">待付款订单</a></li>
+                        <li><a href="individual_need_send_list.html" >待发货订单</a></li>
+                        <li><a href="individual_need_receive_list.html" >待收货订单</a></li>
+                        <li><a href="individual_need_commit.html">待评价订单</a></li>
+                        <li><a href="individual_need_cancel.html">已取消订单</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">客户服务</a>
+                    <ul id="client_server_tab" class="user_center">
+                        <li><a href="individual_refund.html" >退货及退款</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">用户中心</a>
+                    <ul id="client_tab" class="user_center">
+                        <li><a href="individual_user_info.html">用户信息设置</a></li>
+                        <li><a href="individual_receiver_address.html" style="color: #ee2222">收货地址</a></li>
+                        <li><a href="individual_recharge.html">账户充值</a></li>
+                        <li><a href="individual_user_protocol.html">消费保障及服务协议</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a class="part">资产中心</a>
+                    <ul class="user_center">
+                        <li><a href="individual_all_goods.html">我的全部商品</a></li>
+                        <li><a href="individual_always_goods.html">常购清单</a></li>
+                        <li><a href="individual_bills.html">我的账单</a></li>
+                        <li><a href="individual_receipt_management.html">发票管理</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- 右侧内容区 -->
+        <div class="right_content">
+
+            <!--收货地址-->
+            <div class="address_box">
+                <div class="head">
+                    <div class="address_header">收货地址</div>
+                    <button type="button" class="btn btn-danger new_address">新增地址</button>
+                </div>
+                <div class="address_table_box">
+                    <table class="address_list_box">
+                        <thead class="address_list">
+                        <tr class="">
+                            <th class="reciever">收货人</th>
+                            <th class="reciever_area">所在地区</th>
+                            <th class="reciever_street">街道地址</th>
+                            <th class="reciever_tel">电话</th>
+                            <th class="reciever_default"></th>
+                            <th class="operation">操作</th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="receiver_list_box">
+                        <!--<tr class="receiver_content">-->
+                        <!--<th class="receiver_name_info">张小明</th>-->
+                        <!--<th class="receiver_area_info">-->
+                        <!--陕西省 西安市 雁塔区-->
+                        <!--</th>-->
+                        <!--<th class="receiver_street_info">-->
+                        <!--太白南路2号西安电子科技大学-->
+                        <!--</th>-->
+                        <!--<th class="receiver_tel_info">1342324242342-->
+                        <!--</th>-->
+                        <!--<th class="receiver_default_info">-->
+                        <!--<img src="../images/default_address.png" alt="">-->
+                        <!--默认地址-->
+                        <!--</th>-->
+                        <!--<th class="receiver_operation">-->
+                        <!--<div class="edit">-->
+                        <!--<img src=" ../images/edit_addr.png" alt="" class="e_sign">-->
+                        <!--<span>编辑</span>-->
+                        <!--</div>-->
+                        <!--<div class="delete">-->
+                        <!--<img src="../images/del_addr.png" alt="" class="d_sign">-->
+                        <!--<span>删除</span>-->
+                        <!--</div>-->
+                        <!--</th>-->
+                        <!--</tr>-->
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+
+
+                <!--分页-->
+                <!--<div class="pageTest change_page"></div>-->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--勤务通底部-->
+<footer class="qwt_footer clearfix">
+    <div class="w">
+        <div class="qwt_service">
+            <ul class="qwt_service_list">
+                <li class="qwt_service_item">
+                    <!--<h5 class="more">齐</h5>-->
+                    <img src="../images/slogan1.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="quick">快</h5>-->
+                    <img src="../images/slogen2.jpg" alt="">
+
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="good">真</h5>-->
+                    <img src="../images/slogen3.jpg" alt="">
+                </li>
+                <li class="qwt_service_item">
+                    <!--<h5 class="save">廉</h5>-->
+                    <img src="../images/slogen4.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="qwt_shouhou clearfix">
+            <div class="w qwt_sou">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd><a href="news/news_shopping_process.html">购物流程</a></dd>
+                    <dd><a href="news/news_shopping_process.html">会员介绍</a></dd>
+                    <dd><a href="news/news_vip.html">会员等级制度</a></dd>
+                    <dd><a href="news/news_vip.html">充值返利规则</a></dd>
+                    <dd><a href="news/news_common_question.html">常见问题</a></dd>
+                    <dd><a href="news/news_contact_service.html">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd><a href="news/news_self_tapping.html">上门自提</a></dd>
+                    <dd><a href="news/news_service_serch.html">配送服务查询</a></dd>
+                    <dd><a href="news/news_fee_standard.html">配送费收取标准</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd><a href="news/news_transfer_account.html">公司转账</a></dd>
+                    <dd><a href="news/news_transfer_account.html">账期支付</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd><a href="news/news_after_sale.html">售后政策</a></dd>
+                    <dd><a href="news/news_refund.html">退款说明</a></dd>
+                    <dd><a href="news/news_reject.html">退换货</a></dd>
+                    <dd><a href="news/news_cancle_order.html">取消订单</a></dd>
+                </dl>
+
+                <dl class="china_map">
+                    <dt>
+                        勤务通覆盖区县
+                    </dt>
+                    <dd>
+                        <h6 style="text-align: left">勤务通已向陕西省各区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</h6>
+                        <a href="news/news_self_tapping.html">查看详情></a>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="w qwt_bottom clearfix">
+                <div class="about">
+                    <ul class="jb_about">
+                        <li><a href="news/news_about_us.html">关于我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_us.html">联系我们</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_contact_service.html">联系客服</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_find_business.html">合作招商</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_market_center.html">营销中心</a></li>
+                        <li class="line"></li>
+                        <li><a href="../images/yy.jpg" target="_blank">勤务通营业执照</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">友情链接</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">销售联盟</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="#">勤务通社区</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_risk_watch.html">风险监测</a></li>
+                        <li class="line"></li>
+                        <li><a href="news/news_privacy.html">隐私政策</a></li>
+                        <li class="line"></li>
+                        <!--<li><a href="#">勤务通公益</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <!--<li><a href="javascript:;">English Site</a></li>-->
+                        <!--<li class="line"></li>-->
+                        <li><a href="news/news_contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">                    西安市公安局备案编号61011302000757 | 陕ICP备18015788号-2  <br/> Copyright © 2015-2019 勤务通 版权所有<br/>                    勤务通旗下网站：勤务通服务管家 | 勤务通智能后勤综合服务<br/>                    相关协会: <a href="http://www.chinawuliu.com.cn/">中国物流与采购联合会</a> | <a href="http://www.cheasa.org/">中国家用电器服务维修协会</a>                </div>
+                <div class="message">
+                    <a href="#"><img src="../images/mess.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess2.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess3.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess4.png" alt=""/></a>
+                    <a href="#"><img src="../images/mess5.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+<!--新增收货地址Modal-->
+<div class="modal fade" id="new_address_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="new_address_Label">新增地址</h4>
+            </div>
+            <div class="modal-body">
+                <!--<form id="addr_indo_form">-->
+                <div class="item">
+                    <span class="label_info"><i>*</i>收货人:</span>
+                    <div class="info name">
+                        <input  class="form-control name_detail" maxlength="20" type="text">
+                        <!--info-tips-->
+                    </div>
+                    <!--item-warn-->
+                </div>
+                <div class="item select_item">
+                    <span class="label_info"><i>*</i>所在地区:</span>
+                    <div class="info">
+                        <select class="province">
+                            <option value="陕西">陕西</option>
+                        </select>
+                        <select class="city"></select>
+                        <select class="area"></select>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"><i>*</i>街道地址:</span>
+                    <div class="info street">
+                        <input  class="form-control street_detail"  maxlength="60" type="text">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"><i>*</i>电话号码:</span>
+                    <div class="info tel">
+                        <input  class="form-control tel_detail" type="text">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label_info"></span>
+                    <div class="info">
+                        <label>
+                            <input type="checkbox" value="" class="default_addr">
+                            设置为默认收货地址
+                        </label>
+                    </div>
+                </div>
+                <!--</form>-->
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default save_address">保存收货地址</button>
+                <button type="button" class="btn btn-default save_address_edit" style="display: none">保存收货地址</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--提示删除Modal-->
+<div class="modal fade" id="tip_delete_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content del_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body del_body">
+                <div class="tip_box">
+                    <img src="../images/tip.png" alt="">
+                </div>
+                <div class="ask_text">您确定要删除吗？</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default delete_del" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-default cancle_del" data-dismiss="modal">取消</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--失败操作的提示-->
+<div class="modal fade" id="fail_operation_Modal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 150px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" id="fail_modal_content"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

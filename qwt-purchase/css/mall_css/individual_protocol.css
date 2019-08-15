@@ -1,0 +1,47 @@
+#myTab{
+    height: 45px;
+    border-bottom: 1px solid #dddddd;
+}
+#myTab li{
+    text-align: center;
+    width: 240px;
+    font: 400 16px/45px "微软雅黑";
+    height: 45px;
+}
+ #myTabContent{
+     margin: 20px;
+ }
+ #infoTabContent{
+     margin-top: 40px;
+ }
+#user_protocol h2,#trade_protocol h2{
+    font: 600 16px/28px "微软雅黑";
+}
+#user_protocol img,#trade_protocol img{
+    display: block;
+    margin: 10px auto;
+}
+#user_protocol p,#trade_protocol p{
+    font: 400 14px/25px "微软雅黑";
+}
+#user_protocol h1,#trade_protocol h1{
+    font: 600 18px/36px "微软雅黑";
+    text-align: center;
+}
+#user_protocol table{
+    margin: 10px auto;
+    width: 90%;
+}
+/*更改标签页样式*/
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #ffffff;
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none;
+    border-bottom: 2px solid #ff1f17;
+    height: 100%;
+}
+.nav-tabs{
+    border-bottom: none;
+}
